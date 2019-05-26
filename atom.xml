@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yuan901202.github.io/"/>
-  <updated>2017-10-28T00:39:58.000Z</updated>
+  <updated>2019-05-26T09:04:48.011Z</updated>
   <id>https://yuan901202.github.io/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Github emoji</title>
+    <link href="https://yuan901202.github.io/2019/05/26/emoji/"/>
+    <id>https://yuan901202.github.io/2019/05/26/emoji/</id>
+    <published>2019-05-26T09:03:19.000Z</published>
+    <updated>2019-05-26T09:04:48.011Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;People&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;:bowtie: &lt;code&gt;:bowtie:&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;:smile: &lt;code&gt;:smile:&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;:laughing: &lt;code&gt;:laugh
+      
+    
+    </summary>
+    
+      <category term="Some some" scheme="https://yuan901202.github.io/categories/Some-some/"/>
+    
+    
+      <category term="emoji" scheme="https://yuan901202.github.io/tags/emoji/"/>
+    
+      <category term="github" scheme="https://yuan901202.github.io/tags/github/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
