@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yuan901202.github.io/"/>
-  <updated>2019-05-26T09:04:48.011Z</updated>
+  <updated>2019-05-26T09:10:05.799Z</updated>
   <id>https://yuan901202.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://yuan901202.github.io/2019/05/26/emoji/"/>
     <id>https://yuan901202.github.io/2019/05/26/emoji/</id>
     <published>2019-05-26T09:03:19.000Z</published>
-    <updated>2019-05-26T09:04:48.011Z</updated>
+    <updated>2019-05-26T09:10:05.799Z</updated>
     
     <summary type="html">
     
@@ -44,25 +44,6 @@
       <category term="emoji" scheme="https://yuan901202.github.io/tags/emoji/"/>
     
       <category term="github" scheme="https://yuan901202.github.io/tags/github/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://yuan901202.github.io/2017/10/28/hello-world/"/>
-    <id>https://yuan901202.github.io/2017/10/28/hello-world/</id>
-    <published>2017-10-28T00:39:58.000Z</published>
-    <updated>2017-10-28T00:39:58.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-      
-    
-    </summary>
-    
     
   </entry>
   
