@@ -1,0 +1,1782 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+  <meta name="google-site-verification" content="PksUE0-XFmzi0Q0468In_L75ZGhX2hu12EIV_3VESBE">
+
+
+
+  <meta name="msvalidate.01" content="65EC799A52EE745FAD50348D080F24EC">
+
+
+
+  <meta name="yandex-verification" content="1ec55785d160e0ad">
+
+
+
+
+
+  
+  
+  <link rel="stylesheet" href="/lib/fancybox/source/jquery.fancybox.css">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/css/main.css?v=7.1.1">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png?v=7.1.1">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png?v=7.1.1">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png?v=7.1.1">
+
+
+  <link rel="mask-icon" href="/images/safari-pinned-tab.svg?v=7.1.1" color="#222">
+
+
+
+  <meta name="msapplication-config" content="/images/browserconfig.xml">
+
+
+
+  <meta property="fb:admins" content="100001747574507">
+  <meta property="fb:app_id" content="631163044069335">
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.1.1',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: true,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="Topic: Cyber-forensics – a developing tool for solving computer crimeLecturer’s Name: David Johnstone &amp;amp; Tony HooperDate: 12th June, 2016Word Count: 3483">
+<meta name="keywords" content="assessment,university,undergraduate">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cyber-forensics – a developing tool for solving computer crime">
+<meta property="og:url" content="https://yuan901202.github.io/2016/06/12/uni10/index.html">
+<meta property="og:site_name" content="Walking on the Earth">
+<meta property="og:description" content="Topic: Cyber-forensics – a developing tool for solving computer crimeLecturer’s Name: David Johnstone &amp;amp; Tony HooperDate: 12th June, 2016Word Count: 3483">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-05-27T03:39:46.439Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Cyber-forensics – a developing tool for solving computer crime">
+<meta name="twitter:description" content="Topic: Cyber-forensics – a developing tool for solving computer crimeLecturer’s Name: David Johnstone &amp;amp; Tony HooperDate: 12th June, 2016Word Count: 3483">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Walking on the Earth" type="application/atom+xml">
+
+
+
+  
+  
+  <link rel="canonical" href="https://yuan901202.github.io/2016/06/12/uni10/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Cyber-forensics – a developing tool for solving computer crime | Walking on the Earth</title>
+  
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId  : '631163044069335',
+        xfbml  : true,
+        version: 'v3.3'
+      });
+    };
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) {return;}
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+
+
+
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140801788-1"></script>
+  <script>
+    var host = window.location.hostname;
+    if (host !== "localhost" || !true) {
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-140801788-1');
+    }
+  </script>
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Walking on the Earth</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">Blog of Tony Yuan</p>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Home</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>Tags<span class="badge">7</span></a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>Categories<span class="badge">5</span></a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">20</span></a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>About</a>
+
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>Search</a>
+        </li>
+      
+    </ul>
+  
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="Searching..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+  
+  
+
+  
+
+  <a href="https://github.com/yuan901202" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewbox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a>
+
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://yuan901202.github.io/2016/06/12/uni10/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Tony Yuan">
+      <meta itemprop="description" content="Kia Ora! My name is Tianfu (Tony) Yuan. And I’m a young passionate website developer living at New Zealand.">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Walking on the Earth">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Cyber-forensics – a developing tool for solving computer crime
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 12-06-2016 15:19:15" itemprop="dateCreated datePublished" datetime="2016-06-12T15:19:15+12:00">12-06-2016</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 27-05-2019 15:39:46" itemprop="dateModified" datetime="2019-05-27T15:39:46+12:00">27-05-2019</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Undergraduate/" itemprop="url" rel="index"><span itemprop="name">Undergraduate</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments: </span>
+                <a href="/2016/06/12/uni10/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count fb-comments-count" data-href="https://yuan901202.github.io/2016/06/12/uni10/" itemprop="commentCount">0</span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             Views:  
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Symbols count in article: </span>
+                
+                <span title="Symbols count in article">27k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">24 mins.</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="Topic-Cyber-forensics-–-a-developing-tool-for-solving-computer-crime"><a href="#Topic-Cyber-forensics-–-a-developing-tool-for-solving-computer-crime" class="headerlink" title="Topic: Cyber-forensics – a developing tool for solving computer crime"></a>Topic: Cyber-forensics – a developing tool for solving computer crime</h1><h2 id="Lecturer’s-Name-David-Johnstone-amp-Tony-Hooper"><a href="#Lecturer’s-Name-David-Johnstone-amp-Tony-Hooper" class="headerlink" title="Lecturer’s Name: David Johnstone &amp; Tony Hooper"></a>Lecturer’s Name: David Johnstone &amp; Tony Hooper</h2><h2 id="Date-12th-June-2016"><a href="#Date-12th-June-2016" class="headerlink" title="Date: 12th June, 2016"></a>Date: 12th June, 2016</h2><h2 id="Word-Count-3483"><a href="#Word-Count-3483" class="headerlink" title="Word Count: 3483"></a>Word Count: 3483</h2><a id="more"></a>
+<h3 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h3><p>The world is turning into a big village because the network developed rapidly nowadays, and there is no boarder can isolate the cultures and languages. However, this modern technology brings a huge issue when we deal with the crime, especially, the computer crime across the Internet. The field of cyber forensics has raised due to the growth of computer crime, which involves collecting, reserving, and analysing the digital evidence without destroying the original data and physical devices. Apart from technology issues that we need to deal with, there also have ethical issues we need to resolve during the process of cyber forensics. This essay will discuss the ethical issue when deal with computer crime in four different ways: privacy, ownership and intellectual property rights, issues of data collection, storage and access, and digital evidence accuracy and difficulties.</p>
+<h3 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h3><p>Computer crime, or also called cybercrime abound in today’s society, thus computer forensics was developed as an essential tool to investigate many issues that we facing at electronic age. When computer technology dramatically improved nowadays, the society that we lived has benefited a lot from such technology, but the lesson that we learned might be very expensive. Computer crimes become a very serious issue today, and it might cost up to billions of dollars of damage. Especially, the Internet provides a nest of criminal activities, which the problems includes untraceable mark on the Internet, unrecognised identity, and difficult to penetrate. Cyber forensics was introduced to deal with the computer crime problem, which using certain investigation and analysis techniques to collect, reserve, and analyse the evidences that gathered from target computers or other digital devices that is suitable presented as evidence in court (Rouse, 2013). Computer systems or other digital devices often store valuable data and personal confidential information that could help investigator to identify potential evidences in order to resolve the crime. Digital evidence is the term that used to deal with any data or information that found at crime scene, and it is difficult to collecting and processing the digital evidence before present to court. The process of computer forensics involved eight steps to retrieve digital evidences, which included secure suspect computer, collect every files on that computer, recover any deleted files, reveal all hidden files, decrypted all encrypted files, analyse all the files, validate files that could be evidence, and finally present in court (Strickland, 2008). However, the legal and ethical issues that often come with privacy issues, ownership and intellectual property rights, data collection, storage and access issues, and digital evidence accuracy and difficulties during the process of computer forensics.</p>
+<h3 id="Discussion"><a href="#Discussion" class="headerlink" title="Discussion"></a>Discussion</h3><h4 id="Privacy"><a href="#Privacy" class="headerlink" title="Privacy"></a>Privacy</h4><p>Privacy issues were concerned when police using a certain tool collect data from digital device during the process of computer forensics, because the file not only contains the evidences, but also it might contain other confidential information. Caloyannides &amp; Ebrary (2004) showed that the file that stored on computer is contained “data about the data”, like the date of this file created, when it was modified, who using it, and what software did use. There has a chance that such information might disclosure under this circumstance. Ntantogian, Apostolopoulos, Marinakis &amp; Xenakis (2014) recent study showed that the credentials information could recovered from the volatile memory of Android devices by using forensics software, which means people who have knowledges about computer software and Android system could retrieve confidential information from any Android devices. They also demonstrates the vulnerable has been found at most of Android applications, even the online banking application has less security settings. According to this research, the vulnerable of Android system could help police to retrieve the data from the mobile device, but it also considers that other people’s confidential information might disclose if criminal using second hand mobile devices. A recent news about privacy on mobile device is that San Bernardino shooting in Southern California in 2nd December, 2015, a suspect left an iPhone 5C at scene but it locked with password, and then FBI ask Apple to unlock the device because after 10 trials the information stored at that device will be completely wiped, but Apple refuse to unlock the device due to concerned about users’ privacy (<a href="http://www.theguardian.com/us-news/2016/feb/17/apple-ordered-to-hack-iphone-of-san-bernardino-shooter-for-fbi)" target="_blank" rel="noopener">http://www.theguardian.com/us-news/2016/feb/17/apple-ordered-to-hack-iphone-of-san-bernardino-shooter-for-fbi)</a>. This case showed that mobile devices could contain a massive data about user, which includes personal information, social media account, and bank account. When police or federal government try to use computer forensics tool to collect data from a mobile device, the user’s privacy should be considered if sensitive data might impact somebody else.</p>
+<p>According to Brungs &amp; Jamieson (2005), the law called Telecommunications Act 1979 is published due to protect the data during the transmissions in Australia. However, the problem is that the law is only applied to if the person or organisation intercept the data during the transmission and the data for transmission. They noted that the stored data might not protect the law due to the Telecommunications Act 1979 did not examine it clearly in detailed (Brungs &amp; Jamieson, 2005, p. 60). And also, there might have multi-jurisdictional in Australia, which means that different law is applied to different states or federal government. If the crime is committed within the state, the state law will apply to, otherwise, the federal law will apply to if the crime is across the state. Edward Snowden, who is a former NSA employee just leaked a document about the NSA tapping undersea fibre cable for surveillance and collects data in order to prevent terrorist attacks (<a href="http://www.bbc.com/news/world-us-canada-23123964)" target="_blank" rel="noopener">http://www.bbc.com/news/world-us-canada-23123964)</a>. This case showed that every information might collect by the government in order to provide useful information when doing computer forensics, however, people won’t know about what information that they collect and how can they use about such information. Another law called the Electronic Communications Privacy Act 1986, also known as ECPA in USA, which is focus on deal with the digital files that transmit through network (<a href="https://it.ojp.gov/privacyliberty/authorities/statutes/1285)" target="_blank" rel="noopener">https://it.ojp.gov/privacyliberty/authorities/statutes/1285)</a>. However, another law called the USA PATRIOT Act 2001, which stands for “Uniting and Strengthening America by Providing Appropriate Tools Required to Intercept and Obstruct Terrorism Act 2001”. This law is gives the government right to monitoring or interception telephone communications between terrorists (<a href="https://it.ojp.gov/PrivacyLiberty/authorities/statutes/1281)" target="_blank" rel="noopener">https://it.ojp.gov/PrivacyLiberty/authorities/statutes/1281)</a>. </p>
+<p>Another privacy is the Internet browser cookies used to identify content of website. Rogers, Goldman, Mislan, Wedge &amp; Debrota (2006) argued that the cookies that stored at computer can be used to identify the URL of the website, dates and times usually stored within the cookies, and it might help police to create an investigative timelines. In addition, temporary cache files could also help investigation, the cache files is stored a couple of website content usually is pictures, but it not the whole history of internet browser, because the cache will be clear when it reach to a default size (<a href="http://searchstorage.techtarget.com/definition/cache)" target="_blank" rel="noopener">http://searchstorage.techtarget.com/definition/cache)</a>. The problem is that cookies or cache might disclosure user’s personal information, because cookies also store personal information and track user behaviour. When police perform computer forensic, the cookie might help to create a criminal timeline, but it might also disclosure user other confidential information which is not related to the crime.</p>
+<h4 id="Ownership-and-intellectual-property-rights"><a href="#Ownership-and-intellectual-property-rights" class="headerlink" title="Ownership and intellectual property rights"></a>Ownership and intellectual property rights</h4><p>When police attempt to investigate a certain file, they should check ownership of such objects in order to measure the evidentiary value. Rogers, Goldman, Mislan, Wedge &amp; Debrota (2006) showed that the ownership and security properties of files is not available in FAT file system, and it also not available in Windows XP operating system, they showed that only NTFS file system used above Windows XP can be retrieve the ownership and permission information, which the information is useful to determine the ownership of file and administrator user. When we talked about ownership, we often attempt to relate it to the intellectual property rights. The tools of computer forensic used during investigation often need to recover the file from computer system in order to identify the owner, thus police could measure that the file is whether useful or not.  </p>
+<p>Kessler (2004) revealed that the technology of steganography provide some important evidence when the ownership of file could not identified clearly, he showed that original author could retrieve a hidden message (also known as digital watermark) from a file could prove that the file is belong to the right owner. The digital watermark is like the “data about the data” that we talked about before, the information that associated with the file could help an investigator to examine the owner of the file. On the other hand, Sommer (1998) indicated that the patterns of ownership are changed since all physical document transferred to digital form, the reason is because the computer evidence could modify by criminal purpose, thus the digital evidence could not 100% trusted. There has four ways to change file properties that could make such file useless either in Windows and MAC operating system, such as using details pane in the Windows operating system, or using the Finder could change file permission. The website also list a tool called “BulkFileChanger” that can modify the file attribute, like the created time, modified time and accessed time (<a href="http://www.wikihow.com/Change-File-Properties)" target="_blank" rel="noopener">http://www.wikihow.com/Change-File-Properties)</a>. </p>
+<p>Office of Legal education Executive Office for United Stated Attorneys (2009) stated that criminal evidence might contain evidence of ownership, and also, the intellectual property of evidence should be considered as part of government’s property. Casey (2002) showed that the most sufficient way to investigate intellectual property theft is through analyse the crime data that transfer between the communication, and key word search is necessary. He also examined that the tool used to investigate this criminal case should be had clearly detailed, because the detailed evidence should meaningful for the investigator. However, the problem often come with if the intellectual property could not determine by the computer forensic tool, Walden (2007) showed that the intellectual property is hardly defined by computer technology, because there might have multiple resources claimed that the file is belong to them, which it will cause misusing or misleading the criminal case to find out the real criminal. On the other hand, Buchholz &amp; Spafford (2004) showed that the metadata that stored on existing system could help to further investigate the criminal case, because the metadata is usually record on non-volatile storage, which means the content of metadata could not change unless the whole system is completely wiped by professional. They also indicated that the quality of the data determine the how to solve the criminal case, especially, the timestamps are considered as a high value evidence, because it can help the investigator to reconstruction the whole file operation ordered by the time. However, misleading information provides to investigator, because the system can be modified by unauthorised person if they gain super-user (or root) permission, like hackers. Based on the ownership and intellectual property rights issues that still exist in the computer forensics, the investigator should develop a new strategy to address such problems.</p>
+<h4 id="Issues-of-data-collection-storage-and-access"><a href="#Issues-of-data-collection-storage-and-access" class="headerlink" title="Issues of data collection, storage and access"></a>Issues of data collection, storage and access</h4><p>Marcella &amp; Greenfield (2002) emphasises one of useful process is create a timeline of criminal activities based on the information that collected from computer system or others, and also the evidence should be secure at safe place in order to prevent unauthorised person to access it. They also showed that the importance of creating a profile based on the evidential record, especially, using log files to gain some definite information, because the log file will record any activities did on the system. However, enable log file function that required to monitor the system, which it might not be legal in certain countries. Kruse &amp; Heiser (2001) argued that the investigator should not directly check the original data, because the data might be gone due to some circumstance, the example showed that if the evidence stored at RAM (Random Access Memory) of computer, there will be high chance lose data if shut down the computer before capture all the data. As a result, how to collect the data is tricky when we deal with the digital evidence. In addition, Casey (2002) showed that there has a basic requirement that every investigator must to meet, like evidence preservation, temporal analysis, and evidence recovery. Every evidence must be collected with data integrity or structural integrity, which means the evidence must be collected without any modifications. Moreover, evidence should collect for professional, and supervised by the related agencies. </p>
+<p>A recent study (Adelstein et al., 2006) found that digital evidence storage format should be have a standard format, which it should store such evidence into digital files based on the template of format. If there has no such standard guide to correct the current format, the information might not be widely understood by other peoples. The universal format could help investigator quick and easy to locate the file that they want to access. But the problem is how to store those evidence, because it unlike other physical document that we stored at the library, it can be influence by other factors which can destroy it. Marcella &amp; Guillossou (2012) stated that investigator should follow three principles when storing digital evidence: (1) make sure the digital evidence is on the requested list that investigate agency proposed; (2) make sure all the digital evidence stored at an acceptable environment, which provide secure, and not impact by extreme temperature or other natural conditions; and (3) make sure all the digital evidence store at the environment that not affect by magnetic fields, dust, or any other damage could destroy it. Consider the mass of data needs to store, the magnetic hard drive is the main storage media that we used today, and the magnetic component is build-in the hard drive, which is allowing a computer to write or read data from the hard drive. However, outside magnetic fields could easily change the sequence of blocks on the disk or even make it ‘clean’ (<a href="http://www.igcseict.info/theory/3/mag/)" target="_blank" rel="noopener">http://www.igcseict.info/theory/3/mag/)</a>. </p>
+<p>Marcella &amp; Greenfield (2002) showed that the difficulty of accessing the certain file on the local computer system is the file has password protected. If the file is password protected, necessary password cracking program should help the investigator to identify the password, but it might take a very long time to crack it. However, cloud technology growth rapidly today, which make the suspect files is hard to retrieve the content because it stored on the Internet. Moore (2011) showed that one computer forensic tool called EnCase is used to provide preview of the suspect content on the hard disk without exact the image that stored on the disk, and also it can help investigator save time on review every individual files, because it provide gallery view that allow people to use key word search, and hex view to allow people check hexadecimal data. Casey (2004) stated that “illegal access” might happen during the process of investigation, because sometime investigator needs to access the data without permission, which the case might lead to hacking. He suggests when investigators want to access to a certain resource but it needs password. They need to gain a search warrant to prevent possible hacking issues in the future.</p>
+<h4 id="Digital-evidence-accuracy-and-difficulties"><a href="#Digital-evidence-accuracy-and-difficulties" class="headerlink" title="Digital evidence accuracy and difficulties"></a>Digital evidence accuracy and difficulties</h4><p>Mcneil (2009) indicated that the biggest manner of digital evidence is accuracy and reliability, the example is given to how to record a video as evidence, the Scientific Working Group Digital Evidence (SWGDE), which is an organization under the United States government, they list 12 practices when recording video as digital evidence, there is like recording redundant video, recording video in different files, and using standard video format to encoding videos. He also suggested that the digital evidence should be delivery to court directly via a secure network, or other physical disk like DVD should be used as a delivery method. However, there should have multiple copies of evidence, only copy version of digital evidence should be used, the original copy should keep at a secure place, only present to court if the judge ask to. Moore (2011) stated that in order to keep the digital evidence accuracy, the chain of custody should be followed all the time when investigate the crime, because the digital evidence could be erased or modified if it left as unsupervised. He also examined that the steps need to following when execute the search warrant for the purpose of digital evidence accuracy: (1) remove any suspects from computer or other digital devices; (2) make sure the criminal scene is secured by expert; (3) cutting off any outside resource that might have ability to control the computer or other devices; (4) shut down the computer or other devices; (5) any computers should disassemble into individual component; (6) any other evidence should secured at the scene; (7) transport all the evidence to lab and prepare to analyse. </p>
+<p>Tripsas &amp; Gavetti (2000) showed that digital evidence has difficulty to collect from rapidly changed technology, and using traditional method to collect evidence might cause troubles to capture the useful data. Shipley &amp; Reeve (2006) indicated that a “running computer” could provide a crucial evidence to court if the investigator could able to access it, for example, data that store at volatile memory. However, such volatile data is stored at RAM (Random Access Memory), because every data stored at RAM is as temporary data storage media, so the data could be replace if the application need to refresh, or the data will be lost if cut off the power supply. The challenge is that how to save or retrieve data from RAM, and keep the data into permanent storage media. Goodison, Davis &amp; Jackson (2015) indicated that the limited number of digital evidences could make the criminal case unsolved, and also some evidence is hard to collect, like some evidence can be accessed from local computer but it stored at remote place, for example, the data collected from social media or online cloud storage. In addition, Mason &amp; George (2011) implies cloud computing technology is made difficult for authorities to access the physical data due to the nature of the remote. And also, cloud technology is encrypted by high level of encryption algorithm, which make the investigator is hard to break into the database, even the service provider was unable to access the data without known password.</p>
+<p>On the other hand, Kerr (2005) showed that doctrine might also can influence the process of collecting digital evidence during cybercrime investigation. Because based on the doctrine only certain institution could access it, and other organisation does not have permission to access the data. He also examined that three mechanisms could apply to when collecting evidence, these are: collect evidence from the 3rd party, collect evidence from the target, and collect evidence in transit. However, those three mechanisms are difficult apply to the doctrines situation, because the traditional rules might not be suitable for the physical world rules.</p>
+<h3 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h3><p>There have been many ethical issues discovered during the computer forensic process, and the methodology that used during the investigation is difficult to deal with either legal or ethical issues. Digital evidence is one of main data have been collected and analysed during the investigation, the theory of deal with digital evidence is associated with different terminologies on how to develop an effective strategy to deal with privacy issues, ownership and intellectual property rights, data collection, storage and access issues, and digital evidence accuracy and difficulties that still remain at computer forensic. Although computer forensic technology has made some achievement, but there still exist enormous difficulties and challenges. Following suggestions might help development of forensic technology: (1) due to high demand of network usage, and nature of dynamic network change, the evidence need a large capacity storage to store digital evidence, so how to effectively preserve, protect and analyse the evidence is the urgent problem need to solve in the future; (2) the jurisdiction policies or regulations is different between countries, so the design of forensics system should be consider to deal with such problems due to network world is global event; (3) the standardization of collection evidences, technologies, tools, and languages should be meet the global agreement and procedure; and (4) there has difficulty when a large computer fraud case happened, because it usually involved thousands of peoples and computers, how to collecting evidence of crime is very difficult, so the investigation agency should develop an automatic forensic technology system that can monitoring and tracking every suspect activities. Any investigator undertaking the investigation process should be aware of the ethical issues within the criminal case. In particular, it is important to be able to collect, reserve, and analyse the data from a crime scene. As we discussed before, computer forensic is a broad domain, which combines the technology, legal and ethical issues within one case. However, whilst ethical issues are important to the establishment of the relationship with the criminal, which it can help better understand the criminal motive and criminal purpose. In this way, ethical issues in computer forensic can be seen as playing an important role in criminal investigation process.</p>
+<h3 id="References"><a href="#References" class="headerlink" title="References"></a>References</h3><p>Adelstein, F. L., Carrier, B., Casey, E., Garfinkel, S., Hosmer, C., Kornblum, J., . . . Turner, P. (2006). STandardizing digital evidence storage. Communications of the ACM, 49(2), 67-68. doi: 10.1145/1113034.1113071</p>
+<p>Brungs, A. &amp; Jamieson, R. (2005). Identification of Legal Issues for Computer Forensics. Information Systems Management, 22(2), 57-66. doi: 10.1201/1078/45099.22.2.20050301/87278.7</p>
+<p>Buchholz, F., &amp; Spafford, E. (2004). On the role of file system metadata in digital forensics. Digital Investigation, 1(4), 298-309. doi: 10.1016/j.diin.2004.10.002</p>
+<p>Caloyannides, M., &amp; Ebrary, Inc. (2004). Privacy Protection and Computer Forensics / Michael A. Caloyannides. Boston: Artech House.</p>
+<p>Casey, E. (2002). Handbook of computer crime investigation: Forensic tools and technology / edited by Eoghan Casey. San Diego, Calif: Academic Press.</p>
+<p>Casey, E. (2004). Digital evidence and computer crime: Forensic science, computers, and the Internet. (2nd ed.). Amsterdam; Boston: Academic Press.</p>
+<p>Goodison, S., Davis, R., &amp; Jackson, B. (2015). Digital Evidence and the U.S. Criminal Justice System: Identifying Technology and Other Needs to More Effectively Acquire and Utilize Digital Evidence. Santa Monica, CA: RAND Corporation.</p>
+<p>Kessler, G. (2004). An overview of steganography for the computer forensics examiner. Forensic Science Communications, 6(3).</p>
+<p>Kerr, O. (2005). Digital Evidence and the New Criminal Procedure. Columbia Law Review, 105(1), 279-318.</p>
+<p>Kruse, W., &amp; Heiser, J. (2001). Computer Forensics: Incident Response Essentials (1st ed.). Boston, USA: Addison-Wesley Professional.</p>
+<p>Marcella, A., &amp; Greenfield, R. (2002). Cyber forensics: A field manual for collecting, examining, and preserving evidence of computer crimes / Albert J. Marcella, Robert S. Greenfield, editors. Boca Raton, Fla: Auerbach.</p>
+<p>Marcella, A., &amp; Guillossou, F. (2012). Cyber Forensics from Data to Digital Evidence. New York, USA: John Wiley &amp; Sons.</p>
+<p>Mason, S., &amp; George, E. (2011). Digital evidence and ‘cloud’ computing. Computer Law and Security Review: The International Journal of Technology and Practice, 27(5), 524-528. doi: 10.1016/j.clsr.2011.07.005</p>
+<p>Mcneil, T. (2009). Managing digital evidence. Law Enforcement Technology, 36(1), 30, 32-37.</p>
+<p>Moore, R. (2011). Cybercrime: Investigating high-technology computer crime (2nd ed.). Burlington, MA: Oxford: Anderson; Elsevier.</p>
+<p>Ntantogian, C., Apostolopoulos, D., Marinakis, G., &amp; Xenakis, C. (2014). Evaluating the privacy of Android mobile applications under forensic analysis. Computers &amp; Security, 42, 66-76. doi: 10.1016/j.cose.2014.01.004</p>
+<p>Office of Legal education Executive Office for United Stated Attorneys. (2009). Searching and seizing computers and obtaining electronic evidence in criminal investigations – Computer crime and intellectual property section criminal division. Retrieved from <a href="https://www.justice.gov/sites/default/files/criminal-ccips/legacy/2015/01/14/ssmanual2009.pdf" target="_blank" rel="noopener">https://www.justice.gov/sites/default/files/criminal-ccips/legacy/2015/01/14/ssmanual2009.pdf</a></p>
+<p>Rogers, M., Goldman, J., Mislan, R., Wedge, T., &amp; Debrota, S. (2006). Computer Forensics Field Triage Process Model. Journal of Digital Forensics, Security and Law, 1(2), 19-38.</p>
+<p>Rouse, M. (2013). Computer forensics (cyber forensics). Retrieved from <a href="http://searchsecurity.techtarget.com/definition/computer-forensics" target="_blank" rel="noopener">http://searchsecurity.techtarget.com/definition/computer-forensics</a></p>
+<p>Shipley, T., &amp; Reeve, H. (2006). Collecting Evidence from a Running Computer: A Technical and Legal Primer for the Justice Community. Retrieved from <a href="http://www.search.org/files/pdf/CollectEvidenceRunComputer.pdf" target="_blank" rel="noopener">http://www.search.org/files/pdf/CollectEvidenceRunComputer.pdf</a></p>
+<p>Strickland, J. (2008). How Computer Forensics Works. Retrieved from <a href="http://computer.howstuffworks.com/computer-forensic2.htm" target="_blank" rel="noopener">http://computer.howstuffworks.com/computer-forensic2.htm</a></p>
+<p>Sommer, P. (1998). Digital footprints: Assessing computer evidence. Criminal Law Review, 12, 61-78.</p>
+<p>Tripsas, M., &amp; Gavetti, G. (2000). Capabilities, cognition, and inertia: Evidence from digital imaging. Strategic Management Journal, 21(10‐11), 1147-1161. doi: 10.1002/1097-0266(200010/11)21:10/11&lt;1147::AID-SMJ128&gt;3.0.CO;2-R</p>
+<p>Walden, I. (2007). Computer crimes and digital investigations / Ian Walden. Oxford; New York: Oxford University Press.</p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+      <div>
+        <div id="reward-container">
+  <div>Would you mind buy me a cup of coffee?</div>
+  <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    Donate
+  </button>
+  <div id="qr" style="display: none;">
+
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/wechatpay.png" alt="Tony Yuan WeChat Pay">
+        <p>WeChat Pay</p>
+      </div>
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/alipay.png" alt="Tony Yuan Alipay">
+        <p>Alipay</p>
+      </div>
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/assessment/" rel="tag"># assessment</a>
+          
+            <a href="/tags/university/" rel="tag"># university</a>
+          
+            <a href="/tags/undergraduate/" rel="tag"># undergraduate</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+          <div class="wp_rating">
+            <div id="wpac-rating"></div>
+          </div>
+        
+
+        
+          
+            <span class="post-meta-divider">|</span>
+          
+          <div class="social-like">
+            
+
+            
+              <div class="fb_like">
+                <div class="fb-like" data-layout="button_count" data-share="true"></div>
+              </div>
+            
+          </div>
+        
+
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/05/02/uni9/" rel="next" title="ERP and Change Management at Nestlé Case Study Assignment">
+                <i class="fa fa-chevron-left"></i> ERP and Change Management at Nestlé Case Study Assignment
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/08/14/uni11/" rel="prev" title="The organization should concerned about both business and technical issues when implementing cloud computing technology">
+                The organization should concerned about both business and technical issues when implementing cloud computing technology <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      <div class="fb-comments" data-href="https://yuan901202.github.io/2016/06/12/uni10/" data-numposts="10" data-width="100%" data-colorscheme="light">
+      </div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.png" alt="Tony Yuan">
+            
+              <p class="site-author-name" itemprop="name">Tony Yuan</p>
+              <div class="site-description motion-element" itemprop="description">Kia Ora! My name is Tianfu (Tony) Yuan. And I’m a young passionate website developer living at New Zealand.</div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">20</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">5</span>
+                    <span class="site-state-item-name">categories</span>
+                  
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">7</span>
+                    <span class="site-state-item-name">tags</span>
+                  
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="chat motion-element">
+              
+              
+                <a onclick="tidioChatApi.open();">
+              
+              <i class="fa fa-comment"></i>
+                  Chat
+                </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/yuan901202" title="GitHub &rarr; https://github.com/yuan901202" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="mailto:yuan901202@hotmail.com" title="E-Mail &rarr; mailto:yuan901202@hotmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://weibo.com/235679813" title="Weibo &rarr; https://weibo.com/235679813" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>Weibo</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://twitter.com/yuan901202" title="Twitter &rarr; https://twitter.com/yuan901202" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://www.facebook.com/yuan901202" title="FB Page &rarr; https://www.facebook.com/yuan901202" rel="noopener" target="_blank"><i class="fa fa-fw fa-facebook"></i>FB Page</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://youtube.com/yuan901202" title="YouTube &rarr; https://youtube.com/yuan901202" rel="noopener" target="_blank"><i class="fa fa-fw fa-youtube"></i>YouTube</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://instagram.com/yuan901202" title="Instagram &rarr; https://instagram.com/yuan901202" rel="noopener" target="_blank"><i class="fa fa-fw fa-instagram"></i>Instagram</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="skype:yuan901202@hotmail.com" title="Skype &rarr; skype:yuan901202@hotmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-skype"></i>Skype</a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://github.com/" title="https://github.com/" rel="noopener" target="_blank">Github</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.wolframalpha.com/" title="https://www.wolframalpha.com/" rel="noopener" target="_blank">WolframAlpha</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Topic-Cyber-forensics-–-a-developing-tool-for-solving-computer-crime"><span class="nav-number">1.</span> <span class="nav-text">Topic: Cyber-forensics – a developing tool for solving computer crime</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Lecturer’s-Name-David-Johnstone-amp-Tony-Hooper"><span class="nav-number">1.1.</span> <span class="nav-text">Lecturer’s Name: David Johnstone &amp; Tony Hooper</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Date-12th-June-2016"><span class="nav-number">1.2.</span> <span class="nav-text">Date: 12th June, 2016</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Word-Count-3483"><span class="nav-number">1.3.</span> <span class="nav-text">Word Count: 3483</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Abstract"><span class="nav-number">1.3.1.</span> <span class="nav-text">Abstract</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Introduction"><span class="nav-number">1.3.2.</span> <span class="nav-text">Introduction</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Discussion"><span class="nav-number">1.3.3.</span> <span class="nav-text">Discussion</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Privacy"><span class="nav-number">1.3.3.1.</span> <span class="nav-text">Privacy</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Ownership-and-intellectual-property-rights"><span class="nav-number">1.3.3.2.</span> <span class="nav-text">Ownership and intellectual property rights</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Issues-of-data-collection-storage-and-access"><span class="nav-number">1.3.3.3.</span> <span class="nav-text">Issues of data collection, storage and access</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Digital-evidence-accuracy-and-difficulties"><span class="nav-number">1.3.3.4.</span> <span class="nav-text">Digital evidence accuracy and difficulties</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Conclusion"><span class="nav-number">1.3.4.</span> <span class="nav-text">Conclusion</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#References"><span class="nav-number">1.3.5.</span> <span class="nav-text">References</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+  
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Tony Yuan All Rights Reserved</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+    <span title="Symbols count total">263k</span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    
+    <span title="Reading time total">3:59</span>
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.1.1</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-user"></i>
+    </span>
+    <span class="site-uv" title="Total Visitors">
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+  
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-eye"></i>
+    </span>
+    <span class="site-pv" title="Total Views">
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+  <div style="display: none;">
+    <script src="//s95.cnzz.com/z_stat.php?id=1277639844&web_id=1277639844"></script>
+  </div>
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+      <div>
+        <div class="addthis_inline_share_toolbox">
+  <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ce76e06ad2257f0" async="async"></script>
+</div>
+
+      </div>
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+    
+    
+  
+  <script color="0,0,255" opacity="0.5" zindex="-1" count="99" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/fancybox/source/jquery.fancybox.pack.js"></script>
+
+
+  
+
+
+  <script src="/js/utils.js?v=7.1.1"></script>
+
+  <script src="/js/motion.js?v=7.1.1"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/affix.js?v=7.1.1"></script>
+
+  <script src="/js/schemes/pisces.js?v=7.1.1"></script>
+
+
+
+
+  
+  <script src="/js/scrollspy.js?v=7.1.1"></script>
+<script src="/js/post-details.js?v=7.1.1"></script>
+
+
+
+  
+
+
+  <script src="/js/next-boot.js?v=7.1.1"></script>
+
+
+  
+
+  
+
+  
+
+  
+  
+  <script id="dsq-count-scr" src="https://yuan901202.disqus.com/count.js" async></script>
+
+
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://yuan901202.github.io/2016/06/12/uni10/";
+    this.page.identifier = "2016/06/12/uni10/";
+    this.page.title = 'Cyber-forensics – a developing tool for solving computer crime';
+    };
+  function loadComments() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://yuan901202.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', '' + +new Date());
+    (d.head || d.body).appendChild(s);
+  }
+  
+    loadComments();
+  
+</script>
+
+
+
+
+
+  
+
+
+  
+  <script>
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+        // ref: https://github.com/ForbesLindesay/unescape-html
+        var unescapeHtml = function(html) {
+          return String(html)
+            .replace(/&quot;/g, '"')
+            .replace(/&#39;/g, '\'')
+            .replace(/&#x3A;/g, ':')
+            // replace all the other &#x; chars
+            .replace(/&#(\d+);/g, function (m, p) { return String.fromCharCode(p); })
+            .replace(/&lt;/g, '<')
+            .replace(/&gt;/g, '>')
+            .replace(/&amp;/g, '&');
+        };
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                content = unescapeHtml(content);
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url).replace(/\/{2,}/g, '/');
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x"></i></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x"></i></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+  <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase-firestore.js"></script>
+  
+  <script>
+    (function () {
+
+      firebase.initializeApp({
+        apiKey: 'AIzaSyD9EX_xsNSmLQbsuGiDoR_2L9Q9Hh8YQzI',
+        projectId: 'yuan901202'
+      })
+
+      function getCount(doc, increaseCount) {
+        //increaseCount will be false when not in article page
+
+        return doc.get().then(function (d) {
+          var count
+          if (!d.exists) { //has no data, initialize count
+            if (increaseCount) {
+              doc.set({
+                count: 1
+              })
+              count = 1
+            }
+            else {
+              count = 0
+            }
+          }
+          else { //has data
+            count = d.data().count
+            if (increaseCount) {
+              if (!(window.localStorage && window.localStorage.getItem(title))) { //if first view this article
+                doc.set({ //increase count
+                  count: count + 1
+                })
+                count++
+              }
+            }
+          }
+          if (window.localStorage && increaseCount) { //mark as visited
+            localStorage.setItem(title, true)
+          }
+
+          return count
+        })
+      }
+
+      function appendCountTo(el) {
+        return function (count) {
+          $(el).append(
+            $('<span>').addClass('post-visitors-count').append(
+              $('<span>').addClass('post-meta-divider').text('|')
+            ).append(
+              $('<span>').addClass('post-meta-item-icon').append(
+                $('<i>').addClass('fa fa-users')
+              )
+              ).append($('<span>').text('Views ' + count))
+          )
+        }
+      }
+
+      var db = firebase.firestore()
+      var articles = db.collection('articles')
+
+      //https://hexo.io/docs/variables.html
+      var isPost = 'Cyber-forensics – a developing tool for solving computer crime'.length > 0
+      var isArchive = '' === 'true'
+      var isCategory = ''.length > 0
+      var isTag = ''.length > 0
+
+      if (isPost) { //is article page
+        var title = 'Cyber-forensics – a developing tool for solving computer crime'
+        var doc = articles.doc(title)
+
+        getCount(doc, true).then(appendCountTo($('.post-meta')))
+      }
+      else if (!isArchive && !isCategory && !isTag) { //is index page
+        var titles = [] //array to titles
+
+        var postsstr = '' //if you have a better way to get titles of posts, please change it
+        eval(postsstr)
+
+        var promises = titles.map(function (title) {
+          return articles.doc(title)
+        }).map(function (doc) {
+          return getCount(doc)
+        })
+        Promise.all(promises).then(function (counts) {
+          var metas = $('.post-meta')
+          counts.forEach(function (val, idx) {
+            appendCountTo(metas[idx])(val)
+          })
+        })
+      }
+    })()
+  </script>
+
+
+  
+
+  
+
+  
+
+  
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+  
+
+  
+
+  
+  <script>
+    wpac_init = window.wpac_init || [];
+    wpac_init.push({
+      widget: 'Rating',
+      id: 18713,
+      el: 'wpac-rating',
+      color: 'fc6423'
+    });
+    (function() {
+      if ('WIDGETPACK_LOADED' in window) return;
+      WIDGETPACK_LOADED = true;
+      var mc = document.createElement('script');
+      mc.type = 'text/javascript';
+      mc.async = true;
+      mc.src = '//embed.widgetpack.com/widget.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+    })();
+  </script>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  <script src="//code.tidio.co/thgvbjkznhsiornyawx4xh4eilhndgmn.js"></script>
+
+
+</body>
+</html>
