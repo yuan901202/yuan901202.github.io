@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://yuan901202.github.io/tags/index.html</loc>
+    
+    <lastmod>2019-05-27T08:44:58.655Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://yuan901202.github.io/about/index.html</loc>
     
-    <lastmod>2019-05-27T05:02:35.567Z</lastmod>
+    <lastmod>2019-05-27T08:44:40.274Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://yuan901202.github.io/categories/index.html</loc>
+    
+    <lastmod>2019-05-27T08:44:18.606Z</lastmod>
     
   </url>
   
@@ -173,20 +187,6 @@
     <loc>https://yuan901202.github.io/2019/05/26/emoji/</loc>
     
     <lastmod>2019-05-26T09:19:02.888Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://yuan901202.github.io/categories/index.html</loc>
-    
-    <lastmod>2019-05-26T09:15:16.400Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://yuan901202.github.io/tags/index.html</loc>
-    
-    <lastmod>2019-05-26T09:14:05.264Z</lastmod>
     
   </url>
   
