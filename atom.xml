@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yuan901202.github.io/"/>
-  <updated>2019-05-28T03:37:50.638Z</updated>
+  <updated>2019-05-28T03:52:58.885Z</updated>
   <id>https://yuan901202.github.io/</id>
   
   <author>
@@ -21,17 +21,18 @@
     <link href="https://yuan901202.github.io/2019/05/28/2019-05-28-markdown-cheatsheet/"/>
     <id>https://yuan901202.github.io/2019/05/28/2019-05-28-markdown-cheatsheet/</id>
     <published>2019-05-28T02:45:51.000Z</published>
-    <updated>2019-05-28T03:37:50.638Z</updated>
+    <updated>2019-05-28T03:52:58.885Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;h3 id=&quot;Basic-Syntax&quot;&gt;&lt;a href=&quot;#Basic-Syntax&quot; class=&quot;headerlink&quot; title=&quot;Basic Syntax&quot;&gt;&lt;/a&gt;Basic Syntax&lt;/h3&gt;&lt;ul&gt;
+      &lt;h3 id=&quot;Basic-Syntax&quot;&gt;&lt;a href=&quot;#Basic-Syntax&quot; class=&quot;headerlink&quot; title=&quot;Basic Syntax&quot;&gt;&lt;/a&gt;Basic Syntax&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;Heading&lt;/li&gt;
 &lt;/ul&gt;
-&lt;figu
-      
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;# H1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;## H2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;### H3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;Bold&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;**bold text**&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
@@ -49,15 +50,14 @@
     <link href="https://yuan901202.github.io/2019/05/28/2019-05-28-git-cheatsheet/"/>
     <id>https://yuan901202.github.io/2019/05/28/2019-05-28-git-cheatsheet/</id>
     <published>2019-05-28T02:45:41.000Z</published>
-    <updated>2019-05-28T03:35:21.053Z</updated>
+    <updated>2019-05-28T03:52:47.066Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;h3 id=&quot;Install-Git&quot;&gt;&lt;a href=&quot;#Install-Git&quot; class=&quot;headerlink&quot; title=&quot;Install Git&quot;&gt;&lt;/a&gt;Install Git&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;Mac OS (Download from &lt;a hre
-      
+      &lt;h3 id=&quot;Install-Git&quot;&gt;&lt;a href=&quot;#Install-Git&quot; class=&quot;headerlink&quot; title=&quot;Install Git&quot;&gt;&lt;/a&gt;Install Git&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Mac OS (Download from &lt;a href=&quot;https://git-scm.com/download/mac&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://git-scm.com/download/mac&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Windows (Download from &lt;a href=&quot;https://git-scm.com/download/win&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://git-scm.com/download/win&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Linux/Unix (Download from &lt;a href=&quot;https://git-scm.com/download/linux&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://git-scm.com/download/linux&lt;/a&gt;)&lt;/li&gt;&lt;/ul&gt;
     
     </summary>
     
