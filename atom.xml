@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yuan901202.github.io/"/>
-  <updated>2019-05-28T03:52:58.885Z</updated>
+  <updated>2019-05-30T08:10:06.092Z</updated>
   <id>https://yuan901202.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Agile &amp; Scrum Overview</title>
+    <link href="https://yuan901202.github.io/2019/05/30/2019-05-30-agile-scrum/"/>
+    <id>https://yuan901202.github.io/2019/05/30/2019-05-30-agile-scrum/</id>
+    <published>2019-05-30T07:32:42.000Z</published>
+    <updated>2019-05-30T08:10:06.092Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;Agile&quot;&gt;&lt;a href=&quot;#Agile&quot; class=&quot;headerlink&quot; title=&quot;Agile&quot;&gt;&lt;/a&gt;Agile&lt;/h2&gt;&lt;h3 id=&quot;Frameworks-amp-Methodologies&quot;&gt;&lt;a href=&quot;#Frameworks-am
+      
+    
+    </summary>
+    
+      <category term="Online Courses" scheme="https://yuan901202.github.io/categories/Online-Courses/"/>
+    
+    
+      <category term="agile" scheme="https://yuan901202.github.io/tags/agile/"/>
+    
+      <category term="scrum" scheme="https://yuan901202.github.io/tags/scrum/"/>
+    
+  </entry>
   
   <entry>
     <title>Markdown Cheat Sheet</title>
@@ -476,29 +501,6 @@
       <category term="university" scheme="https://yuan901202.github.io/tags/university/"/>
     
       <category term="undergraduate" scheme="https://yuan901202.github.io/tags/undergraduate/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>What is Apple Special Event 2014 about?</title>
-    <link href="https://yuan901202.github.io/2014/10/18/2014-10-18-apple-event2014/"/>
-    <id>https://yuan901202.github.io/2014/10/18/2014-10-18-apple-event2014/</id>
-    <published>2014-10-18T03:26:40.000Z</published>
-    <updated>2019-05-28T04:30:18.525Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Since last month WWDC 2014 announced Mac OS X – Yosemite, this year Apple Special Event catchword is”It’s been way too long.”&lt;/p&gt;
-&lt;p&gt;What live here (if available): &lt;a href=&quot;https://www.apple.com/live&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.apple.com/live&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Some some" scheme="https://yuan901202.github.io/categories/Some-some/"/>
-    
-    
-      <category term="news" scheme="https://yuan901202.github.io/tags/news/"/>
-    
-      <category term="apple" scheme="https://yuan901202.github.io/tags/apple/"/>
     
   </entry>
   

@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Agile & Scrum Overview]]></title>
+    <url>%2F2019%2F05%2F30%2F2019-05-30-agile-scrum%2F</url>
+    <content type="text"><![CDATA[AgileFrameworks &amp; Methodologies Scrum Extreme Programming (XP) Lean Kanban RUP (Rational Unified Process) Crystal DSDM (Dynamics Systems Development Method) FDD (Feature Driven Development) Extreme Programming (XP) XP includes some management elements but emphasizes echnical practices more and is therefore more of an agile engineering methodology. In XP, the “customer” works very closely with the development team to define an prioritize granular units of functionality referred to as “user stories”. The development team estimates, plans, and delivers user stories in the form of working, tested software on an iteration by iteration basis (typically every 1-3 weeks). Values Simplicity (do only what is needed) Communication (everyone is part of the team; face-to-face and daily communication) Feedback (early delivery; make any needed changes) Respect (every team member deserves respect) Courage (tell the truth; plan to succeed) Lean Lean is an iterative agile methodology which owes much of its principles and practices to the Lean Manufacturing approach also known as ‘just-in-time production’, and pioneered by Toyota. 7 Principles Eliminating waste Amplifying learning Deciding as late as possible Delivering as fast as possible Empowering the team Building integrity in Seeing the whole Kanban Kanban is an agile methodology for managing the creation of products with an emphasis on continual delivery while not overburdening the team. Underlying mechanism for managing the production line can be applied on software development. Feature requests -&gt; Software development pipeline -&gt; Improved software 3 basic practices Visualize what you do today (workflow): seeing all the items in context of each other can be very informative Limit the amount of work in progress (WIP): this helps balancing the flow-based approach so teams don’t start and commit to too much work at once Enhance flow: when something is finished, the next highest thing from the backlog pulled into play]]></content>
+      <categories>
+        <category>Online Courses</category>
+      </categories>
+      <tags>
+        <tag>agile</tag>
+        <tag>scrum</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Markdown Cheat Sheet]]></title>
     <url>%2F2019%2F05%2F28%2F2019-05-28-markdown-cheatsheet%2F</url>
     <content type="text"><![CDATA[Basic Syntax Heading 123# H1## H2### H3 Bold 1**bold text** Italic 1*italicized text* Blockquote 1&gt; blockquote Ordered List 1231. First item2. Second item3. Third item Unordered List 123- First item- Second item- Third item Code 1`code` Horizontal Rule 1--- Link 1[title](https://www.example.com) Image 1![alt text](image.jpg) Extended Syntax Table 1234| Syntax | Description || ----------- | ----------- || Header | Title || Paragraph | Text | Fenced Code Block 12345&#123; &quot;firstName&quot;: &quot;John&quot;, &quot;lastName&quot;: &quot;Smith&quot;, &quot;age&quot;: 25&#125; Footnote 123Here&apos;s a sentence with a footnote. [^1][^1]: This is the footnote. Heading ID 1### My Great Heading &#123;#custom-id&#125; Definition List 12term: definition Strikethrough 1~~The world is flat.~~ Task List 123- [x] Write the press release- [ ] Update the website- [ ] Contact the media]]></content>
