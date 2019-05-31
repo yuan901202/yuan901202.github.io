@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yuan901202.github.io/"/>
-  <updated>2019-05-31T09:22:53.650Z</updated>
+  <updated>2019-05-31T10:50:03.911Z</updated>
   <id>https://yuan901202.github.io/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>How to build a bolg with Hexo framework?</title>
+    <link href="https://yuan901202.github.io/2019/05/31/2019-05-31-how-to-build-blog-with-hexo/"/>
+    <id>https://yuan901202.github.io/2019/05/31/2019-05-31-how-to-build-blog-with-hexo/</id>
+    <published>2019-05-31T09:45:07.000Z</published>
+    <updated>2019-05-31T10:50:03.911Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Agenda&quot;&gt;&lt;a href=&quot;#Agenda&quot; class=&quot;headerlink&quot; title=&quot;Agenda&quot;&gt;&lt;/a&gt;Agenda&lt;/h2&gt;&lt;p&gt;The process of building a blog is divided into three steps:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Write&lt;/strong&gt;: Configuring the writing and formatting of the content&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Build&lt;/strong&gt;: Generate publishable final content from the original content you write&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Publish&lt;/strong&gt;: Make the content to be published visible to readers&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Users who post content based on blog platforms only need to pay attention to the writing part, but to build an independent personal blog, all three aspects need to be concerned. Fortunately, there are a number of tools that help us simplify the process: the rich Markup language simplifies writing; the powerful static site builder simplifies builds; and the friendly hosting platform simplifies publishing.&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Technique" scheme="https://yuan901202.github.io/categories/Technique/"/>
+    
+    
+      <category term="hexo" scheme="https://yuan901202.github.io/tags/hexo/"/>
+    
+      <category term="github pages" scheme="https://yuan901202.github.io/tags/github-pages/"/>
+    
+  </entry>
   
   <entry>
     <title>Agile &amp; Scrum Overview</title>
@@ -471,30 +502,6 @@
     <summary type="html">
     
       &lt;h1 id=&quot;Topic-Explore-the-opportunities-and-challenges-offered-by-one-of-the-following-technological-developments-discussed-in-this-module-3D-printing-solar-energy-and-solar-cells-nanoparticles-big-data-information-gathering-processing-genetically-modified-crops-organisms-or-nuclear-power-Consider-technological-capability-societal-implications-and-potential-progress-traps-that-might-arise-with-rapid-growth-of-this-technology-and-make-a-summary-judgement-whether-in-light-of-both-the-benefits-and-the-likely-costs-and-compromises-the-development-of-such-a-technology-should-be-pursued-or-considering-the-uncertainties-if-there-is-a-case-for-a-‘progress-experiment’-–-in-which-case-which-side-of-those-experiments-NZ-should-be-on&quot;&gt;&lt;a href=&quot;#Topic-Explore-the-opportunities-and-challenges-offered-by-one-of-the-following-technological-developments-discussed-in-this-module-3D-printing-solar-energy-and-solar-cells-nanoparticles-big-data-information-gathering-processing-genetically-modified-crops-organisms-or-nuclear-power-Consider-technological-capability-societal-implications-and-potential-progress-traps-that-might-arise-with-rapid-growth-of-this-technology-and-make-a-summary-judgement-whether-in-light-of-both-the-benefits-and-the-likely-costs-and-compromises-the-development-of-such-a-technology-should-be-pursued-or-considering-the-uncertainties-if-there-is-a-case-for-a-‘progress-experiment’-–-in-which-case-which-side-of-those-experiments-NZ-should-be-on&quot; class=&quot;headerlink&quot; title=&quot;Topic: Explore the opportunities and challenges offered by one of the following technological developments discussed in this module: 3D printing, solar energy and solar cells, nanoparticles, big-data information gathering/processing, genetically modified crops/organisms or nuclear power. Consider technological capability, societal implications, and potential progress traps that might arise with rapid growth of this technology and make a summary judgement whether, in light of both the benefits and the likely costs and compromises, the development of such a technology should be pursued or, considering the uncertainties, if there is a case for a ‘progress experiment’ – in which case, which side of those experiments NZ should be on?&quot;&gt;&lt;/a&gt;Topic: Explore the opportunities and challenges offered by one of the following technological developments discussed in this module: 3D printing, solar energy and solar cells, nanoparticles, big-data information gathering/processing, genetically modified crops/organisms or nuclear power. Consider technological capability, societal implications, and potential progress traps that might arise with rapid growth of this technology and make a summary judgement whether, in light of both the benefits and the likely costs and compromises, the development of such a technology should be pursued or, considering the uncertainties, if there is a case for a ‘progress experiment’ – in which case, which side of those experiments NZ should be on?&lt;/h1&gt;&lt;h2 id=&quot;Lecturer’s-Name-Uli-Zuelicke-Elf-Eldridge-amp-Nick-Agar&quot;&gt;&lt;a href=&quot;#Lecturer’s-Name-Uli-Zuelicke-Elf-Eldridge-amp-Nick-Agar&quot; class=&quot;headerlink&quot; title=&quot;Lecturer’s Name: Uli Zuelicke, Elf Eldridge &amp;amp; Nick Agar&quot;&gt;&lt;/a&gt;Lecturer’s Name: Uli Zuelicke, Elf Eldridge &amp;amp; Nick Agar&lt;/h2&gt;&lt;h2 id=&quot;Date-9th-Feburary-2015&quot;&gt;&lt;a href=&quot;#Date-9th-Feburary-2015&quot; class=&quot;headerlink&quot; title=&quot;Date: 9th Feburary, 2015&quot;&gt;&lt;/a&gt;Date: 9th Feburary, 2015&lt;/h2&gt;&lt;h2 id=&quot;Word-Count-1126&quot;&gt;&lt;a href=&quot;#Word-Count-1126&quot; class=&quot;headerlink&quot; title=&quot;Word Count: 1126&quot;&gt;&lt;/a&gt;Word Count: 1126&lt;/h2&gt;
-    
-    </summary>
-    
-      <category term="Undergraduate" scheme="https://yuan901202.github.io/categories/Undergraduate/"/>
-    
-    
-      <category term="assessment" scheme="https://yuan901202.github.io/tags/assessment/"/>
-    
-      <category term="university" scheme="https://yuan901202.github.io/tags/university/"/>
-    
-      <category term="undergraduate" scheme="https://yuan901202.github.io/tags/undergraduate/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Discuss anthropogenic climate change considering both (a) the physical processes that drive the climate system, and (b) technologies and strategies that can be used to address this issue. Which response(s) do you think are the most important, and why?</title>
-    <link href="https://yuan901202.github.io/2015/01/30/uni2/"/>
-    <id>https://yuan901202.github.io/2015/01/30/uni2/</id>
-    <published>2015-01-30T01:32:49.000Z</published>
-    <updated>2019-05-27T03:39:00.946Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;Topic-Discuss-anthropogenic-climate-change-considering-both-a-the-physical-processes-that-drive-the-climate-system-and-b-technologies-and-strategies-that-can-be-used-to-address-this-issue-Which-response-s-do-you-think-are-the-most-important-and-why&quot;&gt;&lt;a href=&quot;#Topic-Discuss-anthropogenic-climate-change-considering-both-a-the-physical-processes-that-drive-the-climate-system-and-b-technologies-and-strategies-that-can-be-used-to-address-this-issue-Which-response-s-do-you-think-are-the-most-important-and-why&quot; class=&quot;headerlink&quot; title=&quot;Topic: Discuss anthropogenic climate change considering both (a) the physical processes that drive the climate system, and (b) technologies and strategies that can be used to address this issue. Which response(s) do you think are the most important, and why?&quot;&gt;&lt;/a&gt;Topic: Discuss anthropogenic climate change considering both (a) the physical processes that drive the climate system, and (b) technologies and strategies that can be used to address this issue. Which response(s) do you think are the most important, and why?&lt;/h1&gt;&lt;h2 id=&quot;Lecturer’s-Name-Dan-Zwartz-Dave-Frame-amp-Rebecca-Ford&quot;&gt;&lt;a href=&quot;#Lecturer’s-Name-Dan-Zwartz-Dave-Frame-amp-Rebecca-Ford&quot; class=&quot;headerlink&quot; title=&quot;Lecturer’s Name: Dan Zwartz, Dave Frame &amp;amp; Rebecca Ford&quot;&gt;&lt;/a&gt;Lecturer’s Name: Dan Zwartz, Dave Frame &amp;amp; Rebecca Ford&lt;/h2&gt;&lt;h2 id=&quot;Date-30th-January-2015&quot;&gt;&lt;a href=&quot;#Date-30th-January-2015&quot; class=&quot;headerlink&quot; title=&quot;Date: 30th January, 2015&quot;&gt;&lt;/a&gt;Date: 30th January, 2015&lt;/h2&gt;&lt;h2 id=&quot;Word-Count-1077&quot;&gt;&lt;a href=&quot;#Word-Count-1077&quot; class=&quot;headerlink&quot; title=&quot;Word Count: 1077&quot;&gt;&lt;/a&gt;Word Count: 1077&lt;/h2&gt;
     
     </summary>
     
