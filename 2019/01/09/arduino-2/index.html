@@ -111,20 +111,20 @@
 
 
 
-  <meta name="description" content="LED 小灯实验是比较基础的实验之一，上一个“ Hello World！”实验里已经利用到了Arduino自带的LED，这次我们利用其他I/O口和外接直插LED灯来完成这个实验，我们需要的实验器材除了每个实验都必须的Arduino控制器和USB下载线以外的，其它器件如下：  红色M5直插LED*1  220Ω直插电阻*1 面包板*1 面包板跳线*1扎  下一步我们按照下面的小灯实验原理图链接实物图">
+  <meta name="description" content="LED 小灯实验是比较基础的实验之一，上一个“ Hello World！”实验里已经利用到了Arduino自带的LED，这次我们利用其他I/O口和外接直插LED灯来完成这个实验，我们需要的实验器材除了每个实验都必须的Arduino控制器和USB下载线以外的，其它器件如下：  红色M5直插LED*1  220Ω直插电阻*1 面包板*1 面包板跳线*1扎">
 <meta name="keywords" content="arduino,chinese">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Arduino 2 - LED Light">
+<meta property="og:title" content="Arduino 2 - LED Flashing Light闪灯实验">
 <meta property="og:url" content="https://yuan901202.github.io/2019/01/09/arduino-2/index.html">
 <meta property="og:site_name" content="Walking on the Earth">
-<meta property="og:description" content="LED 小灯实验是比较基础的实验之一，上一个“ Hello World！”实验里已经利用到了Arduino自带的LED，这次我们利用其他I/O口和外接直插LED灯来完成这个实验，我们需要的实验器材除了每个实验都必须的Arduino控制器和USB下载线以外的，其它器件如下：  红色M5直插LED*1  220Ω直插电阻*1 面包板*1 面包板跳线*1扎  下一步我们按照下面的小灯实验原理图链接实物图">
+<meta property="og:description" content="LED 小灯实验是比较基础的实验之一，上一个“ Hello World！”实验里已经利用到了Arduino自带的LED，这次我们利用其他I/O口和外接直插LED灯来完成这个实验，我们需要的实验器材除了每个实验都必须的Arduino控制器和USB下载线以外的，其它器件如下：  红色M5直插LED*1  220Ω直插电阻*1 面包板*1 面包板跳线*1扎">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://yuan901202.github.io/2019/01/09/arduino-2/image001.jpg">
 <meta property="og:image" content="https://yuan901202.github.io/2019/01/09/arduino-2/image002.jpg">
-<meta property="og:updated_time" content="2019-06-02T09:50:44.300Z">
+<meta property="og:updated_time" content="2019-06-02T10:18:07.176Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Arduino 2 - LED Light">
-<meta name="twitter:description" content="LED 小灯实验是比较基础的实验之一，上一个“ Hello World！”实验里已经利用到了Arduino自带的LED，这次我们利用其他I/O口和外接直插LED灯来完成这个实验，我们需要的实验器材除了每个实验都必须的Arduino控制器和USB下载线以外的，其它器件如下：  红色M5直插LED*1  220Ω直插电阻*1 面包板*1 面包板跳线*1扎  下一步我们按照下面的小灯实验原理图链接实物图">
+<meta name="twitter:title" content="Arduino 2 - LED Flashing Light闪灯实验">
+<meta name="twitter:description" content="LED 小灯实验是比较基础的实验之一，上一个“ Hello World！”实验里已经利用到了Arduino自带的LED，这次我们利用其他I/O口和外接直插LED灯来完成这个实验，我们需要的实验器材除了每个实验都必须的Arduino控制器和USB下载线以外的，其它器件如下：  红色M5直插LED*1  220Ω直插电阻*1 面包板*1 面包板跳线*1扎">
 <meta name="twitter:image" content="https://yuan901202.github.io/2019/01/09/arduino-2/image001.jpg">
 
 
@@ -145,7 +145,7 @@
   };
 </script>
 
-  <title>Arduino 2 - LED Light | Walking on the Earth</title>
+  <title>Arduino 2 - LED Flashing Light闪灯实验 | Walking on the Earth</title>
   
   <script>
     window.fbAsyncInit = function() {
@@ -456,7 +456,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">Arduino 2 - LED Light
+          <h2 class="post-title" itemprop="name headline">Arduino 2 - LED Flashing Light闪灯实验
 
               
             
@@ -499,7 +499,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 02-06-2019 21:50:44" itemprop="dateModified" datetime="2019-06-02T21:50:44+12:00">02-06-2019</time>
+                <time title="Modified: 02-06-2019 22:18:07" itemprop="dateModified" datetime="2019-06-02T22:18:07+12:00">02-06-2019</time>
               
             
           </span>
@@ -565,7 +565,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">592</span>
+                <span title="Symbols count in article">593</span>
               
 
               
@@ -604,7 +604,8 @@
 <li>红色M5直插LED*1 </li>
 <li>220Ω直插电阻*1</li>
 <li>面包板*1</li>
-<li>面包板跳线*1扎</li>
+<li>面包板跳线*1扎<a id="more"></a>
+</li>
 </ul>
 <p>下一步我们按照下面的小灯实验原理图链接实物图，这里我们使用数字10 接口。使用发光二极管LED时，要连接限流电阻，这里为220Ω电阻，否则电流过大会烧毁发光二极管。</p>
 <p><a href><img src="/2019/01/09/arduino-2/image001.jpg" alt="小灯实验原理图"></a></p>
@@ -679,7 +680,7 @@
   <li class="post-copyright-link">
     <strong>Post link: </strong>
     
-    <a href="https://yuan901202.github.io/2019/01/09/arduino-2/" title="Arduino 2 - LED Light">https://yuan901202.github.io/2019/01/09/arduino-2/</a>
+    <a href="https://yuan901202.github.io/2019/01/09/arduino-2/" title="Arduino 2 - LED Flashing Light闪灯实验">https://yuan901202.github.io/2019/01/09/arduino-2/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.</li>
@@ -732,8 +733,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/01/02/arduino-1/" rel="next" title="Arduino 1 - Hello World">
-                <i class="fa fa-chevron-left"></i> Arduino 1 - Hello World
+              <a href="/2019/01/02/arduino-1/" rel="next" title="Arduino 1 - Hello World实验">
+                <i class="fa fa-chevron-left"></i> Arduino 1 - Hello World实验
               </a>
             
           </div>
@@ -742,8 +743,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/05/26/2019-05-26_emoji/" rel="prev" title="Github emoji">
-                Github emoji <i class="fa fa-chevron-right"></i>
+              <a href="/2019/01/21/arduino-3/" rel="prev" title="Arduino 3 - PWM Control Light Brightness调控灯光亮度实验">
+                Arduino 3 - PWM Control Light Brightness调控灯光亮度实验 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -1098,7 +1099,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="Symbols count total">362k</span>
+    <span title="Symbols count total">392k</span>
   
 
   
@@ -1107,7 +1108,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="Reading time total">5:29</span>
+    <span title="Reading time total">5:56</span>
   
 </div>
 
@@ -1290,7 +1291,7 @@
   var disqus_config = function() {
     this.page.url = "https://yuan901202.github.io/2019/01/09/arduino-2/";
     this.page.identifier = "2019/01/09/arduino-2/";
-    this.page.title = 'Arduino 2 - LED Light';
+    this.page.title = 'Arduino 2 - LED Flashing Light闪灯实验';
     };
   function loadComments() {
     var d = document, s = d.createElement('script');
@@ -1717,13 +1718,13 @@
       var articles = db.collection('articles')
 
       //https://hexo.io/docs/variables.html
-      var isPost = 'Arduino 2 - LED Light'.length > 0
+      var isPost = 'Arduino 2 - LED Flashing Light闪灯实验'.length > 0
       var isArchive = '' === 'true'
       var isCategory = ''.length > 0
       var isTag = ''.length > 0
 
       if (isPost) { //is article page
-        var title = 'Arduino 2 - LED Light'
+        var title = 'Arduino 2 - LED Flashing Light闪灯实验'
         var doc = articles.doc(title)
 
         getCount(doc, true).then(appendCountTo($('.post-meta')))

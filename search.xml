@@ -1,99 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[arduino_21]]></title>
-    <url>%2F2019%2F06%2F02%2Farduino-21%2F</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
-    <title><![CDATA[arduino_20]]></title>
-    <url>%2F2019%2F06%2F02%2Farduino-20%2F</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
-    <title><![CDATA[arduino_19]]></title>
-    <url>%2F2019%2F06%2F02%2Farduino-19%2F</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
-    <title><![CDATA[arduino_18]]></title>
-    <url>%2F2019%2F06%2F02%2Farduino-18%2F</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
-    <title><![CDATA[arduino_17]]></title>
-    <url>%2F2019%2F06%2F02%2Farduino-17%2F</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
-    <title><![CDATA[arduino_16]]></title>
-    <url>%2F2019%2F06%2F02%2Farduino-16%2F</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
-    <title><![CDATA[arduino_15]]></title>
-    <url>%2F2019%2F06%2F02%2Farduino-15%2F</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
-    <title><![CDATA[arduino_14]]></title>
-    <url>%2F2019%2F06%2F02%2Farduino-14%2F</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
-    <title><![CDATA[arduino_13]]></title>
-    <url>%2F2019%2F06%2F02%2Farduino-13%2F</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
-    <title><![CDATA[arduino_12]]></title>
-    <url>%2F2019%2F06%2F02%2Farduino-12%2F</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
-    <title><![CDATA[arduino_11]]></title>
-    <url>%2F2019%2F06%2F02%2Farduino-11%2F</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
-    <title><![CDATA[arduino_10]]></title>
-    <url>%2F2019%2F06%2F02%2Farduino-10%2F</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
-    <title><![CDATA[arduino_9]]></title>
-    <url>%2F2019%2F06%2F02%2Farduino-9%2F</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
-    <title><![CDATA[arduino_8]]></title>
-    <url>%2F2019%2F06%2F02%2Farduino-8%2F</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
-    <title><![CDATA[arduino_7]]></title>
-    <url>%2F2019%2F06%2F02%2Farduino-7%2F</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
-    <title><![CDATA[arduino_6]]></title>
-    <url>%2F2019%2F06%2F02%2Farduino-6%2F</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
-    <title><![CDATA[arduino_5]]></title>
-    <url>%2F2019%2F06%2F02%2Farduino-5%2F</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
-    <title><![CDATA[arduino_4]]></title>
-    <url>%2F2019%2F06%2F02%2Farduino-4%2F</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
-    <title><![CDATA[arduino_3]]></title>
-    <url>%2F2019%2F06%2F02%2Farduino-3%2F</url>
-    <content type="text"></content>
+    <title><![CDATA[Arduino 21 - Stepper Motor步进电机试验]]></title>
+    <url>%2F2019%2F06%2F03%2Farduino-21%2F</url>
+    <content type="text"><![CDATA[步进电机是一种将电脉冲转化为角位移的执行机构。通俗一点讲：当步进驱动器接收到一个脉冲信号，它就驱动步进电机按设定的方向转动一个固定的角度（及步进角）。你可以通过控制脉冲个数来控制角位移量，从而达到准确定位的目的；同时你也可以通过控制脉冲频率来控制电机转动的速度和加速度，从而达到调速的目的。 下面这个就是本次实验使用的步进电机 使用步进电机前一定要仔细查看说明书，确认是四相还是两相，各个线怎样连接，本次实验使用的步进电机是四相的，不同颜色的线定义如下图： 减速步进电机 直径：28mm 电压：5V 步进角度：5.625 x 1/64 减速比：1/64 5线4相：可以用普通uln2003芯片驱动，也可以接成2相使用 该步进电机空载耗电在50mA以下，带64倍减速器，输出力矩比较大，可以驱动重负载，极适合开发板使用。注意：此款步进电机带有64倍减速器，与不带减速器的步进电机相比，转速显得较慢，为方便观察，可在输出轴处粘上一片小纸板。 步进电机(五线四相）驱动板(UL2003)试验板 步进电机驱动板(UL2003)试验板 外形尺寸：31×35mm 硬件连接图如下 Source Code: 123456789101112131415161718192021222324252627282930313233#include &lt;Stepper.h&gt;const int stepsPerRevolution = 64; // change this to fit the number of steps per revolution for your motor// initialize the stepper library on pins 8 through 11:Stepper myStepper(stepsPerRevolution, 8,9,10,11); const int aInPin=A0;int val;void setup() &#123; // set the speed at 60 rpm: myStepper.setSpeed(200);// initialize the serial port:Serial.begin(9600);&#125;void loop() &#123; val=analogRead(aInPin); val=map(val,0,1023,0,99); Serial.println(val); // step one revolution in two direction: if(val&gt;50)&#123; Serial.println(&quot;clockwise&quot;); //原library是整步,整步走的角度是半步走的角度的两倍,半步走的声音比较小,平稳些,启动时最好是半步的走比较稳定 //022中library修改为半步模式不成功？？？FUCK //四拍运行时步距角为θ=360度/（revolution*4）（俗称整步），八拍运行时步距角为θ=360度/（revolution*8）（俗称半步） myStepper.step(stepsPerRevolution/2);// delay(500); &#125; else&#123; // step one revolution in the other direction: Serial.println(&quot;counterclockwise&quot;); myStepper.step(-stepsPerRevolution/2); delay(500); &#125; &#125;]]></content>
+      <categories>
+        <category>Arduino</category>
+      </categories>
+      <tags>
+        <tag>arduino</tag>
+        <tag>chinese</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[How to build a bolg with Hexo framework?]]></title>
@@ -168,7 +85,223 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Arduino 2 - LED Light]]></title>
+    <title><![CDATA[Arduino 20 - PS2 Shot Stick摇杆实验]]></title>
+    <url>%2F2019%2F05%2F20%2Farduino-20%2F</url>
+    <content type="text"><![CDATA[PS2摇杆一般可以用来控制小车等等，其构造主要就是两个10K的电位器，还有一个按键开关。五个端口分别为VCC，X，Button，Y，GND。 接线示意图: Source Code: 123456789101112131415161718192021222324252627282930313233343536373839404142434445#include &lt;LiquidCrystal.h&gt; //调用arduino自带的LiquidCrystal库LiquidCrystal lcd(12, 11, 10, 9, 8, 7);//设置接口int xpotPin = 0; //设置模拟口0为X的信号输入端口int ypotPin = 1; //设置模拟口1为Y的信号输入端口nt bpotPin = 2; //设置模拟口2为Button的信号输入端口int xval=0; //设置变量int yval=0;int bval=0;void setup()&#123;lcd.begin(16, 2); //初始化LCDdelay(1000); //延时1000ms&#125;void loop ()&#123;xval = analogRead(xpotPin); //xval变量为从0信号口读取到的数值yval = analogRead(ypotPin); //yval变量为从1信号口读取到的数值bval = analogRead(bpotPin); //bval变量为从2信号口读取到的数值lcd.clear(); //清屏lcd.setCursor(0, 0) ; //设置光标位置为第一行第一个位置lcd.print(&quot;X=&quot;); //使屏幕显示文字X=lcd.print(xval);lcd.setCursor(7, 0) ; //设置光标位置为第一行第八个位置lcd.print(&quot;Y=&quot;); //使屏幕显示文字Y=lcd.print(yval);if (bval&lt;500)&#123;lcd.setCursor(0, 1) ; //设置光标位置为第二行第一个位置lcd.print(&quot;Button ON&quot;); //使屏幕显示文字Button ON&#125;else&#123;lcd.setCursor(0, 1) ;lcd.print(&quot;Button OFF&quot;); //使屏幕显示文字Button OFF&#125;delay(100); //延时0.1秒，这里也就是刷新速度。&#125; 实验效果，推动摇杆时，电位器阻值发生变化，相应的电压也会发生变化，液晶屏上的数字就是每一个轴的电压数字输出。按下按键后，液晶上显示的按键状态会发生变化。]]></content>
+      <categories>
+        <category>Arduino</category>
+      </categories>
+      <tags>
+        <tag>arduino</tag>
+        <tag>chinese</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Arduino 19 - Infrared Remote Control红外遥控实验]]></title>
+    <url>%2F2019%2F05%2F12%2Farduino-19%2F</url>
+    <content type="text"><![CDATA[红外接收头介绍 什么是红外接收头？红外遥控器发出的信号是一连串的二进制脉冲码。为了使其在无线传输过程中免受其他红外信号的干扰,通常都是先将其调制在特定的载波频率上,然后再经红外发射二极管发射出去,而红外线接收装置则要滤除其他杂波,叧接收该特定频率的信号并将其还原成二进制脉冲码,也就是解调. 工作原理内置接收管将红外发射管发射出来癿光信号转换为微弱的电信号，此信号经由IC内部放大器进行放大，然后通过自动增益控制、带通滤波、解调变、波形整形后还原为遥控器发射出的原始编码，经由接收头的信号输出脚输入到电器上的编码识别电路。 红外接收头的引脚与连线 红外接收头有三个引脚如下图： 用的时候将VOUT接到模拟口，GND接到实验板上的GND,VCC接到实验板上的+5v。 红外遥控实验 实验器件 红外遥控器：1个 红外接收头：1个 LED灯：6个 220Ω电阻：6个 多彩面包线：若干 实验连线 首先将板子连接好；接着将红外接收头按照上述方法接好，将VOUT接到数字11口引脚，将LED灯通过电阻接到数字引脚2,3,4,5,6,7。返样就完成了电路部分的连接。 实验原理 要想对某一遥控器进行解码必须要了解该遥控器的编码方式。本产品使用的控器的码方式为：NEC协议。 下面就介绍一下NEC协议： NEC协议介绍： 特点： （1）8位地址位，8位命令位 （2）为了可靠性地址位和命令位被传输两次 （3）脉冲位置调制 （4）载波频率38khz （5）每一位癿时间为1.125ms戒2.25ms 逻辑 0和1的定义如下图 协议如下： 按键按下立刻松开的发射脉冲： 上面图片显示了NEC的协议典型的脉冲序列。注意：这首先发送LSB（最低位）的协议。在上面癿脉冲传输的地址为0x59命令为0x16。一个消息是由一个9ms的高电平开始，随后有一个4.5ms的低电平，（返两段电平组成引寻码）然后由地址码和命令码。地址和命令传输两次。第二次所有位都取反，可用于对所收到的消息中的确认使用。总传输时间是恒定的，因为每一点与它取反长度重复。如果你不感兴趣，你可以忽略这个可靠性取反，也可以扩大地址和命令，以每16位！ 按键按下一段时间才松开的发射脉冲： 一个命令发送一次，即使在遥控器上的按键仍然按下。当按键一直按下时，第一个110ms癿脉冲与上图一样，之后每110ms重复代码传输一次。返个重复代码是由一个9ms的高电平脉冲和一个2.25ms低电平和560μs癿高电平组成。 重复脉冲 注意：脉冲波形进入一体化接收头以后，因为一体化接收头里要迕解码、信号放大和整形，故要注意：在没有红外信号时，其输出端为高电平，有信号时为低电平，故其输出信号电平正好和发射端相反。接收端脉冲大家可以通过示波器看到，结合看到的波形理解程序。 遥控器键值: 一排一 = 0x00FFA25D; 一排二 = 0x00FFE01F; 一排三 =0x00FF629D; 二排一 = 0x00FFA857; 二排二 = 0x00FFE21D; 二排三 = 0x00FF906F; 三排一 = 0x00FF22DD; 三排二 = 0x00FF6897; 三排三 = 0x00FF02FD; 四排一 = 0x00FF9867; 四排二 = 0x00FFC23D; 四排三= 0x00FFB047; Source Code: 123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105106107108109110111112113114115116117118119120121122123124125126127128129130131132133#include &lt;IRremote.h&gt;int RECV_PIN = 11;int LED1 = 2;int LED2 = 3;int LED3 = 4;int LED4 = 5;int LED5 = 6;int LED6 = 7;long on1 = 0x00FFA25D;long off1 = 0x00FFE01F;long on2 = 0x00FF629D;long off2 = 0x00FFA857;long on3 = 0x00FFE21D;long off3 = 0x00FF906F;long on4 = 0x00FF22DD;long off4 = 0x00FF6897;long on5 = 0x00FF02FD;long off5 = 0x00FF9867;long on6 = 0x00FFC23D;long off6 = 0x00FFB047;IRrecv irrecv(RECV_PIN);decode_results results;// Dumps out the decode_results structure.// Call this after IRrecv::decode()// void * to work around compiler issue//void dump(void *v) &#123;// decode_results *results = (decode_results *)vvoid dump(decode_results *results) &#123; int count = results-&gt;rawlen; if (results-&gt;decode_type == UNKNOWN) &#123; Serial.println(&quot;Could not decode message&quot;); &#125; else &#123; if (results-&gt;decode_type == NEC) &#123; Serial.print(&quot;Decoded NEC: &quot;); &#125; else if (results-&gt;decode_type == SONY) &#123; Serial.print(&quot;Decoded SONY: &quot;); &#125; else if (results-&gt;decode_type == RC5) &#123; Serial.print(&quot;Decoded RC5: &quot;); &#125; else if (results-&gt;decode_type == RC6) &#123; Serial.print(&quot;Decoded RC6: &quot;); &#125; Serial.print(results-&gt;value, HEX); Serial.print(&quot; (&quot;); Serial.print(results-&gt;bits, DEC); Serial.println(&quot; bits)&quot;); &#125; Serial.print(&quot;Raw (&quot;); Serial.print(count, DEC); Serial.print(&quot;): &quot;); for (int i = 0; i &lt; count; i++) &#123; if ((i % 2) == 1) &#123; Serial.print(results-&gt;rawbuf[i]*USECPERTICK, DEC); &#125; else &#123; Serial.print(-(int)results-&gt;rawbuf[i]*USECPERTICK, DEC); &#125; Serial.print(&quot; &quot;); &#125; Serial.println(&quot;&quot;); &#125;void setup() &#123; pinMode(RECV_PIN, INPUT); pinMode(LED1, OUTPUT); pinMode(LED2, OUTPUT); pinMode(LED3, OUTPUT); pinMode(LED4, OUTPUT); pinMode(LED5, OUTPUT); pinMode(LED6, OUTPUT); pinMode(13, OUTPUT); Serial.begin(9600); irrecv.enableIRIn(); // Start the receiver &#125;int on = 0;unsigned long last = millis();void loop() &#123; if (irrecv.decode(&amp;results)) &#123; // If it&apos;s been at least 1/4 second since the last // IR received, toggle the relay if (millis() - last &gt; 250) &#123; on = !on;// digitalWrite(8, on ? HIGH : LOW); digitalWrite(13, on ? HIGH : LOW); dump(&amp;results); &#125; if (results.value == on1 ) digitalWrite(LED1, HIGH); if (results.value == off1 ) digitalWrite(LED1, LOW); if (results.value == on2 ) digitalWrite(LED2, HIGH); if (results.value == off2 ) digitalWrite(LED2, LOW); if (results.value == on3 ) digitalWrite(LED3, HIGH); if (results.value == off3 ) digitalWrite(LED3, LOW); if (results.value == on4 ) digitalWrite(LED4, HIGH); if (results.value == off4 ) digitalWrite(LED4, LOW); if (results.value == on5 ) digitalWrite(LED5, HIGH); if (results.value == off5 ) digitalWrite(LED5, LOW); if (results.value == on6 ) digitalWrite(LED6, HIGH); if (results.value == off6 ) digitalWrite(LED6, LOW); last = millis(); irrecv.resume(); // Receive the next value &#125;&#125;]]></content>
+      <categories>
+        <category>Arduino</category>
+      </categories>
+      <tags>
+        <tag>arduino</tag>
+        <tag>chinese</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Arduino 18 - Rudder Control舵机控制实验]]></title>
+    <url>%2F2019%2F05%2F02%2Farduino-18%2F</url>
+    <content type="text"><![CDATA[舵机是一种位置伺服的驱动器，主要是由外壳、电路板、无核心马达、齿轮与位置检测器所构成。其工作原理是由接收机或者单片机发出信号给舵机，其内部有一个基准电路，产生周期为20ms，宽度为1.5ms 的基准信号，将获得的直流偏置电压与电位器的电压比较，获得电压差输出。经由电路板上的IC 判断转动方向，再驱动无核心马达开始转动，透过减速齿轮将动力传至摆臂，同时由位置检测器送回信号，判断是否已经到达定位。适用于那些需要角度不断变化并可以保持的控制系统。当电机转速一定时，通过级联减速齿轮带动电位器旋转，使得电压差为0，电机停止转动。一般舵机旋转的角度范围是0 度到180 度。 舵机有很多规格，但所有的舵机都有外接三根线，分别用棕、红、橙三种颜色进行区分，由于舵机品牌不同，颜色也会有所差异，棕色为接地线，红色为电源正极线，橙色为信号线。 舵机的转动的角度是通过调节PWM（脉冲宽度调制）信号的占空比来实现的，标准PWM（脉冲宽度调制）信号的周期固定为20ms（50Hz），理论上脉宽分布应在1ms到2ms 之间，但是，事实上脉宽可由0.5ms 到2.5ms 之间，脉宽和舵机的转角0°～180°相对应。有一点值得注意的地方，由于舵机牌子不同，对于同一信号，不同牌子的舵机旋转的角度也会有所不同。 了解了基础知识以后我们就可以来学习控制一个舵机了，本实验所需要的元器件很少只需要舵机一个、跳线一扎就可以了。 SG90 舵机*1 面包板跳线*1 扎 用Arduino 控制舵机的方法有两种，一种是通过Arduino 的普通数字传感器接口产生占空比不同的方波，模拟产生PWM 信号进行舵机定位，第二种是直接利用Arduino 自带的Servo 函数进行舵机的控制，这种控制方法的优点在于程序编写，缺点是只能控制2 路舵机，因为Arduino 自带函数只能利用数字9、10 接口。Arduino 的驱动能力有限，所以当需要控制1 个以上的舵机时需要外接电源。 将舵机接数字 9 接口上。编写一个程序让舵机转动到用户输入数字所对应的角度数的位置，并将角度打印显示到屏幕上。 Source Code: 1234567891011121314151617181920212223242526#include &lt;Servo.h&gt; Servo myservo; // 定义舵机对象，最多八个 int pos = 0; // 定义舵机转动位置 void setup() &#123; myservo.attach(9); // 设置舵机控制针脚 &#125; void loop() &#123; // 0到180旋转舵机，每次延时15毫秒 for(pos = 0; pos &lt; 180; pos += 1) &#123; myservo.write(pos); delay(15); &#125; // 180到0旋转舵机，每次延时15毫秒 for(pos = 180; pos&gt;=1; pos-=1) &#123; myservo.write(pos); delay(15); &#125; &#125; 实验现象：上载到Arduino后，可以看到，舵机开始先按0到180运转，然后再从180到0运转。]]></content>
+      <categories>
+        <category>Arduino</category>
+      </categories>
+      <tags>
+        <tag>arduino</tag>
+        <tag>chinese</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Arduino 17 - 1602 Liquid Crystal液晶实验]]></title>
+    <url>%2F2019%2F04%2F29%2Farduino-17%2F</url>
+    <content type="text"><![CDATA[本次试验使用arduino直接驱动1602液晶显示文字。 1602液晶在应用中非常广泛，最初的1602液晶使用的是HD44780控制器，现在各个厂家的1602模块基本上都是采用了与之兼容的IC，所以特性上基本都是一致的。 1602LCD主要技术参数: 显示容量为16×2个字符； 芯片工作电压为4.5～5.5V； 工作电流为2.0mA（5.0V）； 模块最佳工作电压为5.0V； 字符尺寸为2.95×4.35（W×H）mm。 1602液晶接口引脚定义 接口说明： 两组电源: 一组是模块的电源 一组是背光板的电源 一般均使用5V供电。本次试验背光使用3.3V供电也可以工作。 VL是调节对比度的引脚，串联不大于5KΩ的电位器进行调节。本次实验使用1KΩ的电阻来设定对比度。其连接分高电位与低电位接法，本次使用低电位接法，串联1KΩ电阻后接GND。 RS 是很多液晶上都有的引脚 是命令/数据选择引脚 该脚电平为高时表示将进行数据操作；为低时表示进行命令操作。 RW 也是很多液晶上都有的引脚 是读写选择端 该脚电平为高是表示要对液晶进行读操作；为低时表示要进行写操作。 E 同样很多液晶模块有此引脚 通常在总线上信号稳定后给一正脉冲通知把数据读走，在此脚为高电平的时候总线不允许变化。 D0—D7 8 位双向并行总线，用来传送命令和数据。 BLA是背光源正极，BLK是背光源负极。 1602液晶的基本操作分以下四种： 下图就是1602液晶实物图 1602直接与arduino通信，根据产品手册描述，分8位连接法与4位连接法，咱们先使用8位连接法进行实验。硬件连接方式如下图（图中电阻为1K，2K会显示更加清晰） Source Code: 123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105106107108109110111112113114int DI = 12; int RW = 11; int DB[] = &#123;3, 4, 5, 6, 7, 8, 9, 10&#125;;//使用数组来定义总线需要的管脚 int Enable = 2; void LcdCommandWrite(int value) &#123; // 定义所有引脚 int i = 0; for (i=DB[0]; i &lt;= DI; i++) //总线赋值 &#123; digitalWrite(i,value &amp; 01);//因为1602液晶信号识别是D7-D0(不是D0-D7)，这里是用来反转信号。 value &gt;&gt;= 1; &#125; digitalWrite(Enable,LOW); delayMicroseconds(1); digitalWrite(Enable,HIGH); delayMicroseconds(1); // 延时1ms digitalWrite(Enable,LOW); delayMicroseconds(1); // 延时1ms &#125; void LcdDataWrite(int value) &#123; // 定义所有引脚 int i = 0; digitalWrite(DI, HIGH); digitalWrite(RW, LOW); for (i=DB[0]; i &lt;= DB[7]; i++) &#123; digitalWrite(i,value &amp; 01); value &gt;&gt;= 1; &#125; digitalWrite(Enable,LOW); delayMicroseconds(1); digitalWrite(Enable,HIGH); delayMicroseconds(1); digitalWrite(Enable,LOW); delayMicroseconds(1); // 延时1ms &#125; void setup (void) &#123; int i = 0; for (i=Enable; i &lt;= DI; i++) &#123; pinMode(i,OUTPUT); &#125; delay(100); // 短暂的停顿后初始化LCD // 用于LCD控制需要 LcdCommandWrite(0x38); // 设置为8-bit接口，2行显示，5x7文字大小 delay(64); LcdCommandWrite(0x38); // 设置为8-bit接口，2行显示，5x7文字大小 delay(50); LcdCommandWrite(0x38); // 设置为8-bit接口，2行显示，5x7文字大小 delay(20); LcdCommandWrite(0x06); // 输入方式设定 // 自动增量，没有显示移位 delay(20); LcdCommandWrite(0x0E); // 显示设置 // 开启显示屏，光标显示，无闪烁 delay(20); LcdCommandWrite(0x01); // 屏幕清空，光标位置归零 delay(100); LcdCommandWrite(0x80); // 显示设置 // 开启显示屏，光标显示，无闪烁 delay(20); &#125; void loop (void) &#123; LcdCommandWrite(0x01); // 屏幕清空，光标位置归零 delay(10); LcdCommandWrite(0x80+3); delay(10); // 写入欢迎信息 LcdDataWrite(&apos;W&apos;); LcdDataWrite(&apos;e&apos;); LcdDataWrite(&apos;l&apos;); LcdDataWrite(&apos;c&apos;); LcdDataWrite(&apos;o&apos;); LcdDataWrite(&apos;m&apos;); LcdDataWrite(&apos;e&apos;); LcdDataWrite(&apos; &apos;); LcdDataWrite(&apos;t&apos;); LcdDataWrite(&apos;o&apos;); delay(10); LcdCommandWrite(0xc0+1); // 定义光标位置为第二行第二个位置 delay(10); LcdDataWrite(&apos;Y&apos;); LcdDataWrite(&apos;i&apos;); LcdDataWrite(&apos;x&apos;); LcdDataWrite(&apos;f&apos;); LcdDataWrite(&apos;o&apos;); LcdDataWrite(&apos;n&apos;); LcdDataWrite(&apos;g&apos;); LcdDataWrite(&apos;-&apos;); LcdDataWrite(&apos;a&apos;); LcdDataWrite(&apos;r&apos;); LcdDataWrite(&apos;d&apos;); LcdDataWrite(&apos;u&apos;); LcdDataWrite(&apos;i&apos;); LcdDataWrite(&apos;n&apos;); LcdDataWrite(&apos;o&apos;); delay(5000); LcdCommandWrite(0x01); // 屏幕清空，光标位置归零 delay(10); LcdDataWrite(&apos;Q&apos;); LcdDataWrite(&apos;Q&apos;); LcdDataWrite(&apos;:&apos;);LcdDataWrite(&apos;1&apos;); LcdDataWrite(&apos;6&apos;); LcdDataWrite(&apos;5&apos;); LcdDataWrite(&apos;6&apos;); LcdDataWrite(&apos;3&apos;); LcdDataWrite(&apos;8&apos;); LcdDataWrite(&apos;3&apos;); LcdDataWrite(&apos;9&apos;); LcdDataWrite(&apos;0&apos;);LcdDataWrite(&apos;4&apos;);delay(3000); &#125;]]></content>
+      <categories>
+        <category>Arduino</category>
+      </categories>
+      <tags>
+        <tag>arduino</tag>
+        <tag>chinese</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Arduino 16 - Four Digital Tubes四位数码管实验]]></title>
+    <url>%2F2019%2F04%2F22%2Farduino-16%2F</url>
+    <content type="text"><![CDATA[这次我们进行的实验是使用Arduino驱动一块共阳四位数码管。驱动数码管限流电阻肯定是必不可少的，限流电阻有两种接法，一种是在d1-d4阳极接，总共接4颗。这种接法好处是需求电阻比较少，但是会产生每一位上显示不同数字亮度会不一样，1最亮，8最暗。另外一种接法就是在其他8个引脚上接，这种接法亮度显示均匀，但是用电阻较多。本次实验使用8颗220Ω电阻（因为没有100Ω电阻，所以使用220Ω的代替，100欧姆亮度会比较高）。 4位数码管总共有12个引脚，小数点朝下正放在面前时，左下角为1,其他管脚顺序为逆时针旋转。左上角为最大的12号管脚。 下图为数码管的说明手册 下面是硬件连接图 Source Code: 123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105106107108109110111112113114115116117118119120121122123124125126127128129130131132133134135136137138139140141142143144145146147148149150151152153154155156157158159160161162163164165166167168169170171172173174175176177178179180181182183184185186187188189190191192193194195196197198199200201202203204205206207208209210211212213214215216217218219220221222223224225226227228229230231232233234235236237238239240241242243244245246247248249250251252253//设置阴极接口int a = 1;int b = 2;int c = 3;int d = 4;int e = 5;int f = 6;int g = 7;int p = 8;//设置阳极接口int d4 = 9;int d3 = 10;int d2 = 11;int d1 = 12;//设置变量long n = 0;int x = 100;int del = 55; //此处数值对时钟进行微调 void setup()&#123; pinMode(d1, OUTPUT); pinMode(d2, OUTPUT); pinMode(d3, OUTPUT); pinMode(d4, OUTPUT); pinMode(a, OUTPUT); pinMode(b, OUTPUT); pinMode(c, OUTPUT); pinMode(d, OUTPUT); pinMode(e, OUTPUT); pinMode(f, OUTPUT); pinMode(g, OUTPUT); pinMode(p, OUTPUT);&#125; void loop()&#123; clearLEDs(); pickDigit(1); pickNumber((n/x/1000)%10); delayMicroseconds(del); clearLEDs(); pickDigit(2); pickNumber((n/x/100)%10); delayMicroseconds(del); clearLEDs(); pickDigit(3); dispDec(3); pickNumber((n/x/10)%10); delayMicroseconds(del); clearLEDs(); pickDigit(4); pickNumber(n/x%10); delayMicroseconds(del); n++; if (digitalRead(13) == HIGH) &#123; n = 0; &#125;&#125; void pickDigit(int x) //定义pickDigit(x),其作用是开启dx端口&#123; digitalWrite(d1, LOW); digitalWrite(d2, LOW); digitalWrite(d3, LOW); digitalWrite(d4, LOW); switch(x) &#123; case 1: digitalWrite(d1, HIGH); break; case 2: digitalWrite(d2, HIGH); break; case 3: digitalWrite(d3, HIGH); break; default: digitalWrite(d4, HIGH); break; &#125;&#125; void pickNumber(int x) //定义pickNumber(x),其作用是显示数字x&#123; switch(x) &#123; default: zero(); break; case 1: one(); break; case 2: two(); break; case 3: three(); break; case 4: four(); break; case 5: five(); break; case 6: six(); break; case 7: seven(); break; case 8: eight(); break; case 9: nine(); break; &#125;&#125; void dispDec(int x) //设定开启小数点&#123; digitalWrite(p, LOW);&#125; void clearLEDs() //清屏&#123; digitalWrite(a, HIGH); digitalWrite(b, HIGH); digitalWrite(c, HIGH); digitalWrite(d, HIGH); digitalWrite(e, HIGH); digitalWrite(f, HIGH); digitalWrite(g, HIGH); digitalWrite(p, HIGH);&#125; void zero() //定义数字0时阴极那些管脚开关&#123; digitalWrite(a, LOW); digitalWrite(b, LOW); digitalWrite(c, LOW); digitalWrite(d, LOW); digitalWrite(e, LOW); digitalWrite(f, LOW); digitalWrite(g, HIGH);&#125; void one() //定义数字1时阴极那些管脚开关&#123; digitalWrite(a, HIGH); digitalWrite(b, LOW); digitalWrite(c, LOW); digitalWrite(d, HIGH); digitalWrite(e, HIGH); digitalWrite(f, HIGH); digitalWrite(g, HIGH);&#125; void two() //定义数字2时阴极那些管脚开关&#123; digitalWrite(a, LOW); digitalWrite(b, LOW); digitalWrite(c, HIGH); digitalWrite(d, LOW); digitalWrite(e, LOW); digitalWrite(f, HIGH); digitalWrite(g, LOW);&#125; void three() //定义数字3时阴极那些管脚开关&#123; digitalWrite(a, LOW); digitalWrite(b, LOW); digitalWrite(c, LOW); digitalWrite(d, LOW); digitalWrite(e, HIGH); digitalWrite(f, HIGH); digitalWrite(g, LOW);&#125; void four() //定义数字4时阴极那些管脚开关&#123; digitalWrite(a, HIGH); digitalWrite(b, LOW); digitalWrite(c, LOW); digitalWrite(d, HIGH); digitalWrite(e, HIGH); digitalWrite(f, LOW); digitalWrite(g, LOW);&#125; void five() //定义数字5时阴极那些管脚开关&#123; digitalWrite(a, LOW); digitalWrite(b, HIGH); digitalWrite(c, LOW); digitalWrite(d, LOW); digitalWrite(e, HIGH); digitalWrite(f, LOW); digitalWrite(g, LOW);&#125;void six() //定义数字6时阴极那些管脚开关&#123; digitalWrite(a, LOW); digitalWrite(b, HIGH); digitalWrite(c, LOW); digitalWrite(d, LOW); digitalWrite(e, LOW); digitalWrite(f, LOW); digitalWrite(g, LOW);&#125; void seven() //定义数字7时阴极那些管脚开关&#123; digitalWrite(a, LOW); digitalWrite(b, LOW); digitalWrite(c, LOW); digitalWrite(d, HIGH); digitalWrite(e, HIGH); digitalWrite(f, HIGH); digitalWrite(g, HIGH);&#125; void eight() //定义数字8时阴极那些管脚开关&#123; digitalWrite(a, LOW); digitalWrite(b, LOW); digitalWrite(c, LOW); digitalWrite(d, LOW); digitalWrite(e, LOW); digitalWrite(f, LOW); digitalWrite(g, LOW);&#125; void nine() //定义数字9时阴极那些管脚开关&#123; digitalWrite(a, LOW); digitalWrite(b, LOW); digitalWrite(c, LOW); digitalWrite(d, LOW); digitalWrite(e, HIGH); digitalWrite(f, LOW); digitalWrite(g, LOW);&#125;]]></content>
+      <categories>
+        <category>Arduino</category>
+      </categories>
+      <tags>
+        <tag>arduino</tag>
+        <tag>chinese</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Arduino 15 - Digital Tube Display数码管显示实验]]></title>
+    <url>%2F2019%2F04%2F17%2Farduino-15%2F</url>
+    <content type="text"><![CDATA[数码管是一种半导体发光器件，其基本单元是发光二极管。数码管按段数分为七段数码管和八段数码管，八段数码管比七段数码管多一个发光二极管单元（多一个小数点显示），本实验所使用的是八段数码管。按发光二极管单元连接方式分为共阳极数码管和共阴极数码管。共阳数码管是指将所有发光二极管的阳极接到一起形成公共阳极(COM)的数码管。共阳数码管在应用时应将公共极COM 接到+5V，当某一字段发光二极管的阴极为低电平时，相应字段就点亮。当某一字段的阴极为高电平时，相应字段就不亮。共阴数码管是指将所有发光二极管的阴极接到一起形成公共阴极(COM)的数码管。共阴数码管在应用时应将公共极COM 接到地线GND 上，当某一字段发光二极管的阳极为高电平时，相应字段就点亮。当某一字段的阳极为低电平时，相应字段就不亮。 数码管的每一段是由发光二极管组成，所以在使用时跟发光二极管一样，也要连接限流电阻，否则电流过大会烧毁发光二极管的。本实验用的是共阴极的数码管，共阴数码管在应用时应将公共极接到GND，当某一字段发光二极管的阳极为低电平时，相应字段就点熄灭。当某一字段的阳极为高电平时，相应字段就点亮。介绍完原理， 我们开始准备实验用元器件: 八段数码管*1 220Ω直插电阻*8 面包板*1 面包板跳线*1 扎 我们参考实物连接图按原理图连接好电路: 数码管共有七段显示数字的段，还有一个显示小数点的段。当让数码管显示数字时，只要将相应的段点亮即可。例如：让数码管显示数字1，则将b、c 段点亮即可。将每个数字写成一个子程序。在主程序中每隔2s 显示一个数字，让数码管循环显示1～8 数字。每一个数字显示的时间由延时时间来决定，时间设置的大些，显示的时间就长些，时间设置的小些，显示的时间就短。 Source Code: 12345678910111213141516171819202122232425262728//设置控制各段的数字IO 脚int a=7;//定义数字接口7 连接a 段数码管int b=6;// 定义数字接口6 连接b 段数码管int c=5;// 定义数字接口5 连接c 段数码管int d=11;// 定义数字接口11 连接d 段数码管int e=10;// 定义数字接口10 连接e 段数码管int f=8;// 定义数字接口8 连接f 段数码管int g=9;// 定义数字接口9 连接g 段数码管int dp=4;// 定义数字接口4 连接dp 段数码管void digital_1(void) //显示数字1&#123;unsigned char j;digitalWrite(c,HIGH);//给数字接口5 引脚高电平，点亮c 段digitalWrite(b,HIGH);//点亮b 段for(j=7;j&lt;=11;j++)//熄灭其余段digitalWrite(j,LOW);digitalWrite(dp,LOW);//熄灭小数点DP 段&#125;void digital_2(void) //显示数字2&#123;unsigned char j;digitalWrite(b,HIGH);digitalWrite(a,HIGH);for(j=9;j&lt;=11;j++)digitalWrite(j,HIGH);digitalWrite(dp,LOW);digitalWrite(c,LOW);digitalWrite(f,LOW);]]></content>
+      <categories>
+        <category>Arduino</category>
+      </categories>
+      <tags>
+        <tag>arduino</tag>
+        <tag>chinese</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Arduino 14 - Flame Alarm火焰报警实验]]></title>
+    <url>%2F2019%2F04%2F10%2Farduino-14%2F</url>
+    <content type="text"><![CDATA[火焰传感器介绍 认识火焰传感器 火焰传感器（即红外接收三极管）是机器人专门用来搜寻火源的传感器，本传感器对火焰特别灵敏。实物如图： 工作原理 火焰传感器利用红外线对火焰非常敏感的特点，使用特制的红外线接收管来检测火焰，然后把火焰的亮度转化为高低变化的电平信号，输入到中央处理器，中央处理器根据信号的变化做出相应的程序处理。 火焰传感器的连线 红外接收三极管的短引线端为负极，长引线端为正极。按照下图将负极接到5V接口中，然后将正极和10K电阻相连，电阻的另一端接到GND接口中，最后从火焰传感器的正极端所在列接入一根跳线，跳线的另一端接在模拟口中。如图 火焰报警实验 实验器件 火焰传感器：1个 蜂鸣器：1个 10K电阻：1个 多彩面包板实验跳线：若干 实验连线 1）蜂鸣器的连接首先 按照Arduino教程将控制板、prototype板子、面包板连接好，下载线接好。从实验盒中取出蜂鸣器，按照第二节实验蜂鸣器的连接方法，将蜂鸣器连接到数字第八口。完成蜂鸣器的连接。 2）火焰传感器的连接从实验盒中取出火焰传感器，按照本节所讲述的火焰传感器的接线方法，将火焰传感器接到模拟5口。完成整个实验的连线。 实验原理 在有火焰靠近和没有火焰靠近两种情况下，模拟口读到的电压值是有变化的。实际用万用表测量可知，在没有火焰靠近时，模拟口读到癿电压值为0.3V左右；当有火焰靠近时，模拟口读到癿电压值为1.0V左右，火焰靠近距离越近电压值越大。 所以在程序一开始，我仧可以先存储一个没有火焰时模拟口的电压值i。接着不断的循环读取模拟口电压值j、同存储的值做差值k=j-i、差值k不0.6v做比较。差值k如果大于0.6V（数字二迕制值为123），则判断有火焰靠近让蜂鸣器发出声音以作报警；如果差值小于0.6v则蜂鸣器不响。 Source Code: 1234567891011int flame=A5;//定义火焰接口为模拟0 接口 int Beep=8;//定义蜂鸣器接口为数字7 接口 int val=0;//定义数字变量val void setup() &#123; pinMode(Beep,OUTPUT);//定义LED 为输出接口 pinMode(flame,INPUT);//定义蜂鸣器为输入接口 Serial.begin(9600);//设定波特率为9600 &#125; void loop() &#123; val=analogRead(flame);//读取火焰传感器的模拟值 Serial.println(val);//输出模拟值，并将其打印出来 if(val&gt;=600)//当模拟值大于600 时蜂鸣器鸣响 &#123; digitalWrite(Beep,HIGH); &#125; else &#123; digitalWrite(Beep,LOW); &#125; &#125; 按照arduino教程中癿程序下载方法将本程序下载到实验板中。本程序可以模拟在有火焰时报警癿情冴，在没有火焰时一切正常，当有火焰时立刻报警做出提示。]]></content>
+      <categories>
+        <category>Arduino</category>
+      </categories>
+      <tags>
+        <tag>arduino</tag>
+        <tag>chinese</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Arduino 13 - Tilt Switch倾斜开关实验]]></title>
+    <url>%2F2019%2F04%2F05%2Farduino-13%2F</url>
+    <content type="text"><![CDATA[实验器件 滚珠开关：1个 LED灯：1个 220Ω电阻：1个 多彩面包板实验跳线：若干 实验连线 按照Arduino教程将控制板、扩展板子、面包板连接好，下载线接好。 然后将LED灯连接到数字8引脚，滚珠开关连接到模拟5引脚。 实验原理 当开关一端低于水平位置倾斜，开关寻通，模拟口电压值为5V左右 （数字二进制表示为1023），点亮LED灯。当另一端低于水平位置倾斜 ，开关停止，模拟口电压值为0V左右（数字二进制表示为0），熄灭LED 灯。在程序中模拟口电压值是否大于2.5V左右（数字二迕制表示为512） ，即可知道是否倾斜开关寻通了。 Spirce Code: 1234567891011121314151617181920void setup() &#123; pinMode(8,OUTPUT);//设置数字8引脚为辒出模式 &#125; void loop() &#123; int i;//定义发量i while(1) &#123; i=analogRead(5);//读叏模拟5口电压值 if(i&gt;200)//如果大于512（2.5V） &#123; digitalWrite(8,HIGH);//点亮led灯 &#125; else//否则 &#123; digitalWrite(8,LOW);//熄灭led灯 &#125; &#125; &#125; 将程序下载到实验板后大家可以将板子倾斜观察led灯癿状态。当金色一端低于水平位置倾斜，开关寻通，点亮led灯；当银色一端低于水平位置倾斜，开关戔止，模拟口电压值为0V左右（数字二迕制表示为0），熄灭led灯。掌握本程序后，大家可以按照自己癿想法实验，迓可以控制其他器件例如蜂鸣器等。]]></content>
+      <categories>
+        <category>Arduino</category>
+      </categories>
+      <tags>
+        <tag>arduino</tag>
+        <tag>chinese</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Arduino 12 - LM35 Temperature Sensor温度传感器实验]]></title>
+    <url>%2F2019%2F03%2F29%2Farduino-12%2F</url>
+    <content type="text"><![CDATA[LM35 是很常用且易用的温度传感器元件，在元器件的应用上也只需要一个LM35元件，只利用一个模拟接口就可以，难点在于算法上的将读取的模拟值转换为实际的温度。 所需的元器件如下: 直插LM35*1 面包板*1 面包板跳线*1 扎 按照下面原理图连接电路: Source Code: 12345678910111213141516int potPin = 0; //定义模拟接口0 连接LM35 温度传感器void setup()&#123;Serial.begin(9600);//设置波特率&#125;void loop()&#123;int val;//定义变量int dat;//定义变量val=analogRead(0);// 读取传感器的模拟值并赋值给valdat=(125*val)&gt;&gt;8;//温度计算公式Serial.print(&quot;Tep:&quot;);//原样输出显示Tep 字符串代表温度Serial.print(dat);//输出显示dat 的值Serial.println(&quot;C&quot;);//原样输出显示C 字符串delay(500);//延时0.5 秒&#125; 下载完程序打开监视窗就可以看见当前的温度了。]]></content>
+      <categories>
+        <category>Arduino</category>
+      </categories>
+      <tags>
+        <tag>arduino</tag>
+        <tag>chinese</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Arduino 11 - Light Sensor感光灯实验]]></title>
+    <url>%2F2019%2F03%2F20%2Farduino-11%2F</url>
+    <content type="text"><![CDATA[完成以上的各种实验后，我们对Arduino 的应用也应该有一些认识和了解了，在基本的数字量输入输出和模拟量输入以及PWM 的产生都掌握以后，我们就可以开始进行一些传感器的应用了。 光敏电阻器（photovaristor）又叫光感电阻，是利用半导体的光电效应制成的一种电阻值随入射光的强弱而改变的电阻器；入射光强，电阻减小，入射光弱，电阻增大。光敏电阻器一般用于光的测量、光的控制和光电转换（将光的变化转换为电的变化）。光敏电阻可广泛应用于各种光控电路，如对灯光的控制、调节等场合，也可用于光控开关。 本次实验我们先进行一个较为简单的光敏电阻的使用实验。光敏电阻既然是可以根据光强改变阻值的元件，自然也需要模拟口读取模拟值了，本实验可以借鉴PWM 接口实验，将电位计换做光敏电阻实现当光强不同时LED 小灯的亮度也会有相应的变化。 下面是所需要的元器件： 光敏电阻*1 红色M5 直插LED*1 10KΩ直插电阻*1 220Ω直插电阻*1 面包板*1 面包板跳线*1 扎 按照以下原理图连接电路。 连接好就可以编写程序了，本实验程序与PWM 实验程序相类似只是在PWM 值赋值时根据我们现在的电路稍有修改（修改部分见参考源程序）。 Source Code: 123456789101112131415int potpin=0;//定义模拟接口0 连接光敏电阻int ledpin=11;//定义数字接口11 输出PWM 调节LED 亮度int val=0;//定义变量valvoid setup()&#123;pinMode(ledpin,OUTPUT);//定义数字接口11 为输出Serial.begin(9600);//设置波特率为9600&#125;void loop()&#123;val=analogRead(potpin);//读取传感器的模拟值并赋值给valSerial.println(val);//显示val 变量数值analogWrite(ledpin,val);// 打开LED 并设置亮度（PWM 输出最大值255）delay(10);//延时0.01 秒&#125; 这里我们将传感器返回值除以4，原因是模拟输入analogRead（）函数的返回值范围是0 到1023，而模拟输出analogWrite（）函数的输出值范围是0 到255。下载完程序再试着改变光敏电阻所在的环境的光强度就可以看到我们的小灯有相应的变化了。在日常生活中光敏电阻的应用是很广泛的，用法也是很多，大家可以根据这个实验举一反三，做出更好的互动作品。]]></content>
+      <categories>
+        <category>Arduino</category>
+      </categories>
+      <tags>
+        <tag>arduino</tag>
+        <tag>chinese</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Arduino 10 - Light Controlled Sound光控声音实验]]></title>
+    <url>%2F2019%2F03%2F16%2Farduino-10%2F</url>
+    <content type="text"><![CDATA[实验器件 光敏电阻：1个 蜂鸣器：1个 多彩面包板实验跳线：若干 实验连线 按照Arduino教程将控制板、prototype板子、面包板连接好，下载线接好。光敏电阻的一端接在数字6口，另一端与蜂名起正极相连,蜂明器的负极和GND相连。 实验原理 本程序应用前面几节读取模拟口电压值的方法，直接将光敏电阻接在数字口。程序类似第二节蜂鸣器发声的程序，没有光照时，正常发出声音，但声音特别的小；当有光照时，光敏电阻的阻值减小，所以蜂鸣器两端的电压就会增大，蜂鸣器声音发大。光照越强，电阻越小，蜂鸣器越响。 Source Code: 12345678910111213141516171819202122232425262728void setup() &#123; pinMode(6,OUTPUT); &#125; void loop() &#123; while(1) &#123; char i,j; while(1) &#123; for(i=0;i&lt;80;i++) //辒出一个频率癿声音 &#123; digitalWrite(6,HIGH); delay(1); digitalWrite(6,LOW); delay(1); &#125; for(i=0;i&lt;100;i++) //辒出另一个频率癿声音 &#123; digitalWrite(6,HIGH); delay(2); digitalWrite(6,LOW); delay(2); &#125; &#125; &#125; &#125; 将程序下载到实验板后，可以用手电筒或其他収光物体照射光敏电阻，可以听到有光照时蜂鸣器声音更大。掌握本程序后，大家可以自己动手设计实验，也可以用光敏电阻控制LED灯亮度。]]></content>
+      <categories>
+        <category>Arduino</category>
+      </categories>
+      <tags>
+        <tag>arduino</tag>
+        <tag>chinese</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Arduino 9 - Analog Value Reading模拟值读取实验]]></title>
+    <url>%2F2019%2F03%2F11%2Farduino-9%2F</url>
+    <content type="text"><![CDATA[本个实验我们就来开始学习一下模拟I/O 接口的使用，Arduino 有模拟0—模拟5 共计6 个模拟接口，这6 个接口也可以算作为接口功能复用，除模拟接口功能以外，这6 个接口可作为数字接口使用，编号为数字14—数字19，简单了解以后，下面就来开始我们的实验。电位计是大家比较熟悉的典型的模拟值输出元件，本实验就用它来完成。 所需元器件有： 电位计*1 面包板*1 面包板跳线*1 扎 本实验我们将电位计的阻值转化为模拟值读取出来，然后显示到屏幕上，这也是我们以后完成自己所需的实验功能所必须掌握的实例应用。我们先要按照以下电路图连接实物图 我们使用的是模拟0 接口。 程序的编写也很简单，一个analogRead();语句就可以读出模拟口的值，Arduino 328是10 位的A/D 采集，所以读取的模拟值范围是0-1023，本个实验的程序里还有一个难点就是显示数值在屏幕这一问题，学习起来也是很简单的。首先我们要在voidsetup()里面设置波特率，显示数值属于Arduino 与PC 机通信，所以Arduino 的波特率应与PC 机软件设置的相同才能显示出正确的数值，否则将会显示乱码或是不显示，在Arduino 软件的监视窗口右下角有一个可以设置波特率的按钮，这里设置的波特率需要跟程序里void setup()里面设置波特率相同，程序设置波特率的语句为Serial.begin();括号中为波特率的值。其次就是显示数值的语句了，Serial.print();或者Serial.println();都可以，不同的是后者显示完数值后自动回车，前者不是，更多的关于语句的讲解前面有介绍这里就不再多说了。 Source Code: 1234567891011121314151617int potpin=0;//定义模拟接口0int ledpin=13;//定义数字接口13int val=0;//将定义变量val,并赋初值0void setup()&#123;pinMode(ledpin,OUTPUT);//定义数字接口为输出接口Serial.begin(9600);//设置波特率为9600&#125;void loop()&#123;digitalWrite(ledpin,HIGH);//点亮数字接口13 的LEDdelay(50);//延时0.05 秒digitalWrite(ledpin,LOW);//熄灭数字接口13 的LEDdelay(50);//延时0.05 秒val=analogRead(potpin);//读取模拟接口0 的值，并将其赋给valSerial.println(val);//显示出val 的值&#125; 参考程序借用了Arduino 数字13 口自带的LED 小灯，每读一次值小灯就会闪烁一下。 下面就是读出的模拟值。 本实验到这里就完成了，当您旋转电位计旋钮的时候就可以看到屏幕上数值的变化了，读取模拟值这个方法将一直陪伴我们，模拟值读取是我们很常用的功能，因为很多传感器都是模拟值输出，我们读出模拟值后再进行相应的算法处理，就可以应用到我们需要实现的功能里了。]]></content>
+      <categories>
+        <category>Arduino</category>
+      </categories>
+      <tags>
+        <tag>arduino</tag>
+        <tag>chinese</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Arduino 8 - Buzzer蜂鸣器发声实验]]></title>
+    <url>%2F2019%2F03%2F01%2Farduino-8%2F</url>
+    <content type="text"><![CDATA[用Arduino 可以完成的互动作品有很多，最常见也最常用的就是声光展示了，前面一直都是在用LED 小灯在做实验，本个实验就让大家的电路发出声音，能够发出声音的最常见的元器件就是蜂鸣器和喇叭了，两者相比较蜂鸣器更简单和易用所以我们本实验采用蜂鸣器。 以下是要准备的元件： 蜂鸣器*1 按键*1 面包板*1 面包板跳线*1 扎 照下面的原理图连接电路， 连接电路时要注意一点就是蜂鸣器有正负极之分，下面右侧实物图可看到蜂鸣器有红黑两种接线。连接好电路程序这方面就很简单了，与前面按键控制小灯是实验程序类似，因为蜂鸣器的控制接口也是数字接口输出高低电平就可以控制蜂鸣器的鸣响。 Source Code: 1234567891011121314151617181920212223242526int buzzer=8;//设置控制蜂鸣器的数字IO脚void setup() &#123; pinMode(buzzer,OUTPUT);//设置数字IO脚模式，OUTPUT为辒出 &#125; void loop() &#123; unsigned char i,j;//定义变量while(1) &#123; for(i=0;i&lt;80;i++)//辒出一个频率的声音&#123; digitalWrite(buzzer,HIGH);//发声音delay(1);//延时1ms digitalWrite(buzzer,LOW);//不发声音delay(1);//延时ms &#125; for(i=0;i&lt;100;i++)//辒出另一个频率癿声音 &#123; digitalWrite(buzzer,HIGH);//发声音delay(2);//延时2ms digitalWrite(buzzer,LOW);//不发声音delay(2);//延时2ms &#125; &#125; &#125; 下载完程序，蜂鸣器实验就完成了.]]></content>
+      <categories>
+        <category>Arduino</category>
+      </categories>
+      <tags>
+        <tag>arduino</tag>
+        <tag>chinese</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Arduino 7 - Responder抢答器实验]]></title>
+    <url>%2F2019%2F02%2F25%2Farduino-7%2F</url>
+    <content type="text"><![CDATA[完成上面的实验以后相信已经有很多朋友可以独立完成这个实验了，本实验就是将上面的按键控制小灯的实验扩展成3 个按键对应3 个小灯，占用6 个数字I/O 接口。 原理这里就不多说了同上面实验，下面附上参考原理图和实物连接图。 Source Code: 123456789101112131415161718192021222324252627282930313233343536int redled=10;int yellowled=9;int greenled=8;int redpin=7;int yellowpin=6;int greenpin=5;int red;int yellow;int green;void setup()&#123;pinMode(redled,OUTPUT);pinMode(yellowled,OUTPUT);pinMode(greenled,OUTPUT);pinMode(redpin,INPUT);pinMode(yellowpin,INPUT);pinMode(greenpin,INPUT);&#125;void loop()&#123;red=digitalRead(redpin);if(red==LOW)&#123; digitalWrite(redled,LOW);&#125;else&#123; digitalWrite(redled,HIGH);&#125;yellow=digitalRead(yellowpin);if(yellow==LOW)&#123; digitalWrite(yellowled,LOW);&#125;else&#123; digitalWrite(yellowled,HIGH);&#125;green=digitalRead(greenpin);if(green==LOW)&#123; digitalWrite(greenled,LOW);&#125;else&#123; digitalWrite(greenled,HIGH);&#125;&#125; 此程序与前面程序除接口增多以外并无异处，因此不做程序注解分析。下载完程序，我们自己制作的简易抢答器就完成了。]]></content>
+      <categories>
+        <category>Arduino</category>
+      </categories>
+      <tags>
+        <tag>arduino</tag>
+        <tag>chinese</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Arduino 6 - Button Control LED按键控制LED实验]]></title>
+    <url>%2F2019%2F02%2F18%2Farduino-6%2F</url>
+    <content type="text"><![CDATA[I/O口的意思即为INPUT 接口和OUTPUT 接口，到目前为止我们设计的小灯实验都还只是应用到Arduino 的I/O 口的输出功能，这个实验我们来尝试一下使用Arduino的I/O 口的输入功能即为读取外接设备的输出值，我们用一个按键和一个LED 小灯完成一个输入输出结合使用的实验，让大家能简单了解I/O 的作用。按键开关大家都应该比较了解，属于开关量（数字量）元件，按下时为闭合（导通）状态。完成本实验要用到的元件如下： 按键开关*1 红色M5 直插LED*1 220Ω电阻*1 10KΩ电阻*1 面包板*1 面包板跳线*1 扎 我们将按键接到数字7 接口，红色小灯接到数字11 接口（Arduino 控制器0-13 数字I/O 接口都可以用来接按键和小灯，但是尽量不选择0 和1 接口，0 和1 接口为接口功能复用，除I/O 口功能外也是串口通信接口，下载程序时属于与PC 机通信故应保持0 和1 接口悬空，所以为避免插拔线的麻烦尽量不选用0 和1 接口），按下面的原理图连接好电路。 下面开始编写程序，我们就让按键按下时小灯亮起，根据前面的学习相信这个程序很容易就能编写出来，相对于前面几个实验这个实验的程序中多加了一条条件判断语句，这里我们使用if 语句，Arduino 的程序便写语句是基于C 语言的，所以C 的条件判断语句自然也适用于Arduino，像while、swich 等等。这里根据个人喜好我们习惯于使用简单易于理解的if 语句给大家做演示例程。 我们分析电路可知当按键按下时，数字7 接口可读出为高电平，这时我们使数字11 口输出高电平可使小灯亮起，程序中我们判断数字7 口是否为低电平，要为低电平使数字11 口输出也为低电平小灯不亮，原理同上。 Source Code: 12345678910111213141516int ledpin=11;//定义数字11 接口int inpin=7;//定义数字7 接口int val;//定义变量valvoid setup()&#123;pinMode(ledpin,OUTPUT);//定义小灯接口为输出接口pinMode(inpin,INPUT);//定义按键接口为输入接口&#125;void loop()&#123;val=digitalRead(inpin);//读取数字7 口电平值赋给valif(val==LOW)//检测按键是否按下，按键按下时小灯亮起&#123; digitalWrite(ledpin,LOW);&#125;else&#123; digitalWrite(ledpin,HIGH);&#125;&#125; 下载完程序我们本次的小灯配合按键的实验就完成了，本实验的原理很简单，广泛被用于各种电路和电器中，实际生活中大家也不难在各种设备上发现，例如大家的手机当按下任一按键时背光灯就会亮起，这就是典型应用了，下面一个实验就是一个最简单的生活中应用实例–抢答器。]]></content>
+      <categories>
+        <category>Arduino</category>
+      </categories>
+      <tags>
+        <tag>arduino</tag>
+        <tag>chinese</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Arduino 5 - Traffic Lights交通灯设计实验]]></title>
+    <url>%2F2019%2F02%2F10%2Farduino-5%2F</url>
+    <content type="text"><![CDATA[上面我们已经完成了单个小灯的控制实验，接下来我们就来做一个稍微复杂一点的交通灯实验，其实聪明的朋友们可以看出来这个实验就是将上面单个小灯的实验扩展成3 个颜色的小灯，就可以实现我们模拟交通灯的实验了。我们完成这个实验所需的元件除了Arduino 控制器和下载线还需要的硬件如下： 红色M5 直插LED*1 黄色M5 直插LED*1 绿色M5 直插LED*1 220Ω电阻*3 面包板*1 面包板跳线*1 扎 准备好上述元件我们就可以开工了，我们可以按照上面小灯闪烁的实验举一反三，下面是我们提供参考的原理图，我们使用的分别是数字10、7、4、接口. 既然是交通灯模拟实验，红黄绿三色小灯闪烁时间就要模拟真实的交通灯，我们使用Arduino 的delay（）函数来控制延时时间，相对于C 语言就要简单许多了。 Source Code: 123456789101112131415161718192021int redled =10; //定义数字10 接口int yellowled =7; //定义数字7 接口int greenled =4; //定义数字4 接口void setup()&#123;pinMode(redled, OUTPUT);//定义红色小灯接口为输出接口pinMode(yellowled, OUTPUT); //定义黄色小灯接口为输出接口pinMode(greenled, OUTPUT); //定义绿色小灯接口为输出接口&#125;void loop()&#123;digitalWrite(redled, HIGH);//点亮红色小灯delay(1000);//延时1 秒digitalWrite(redled, LOW); //熄灭红色小灯digitalWrite(yellowled, HIGH);//点亮黄色小灯delay(200);//延时0.2 秒digitalWrite(yellowled, LOW);//熄灭黄色小灯digitalWrite(greenled, HIGH);//点亮绿色小灯delay(1000);//延时1 秒digitalWrite(greenled, LOW);//熄灭绿色小灯&#125; 下载程序完成后就可以看到我们自己设计控制的交通灯了。]]></content>
+      <categories>
+        <category>Arduino</category>
+      </categories>
+      <tags>
+        <tag>arduino</tag>
+        <tag>chinese</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Arduino 4 - Advertising Light Effect广告灯效果实验]]></title>
+    <url>%2F2019%2F02%2F02%2Farduino-4%2F</url>
+    <content type="text"><![CDATA[1）实验器件 Led灯：6个 220Ω的电阻：6个 多彩面包板实验跳线：若干 2）实验连线 按照二级管的接线方法，将六个LED灯依次接到数字1~6引脚上。如图： 3）实验原理 在生活中我们经常会看到一些由各种颜色的LED灯组成的广告牌，广告牌上各个位置上癿LED灯不断的变话,形成各种效果。本节实验就是利用LED灯编程模拟广告灯效果。 Source Code: 123456789101112131415161718192021222324int BASE = 2 ; //第一顆 LED 接的 I/O 腳int NUM = 6; //LED 的總數void setup()&#123; for (int i = BASE; i &lt; BASE + NUM; i ++) &#123; pinMode(i, OUTPUT); //設定數字I/O腳為輸出 &#125;&#125;void loop()&#123; for (int i = BASE; i &lt; BASE + NUM; i ++) &#123; digitalWrite(i, LOW); //設定數字I/O腳輸出為&quot;低&quot;，即逐漸關燈 delay(200); //延遲 &#125; for (int i = BASE; i &lt; BASE + NUM; i ++) &#123; digitalWrite(i, HIGH); //設定數字I/O腳輸出為&quot;低&quot;，即逐漸開燈 delay(200); //延遲 &#125; &#125;]]></content>
+      <categories>
+        <category>Arduino</category>
+      </categories>
+      <tags>
+        <tag>arduino</tag>
+        <tag>chinese</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Arduino 3 - PWM Control Light Brightness调控灯光亮度实验]]></title>
+    <url>%2F2019%2F01%2F21%2Farduino-3%2F</url>
+    <content type="text"><![CDATA[Pulse Width Modulation 就是通常所说的PWM，译为脉冲宽度调制，简称脉宽调制。脉冲宽度调制（PWM）是一种对模拟信号电平进行数字编码的方法，由于计算机不能输出模拟电压，只能输出0 或5V 的的数字电压值，我们就通过使用高分辨率计数器，利用方波的占空比被调制的方法来对一个具体模拟信号的电平进行编码。PWM 信号仍然是数字的，因为在给定的任何时刻，满幅值的直流供电要么是5V(ON)，要么是0V(OFF)。电压或电流源是以一种通(ON)或断(OFF)的重复脉冲序列被加到模拟负载上去的。通的时候即是直流供电被加到负载上的时候，断的时候即是供电被断开的时候。只要带宽足够，任何模拟值都可以使用PWM 进行编码。输出的电压值是通过通和断的时间进行计算的。 输出电压 =（接通时间/脉冲时间）* 最大电压值 PWM 被用在许多地方，调光灯具、电机调速、声音的制作等等。下面介绍一下PWM 的三个基本参数： 脉冲宽度变化幅度（最小值/最大值） 脉冲周期（1 秒内脉冲频率个数的倒数） 电压高度（例如：0V-5V） Arduino 控制器有6 个PWM 接口分别是数字接口3、5、6、9、10、11，前面我们已经做了按键控制小灯的实验，那是数字信号控制数字接口的实验，我们也做过电位计的实验，这次我们就来完成一个用电位计控制小灯的实验。 需要的元器件有： 电位计模块*1 红色M5 直插LED*1 220Ω直插电阻 面包板*1 面包板跳线*1 扎 电位计即为模拟值输入我们接到模拟口，小灯我们接到PWM 接口上，这样通过产生不同的PWM 信号就可以让小灯有亮度不同的变化。 我们先按照下面的原理图连接实物图。 在编写程序的过程中，我们会用到模拟写入analogWrite(PWM 接口，模拟值)函数，对于模拟写入analogWrite()函数，此函数用法也很简单，我们在本实验中读取电位计的模拟值信号并将其赋给PWM 接口使小灯产生相应的亮度变化，再在屏幕上显示出读取的模拟值，大家可以理解为此程序是在模拟值读取的实验程序中多加了将模拟值赋给PWM 接口这一部分，下面给大家提供一段参考源程序。 Source Code: 12345678910111213141516int potpin=0;//定义模拟接口0int ledpin=11;//定义数字接口11（PWM 输出）int val=0;// 暂存来自传感器的变量数值void setup()&#123;pinMode(ledpin,OUTPUT);//定义数字接口11 为输出Serial.begin(9600);//设置波特率为9600//注意：模拟接口自动设置为输入&#125;void loop()&#123;val=analogRead(potpin);// 读取传感器的模拟值并赋值给valSerial.println(val);//显示val 变量analogWrite(ledpin,val/4);// 打开LED 并设置亮度（PWM 输出最大值255）delay(10);//延时0.01 秒&#125; 下载完程序，我们旋转电位计的旋钮不但可以看到屏幕上数值的变化还也可以清楚的看到我们面包板上的LED小灯的亮度也在随之变化。]]></content>
+      <categories>
+        <category>Arduino</category>
+      </categories>
+      <tags>
+        <tag>arduino</tag>
+        <tag>chinese</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Arduino 2 - LED Flashing Light闪灯实验]]></title>
     <url>%2F2019%2F01%2F09%2Farduino-2%2F</url>
     <content type="text"><![CDATA[LED 小灯实验是比较基础的实验之一，上一个“ Hello World！”实验里已经利用到了Arduino自带的LED，这次我们利用其他I/O口和外接直插LED灯来完成这个实验，我们需要的实验器材除了每个实验都必须的Arduino控制器和USB下载线以外的，其它器件如下： 红色M5直插LED*1 220Ω直插电阻*1 面包板*1 面包板跳线*1扎 下一步我们按照下面的小灯实验原理图链接实物图，这里我们使用数字10 接口。使用发光二极管LED时，要连接限流电阻，这里为220Ω电阻，否则电流过大会烧毁发光二极管。 按照上图链接好电路后，就可以开始编写程序了，我们还是让LED小灯闪烁，点亮1秒，熄灭1秒。这个程序很简单与Arduino自带的例程里的Blink 相似只是将13数字接口换做10数字接口。 Source Code: 123456789101112int ledPin = 10; //定义数字10 接口void setup()&#123;pinMode(ledPin, OUTPUT);//定义小灯接口为输出接口&#125;void loop()&#123;digitalWrite(ledPin, HIGH); //点亮小灯delay(1000); //延时1 秒digitalWrite(ledPin, LOW); //熄灭小灯delay(1000); // 延时1 秒&#125;]]></content>
       <categories>
@@ -180,7 +313,7 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Arduino 1 - Hello World]]></title>
+    <title><![CDATA[Arduino 1 - Hello World实验]]></title>
     <url>%2F2019%2F01%2F02%2Farduino-1%2F</url>
     <content type="text"><![CDATA[首先先来练习一个不需要其他辅助元件，只需要一块Arduino 和一根下载线的简单实验，让我们的Arduino说出“Hello World！”，这是一个让Arduino和PC机通信的实验，这也是一个入门试验，希望可以带领大家进入Arduino的世界。 这个实验我们需要用到的实验硬件有： 我们按照上面所讲的将Arduino的驱动安装好后，我们打开Arduino的软件，编写一段程序让Arduino接受到我们发的指令就显示“Hello World！”字符串，当然您也可以让Arduino 不用接受任何指令就直接不断回显“Hello World！”，其实很简单，一条if（）语句就可以让你的Arduino听从你的指令了，我们再借用一下Arduino自带的数字13 LED，让Arduino接受到指令时LED闪烁一下，再显示“Hello World！” Source Code: 12345678910111213141516171819int val;//定义变量valint ledpin=13;//定义数字接口13void setup()&#123;Serial.begin(9600);//设置波特率为9600，这里要跟软件设置相一致。当接入特定设备（如：蓝牙）时，我们也要跟其他设备的波特率达到一致。pinMode(ledpin,OUTPUT);//设置数字13 口为输出接口，Arduino 上我们用到的I/O 口都要进行类似这样的定义。&#125;void loop()&#123;val=Serial.read();//读取PC 机发送给Arduino 的指令或字符，并将该指令或字符赋给valif(val==&apos;R&apos;)//判断接收到的指令或字符是否是“R”。&#123;//如果接收到的是“R”字符digitalWrite(ledpin,HIGH);//点亮数字13 口LED。delay(500);digitalWrite(ledpin,LOW);//熄灭数字13 口LEDdelay(500);Serial.println(&quot;Hello World!&quot;);//显示“Hello World！”字符串&#125;&#125;]]></content>
       <categories>

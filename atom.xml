@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yuan901202.github.io/"/>
-  <updated>2019-06-02T05:31:06.217Z</updated>
+  <updated>2019-06-03T07:47:16.314Z</updated>
   <id>https://yuan901202.github.io/</id>
   
   <author>
@@ -17,268 +17,24 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>arduino_21</title>
-    <link href="https://yuan901202.github.io/2019/06/02/arduino-21/"/>
-    <id>https://yuan901202.github.io/2019/06/02/arduino-21/</id>
-    <published>2019-06-02T05:31:06.000Z</published>
-    <updated>2019-06-02T05:31:06.217Z</updated>
+    <title>Arduino 21 - Stepper Motor步进电机试验</title>
+    <link href="https://yuan901202.github.io/2019/06/03/arduino-21/"/>
+    <id>https://yuan901202.github.io/2019/06/03/arduino-21/</id>
+    <published>2019-06-03T05:31:06.000Z</published>
+    <updated>2019-06-03T07:47:16.314Z</updated>
     
     <summary type="html">
     
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>arduino_20</title>
-    <link href="https://yuan901202.github.io/2019/06/02/arduino-20/"/>
-    <id>https://yuan901202.github.io/2019/06/02/arduino-20/</id>
-    <published>2019-06-02T05:31:03.000Z</published>
-    <updated>2019-06-02T05:31:03.809Z</updated>
-    
-    <summary type="html">
+      &lt;p&gt;步进电机是一种将电脉冲转化为角位移的执行机构。通俗一点讲：当步进驱动器接收到一个脉冲信号，它就驱动步进电机按设定的方向转动一个固定的角度（及步进角）。你可以通过控制脉冲个数来控制角位移量，从而达到准确定位的目的；同时你也可以通过控制脉冲频率来控制电机转动的速度和加速度，从而达到调速的目的。&lt;br&gt;&lt;/p&gt;
     
     </summary>
     
+      <category term="Arduino" scheme="https://yuan901202.github.io/categories/Arduino/"/>
     
-  </entry>
-  
-  <entry>
-    <title>arduino_19</title>
-    <link href="https://yuan901202.github.io/2019/06/02/arduino-19/"/>
-    <id>https://yuan901202.github.io/2019/06/02/arduino-19/</id>
-    <published>2019-06-02T05:31:00.000Z</published>
-    <updated>2019-06-02T05:31:00.815Z</updated>
     
-    <summary type="html">
+      <category term="arduino" scheme="https://yuan901202.github.io/tags/arduino/"/>
     
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>arduino_18</title>
-    <link href="https://yuan901202.github.io/2019/06/02/arduino-18/"/>
-    <id>https://yuan901202.github.io/2019/06/02/arduino-18/</id>
-    <published>2019-06-02T05:30:58.000Z</published>
-    <updated>2019-06-02T05:30:58.178Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>arduino_17</title>
-    <link href="https://yuan901202.github.io/2019/06/02/arduino-17/"/>
-    <id>https://yuan901202.github.io/2019/06/02/arduino-17/</id>
-    <published>2019-06-02T05:30:55.000Z</published>
-    <updated>2019-06-02T05:30:55.381Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>arduino_16</title>
-    <link href="https://yuan901202.github.io/2019/06/02/arduino-16/"/>
-    <id>https://yuan901202.github.io/2019/06/02/arduino-16/</id>
-    <published>2019-06-02T05:30:52.000Z</published>
-    <updated>2019-06-02T05:30:52.578Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>arduino_15</title>
-    <link href="https://yuan901202.github.io/2019/06/02/arduino-15/"/>
-    <id>https://yuan901202.github.io/2019/06/02/arduino-15/</id>
-    <published>2019-06-02T05:30:37.000Z</published>
-    <updated>2019-06-02T05:30:37.769Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>arduino_14</title>
-    <link href="https://yuan901202.github.io/2019/06/02/arduino-14/"/>
-    <id>https://yuan901202.github.io/2019/06/02/arduino-14/</id>
-    <published>2019-06-02T05:30:35.000Z</published>
-    <updated>2019-06-02T05:30:35.335Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>arduino_13</title>
-    <link href="https://yuan901202.github.io/2019/06/02/arduino-13/"/>
-    <id>https://yuan901202.github.io/2019/06/02/arduino-13/</id>
-    <published>2019-06-02T05:30:32.000Z</published>
-    <updated>2019-06-02T05:30:32.795Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>arduino_12</title>
-    <link href="https://yuan901202.github.io/2019/06/02/arduino-12/"/>
-    <id>https://yuan901202.github.io/2019/06/02/arduino-12/</id>
-    <published>2019-06-02T05:30:30.000Z</published>
-    <updated>2019-06-02T05:30:30.365Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>arduino_11</title>
-    <link href="https://yuan901202.github.io/2019/06/02/arduino-11/"/>
-    <id>https://yuan901202.github.io/2019/06/02/arduino-11/</id>
-    <published>2019-06-02T05:30:27.000Z</published>
-    <updated>2019-06-02T05:30:27.696Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>arduino_10</title>
-    <link href="https://yuan901202.github.io/2019/06/02/arduino-10/"/>
-    <id>https://yuan901202.github.io/2019/06/02/arduino-10/</id>
-    <published>2019-06-02T05:30:25.000Z</published>
-    <updated>2019-06-02T05:30:25.130Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>arduino_9</title>
-    <link href="https://yuan901202.github.io/2019/06/02/arduino-9/"/>
-    <id>https://yuan901202.github.io/2019/06/02/arduino-9/</id>
-    <published>2019-06-02T05:30:22.000Z</published>
-    <updated>2019-06-02T05:30:22.231Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>arduino_8</title>
-    <link href="https://yuan901202.github.io/2019/06/02/arduino-8/"/>
-    <id>https://yuan901202.github.io/2019/06/02/arduino-8/</id>
-    <published>2019-06-02T05:30:19.000Z</published>
-    <updated>2019-06-02T05:30:19.123Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>arduino_7</title>
-    <link href="https://yuan901202.github.io/2019/06/02/arduino-7/"/>
-    <id>https://yuan901202.github.io/2019/06/02/arduino-7/</id>
-    <published>2019-06-02T05:30:16.000Z</published>
-    <updated>2019-06-02T05:30:16.520Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>arduino_6</title>
-    <link href="https://yuan901202.github.io/2019/06/02/arduino-6/"/>
-    <id>https://yuan901202.github.io/2019/06/02/arduino-6/</id>
-    <published>2019-06-02T05:30:13.000Z</published>
-    <updated>2019-06-02T05:30:13.781Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>arduino_5</title>
-    <link href="https://yuan901202.github.io/2019/06/02/arduino-5/"/>
-    <id>https://yuan901202.github.io/2019/06/02/arduino-5/</id>
-    <published>2019-06-02T05:30:10.000Z</published>
-    <updated>2019-06-02T05:30:10.957Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>arduino_4</title>
-    <link href="https://yuan901202.github.io/2019/06/02/arduino-4/"/>
-    <id>https://yuan901202.github.io/2019/06/02/arduino-4/</id>
-    <published>2019-06-02T05:30:08.000Z</published>
-    <updated>2019-06-02T05:30:08.218Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>arduino_3</title>
-    <link href="https://yuan901202.github.io/2019/06/02/arduino-3/"/>
-    <id>https://yuan901202.github.io/2019/06/02/arduino-3/</id>
-    <published>2019-06-02T05:30:05.000Z</published>
-    <updated>2019-06-02T05:30:05.541Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
+      <category term="chinese" scheme="https://yuan901202.github.io/tags/chinese/"/>
     
   </entry>
   
@@ -310,6 +66,474 @@
       <category term="hexo" scheme="https://yuan901202.github.io/tags/hexo/"/>
     
       <category term="github pages" scheme="https://yuan901202.github.io/tags/github-pages/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Agile &amp; Scrum Overview</title>
+    <link href="https://yuan901202.github.io/2019/05/30/2019-05-30-agile-scrum/"/>
+    <id>https://yuan901202.github.io/2019/05/30/2019-05-30-agile-scrum/</id>
+    <published>2019-05-30T07:32:42.000Z</published>
+    <updated>2019-05-31T09:22:53.650Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Agile&quot;&gt;&lt;a href=&quot;#Agile&quot; class=&quot;headerlink&quot; title=&quot;Agile&quot;&gt;&lt;/a&gt;Agile&lt;/h2&gt;&lt;h3 id=&quot;Frameworks-amp-Methodologies&quot;&gt;&lt;a href=&quot;#Frameworks-amp-Methodologies&quot; class=&quot;headerlink&quot; title=&quot;Frameworks &amp;amp; Methodologies&quot;&gt;&lt;/a&gt;Frameworks &amp;amp; Methodologies&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Scrum&lt;/li&gt;
+&lt;li&gt;Extreme Programming (XP)&lt;/li&gt;
+&lt;li&gt;Lean&lt;/li&gt;
+&lt;li&gt;Kanban&lt;/li&gt;
+&lt;li&gt;RUP (Rational Unified Process)&lt;/li&gt;
+&lt;li&gt;Crystal&lt;/li&gt;
+&lt;li&gt;DSDM (Dynamics Systems Development Method)&lt;/li&gt;
+&lt;li&gt;FDD (Feature Driven Development)&lt;/li&gt;&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Online Courses" scheme="https://yuan901202.github.io/categories/Online-Courses/"/>
+    
+    
+      <category term="agile" scheme="https://yuan901202.github.io/tags/agile/"/>
+    
+      <category term="scrum" scheme="https://yuan901202.github.io/tags/scrum/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Markdown Cheat Sheet</title>
+    <link href="https://yuan901202.github.io/2019/05/28/2019-05-28-markdown-cheatsheet/"/>
+    <id>https://yuan901202.github.io/2019/05/28/2019-05-28-markdown-cheatsheet/</id>
+    <published>2019-05-28T02:45:51.000Z</published>
+    <updated>2019-05-28T03:52:58.885Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;Basic-Syntax&quot;&gt;&lt;a href=&quot;#Basic-Syntax&quot; class=&quot;headerlink&quot; title=&quot;Basic Syntax&quot;&gt;&lt;/a&gt;Basic Syntax&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Heading&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;# H1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;## H2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;### H3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;Bold&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;**bold text**&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+      <category term="Technique" scheme="https://yuan901202.github.io/categories/Technique/"/>
+    
+    
+      <category term="git" scheme="https://yuan901202.github.io/tags/git/"/>
+    
+      <category term="cheatsheet" scheme="https://yuan901202.github.io/tags/cheatsheet/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git Cheat Sheet</title>
+    <link href="https://yuan901202.github.io/2019/05/28/2019-05-28-git-cheatsheet/"/>
+    <id>https://yuan901202.github.io/2019/05/28/2019-05-28-git-cheatsheet/</id>
+    <published>2019-05-28T02:45:41.000Z</published>
+    <updated>2019-05-28T03:52:47.066Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;Install-Git&quot;&gt;&lt;a href=&quot;#Install-Git&quot; class=&quot;headerlink&quot; title=&quot;Install Git&quot;&gt;&lt;/a&gt;Install Git&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Mac OS (Download from &lt;a href=&quot;https://git-scm.com/download/mac&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://git-scm.com/download/mac&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Windows (Download from &lt;a href=&quot;https://git-scm.com/download/win&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://git-scm.com/download/win&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Linux/Unix (Download from &lt;a href=&quot;https://git-scm.com/download/linux&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://git-scm.com/download/linux&lt;/a&gt;)&lt;/li&gt;&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Technique" scheme="https://yuan901202.github.io/categories/Technique/"/>
+    
+    
+      <category term="git" scheme="https://yuan901202.github.io/tags/git/"/>
+    
+      <category term="cheatsheet" scheme="https://yuan901202.github.io/tags/cheatsheet/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>How to obtain a free top-level domain?</title>
+    <link href="https://yuan901202.github.io/2019/05/27/2019-05-27_free-domain/"/>
+    <id>https://yuan901202.github.io/2019/05/27/2019-05-27_free-domain/</id>
+    <published>2019-05-27T09:02:05.000Z</published>
+    <updated>2019-05-27T09:22:34.855Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;In the era of internet everyone wants their online presence , but having an online presence is not so simple as it seems. To have your own website , you should have a domain name otherwise it would be like yourname.blogspot.com or yourname.wordpress.com&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Technique" scheme="https://yuan901202.github.io/categories/Technique/"/>
+    
+    
+      <category term="free" scheme="https://yuan901202.github.io/tags/free/"/>
+    
+      <category term="domain" scheme="https://yuan901202.github.io/tags/domain/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Github emoji</title>
+    <link href="https://yuan901202.github.io/2019/05/26/2019-05-26_emoji/"/>
+    <id>https://yuan901202.github.io/2019/05/26/2019-05-26_emoji/</id>
+    <published>2019-05-26T09:03:19.000Z</published>
+    <updated>2019-05-28T02:46:41.226Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;There you can find a omplete list of github markdown emoji markup. Check it out!&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Some some" scheme="https://yuan901202.github.io/categories/Some-some/"/>
+    
+    
+      <category term="emoji" scheme="https://yuan901202.github.io/tags/emoji/"/>
+    
+      <category term="github" scheme="https://yuan901202.github.io/tags/github/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Arduino 20 - PS2 Shot Stick摇杆实验</title>
+    <link href="https://yuan901202.github.io/2019/05/20/arduino-20/"/>
+    <id>https://yuan901202.github.io/2019/05/20/arduino-20/</id>
+    <published>2019-05-20T05:31:03.000Z</published>
+    <updated>2019-06-03T07:41:44.448Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;PS2摇杆一般可以用来控制小车等等，其构造主要就是两个10K的电位器，还有一个按键开关。五个端口分别为VCC，X，Button，Y，GND。&lt;/p&gt;
+&lt;p&gt;&lt;a href&gt;&lt;img src=&quot;/2019/05/20/arduino-20/image001.jpg&quot; alt&gt;&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Arduino" scheme="https://yuan901202.github.io/categories/Arduino/"/>
+    
+    
+      <category term="arduino" scheme="https://yuan901202.github.io/tags/arduino/"/>
+    
+      <category term="chinese" scheme="https://yuan901202.github.io/tags/chinese/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Arduino 19 - Infrared Remote Control红外遥控实验</title>
+    <link href="https://yuan901202.github.io/2019/05/12/arduino-19/"/>
+    <id>https://yuan901202.github.io/2019/05/12/arduino-19/</id>
+    <published>2019-05-12T05:31:00.000Z</published>
+    <updated>2019-06-03T07:39:21.342Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;红外接收头介绍&quot;&gt;&lt;a href=&quot;#红外接收头介绍&quot; class=&quot;headerlink&quot; title=&quot;红外接收头介绍&quot;&gt;&lt;/a&gt;红外接收头介绍&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;什么是红外接收头？&lt;br&gt;红外遥控器发出的信号是一连串的二进制脉冲码。为了使其在无线传输过程中免受其他红外信号的干扰,通常都是先将其调制在特定的载波频率上,然后再经红外发射二极管发射出去,而红外线接收装置则要滤除其他杂波,叧接收该特定频率的信号并将其还原成二进制脉冲码,也就是解调. &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;工作原理&lt;br&gt;内置接收管将红外发射管发射出来癿光信号转换为微弱的电信号，此信号经由IC内部放大器进行放大，然后通过自动增益控制、带通滤波、解调变、波形整形后还原为遥控器发射出的原始编码，经由接收头的信号输出脚输入到电器上的编码识别电路。 &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+    
+    </summary>
+    
+      <category term="Arduino" scheme="https://yuan901202.github.io/categories/Arduino/"/>
+    
+    
+      <category term="arduino" scheme="https://yuan901202.github.io/tags/arduino/"/>
+    
+      <category term="chinese" scheme="https://yuan901202.github.io/tags/chinese/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Arduino 18 - Rudder Control舵机控制实验</title>
+    <link href="https://yuan901202.github.io/2019/05/02/arduino-18/"/>
+    <id>https://yuan901202.github.io/2019/05/02/arduino-18/</id>
+    <published>2019-05-02T05:30:58.000Z</published>
+    <updated>2019-06-03T07:29:21.255Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;舵机是一种位置伺服的驱动器，主要是由外壳、电路板、无核心马达、齿轮与位置检测器所构成。其工作原理是由接收机或者单片机发出信号给舵机，其内部有一个基准电路，产生周期为20ms，宽度为1.5ms 的基准信号，将获得的直流偏置电压与电位器的电压比较，获得电压差输出。经由电路板上的IC 判断转动方向，再驱动无核心马达开始转动，透过减速齿轮将动力传至摆臂，同时由位置检测器送回信号，判断是否已经到达定位。适用于那些需要角度不断变化并可以保持的控制系统。当电机转速一定时，通过级联减速齿轮带动电位器旋转，使得电压差为0，电机停止转动。一般舵机旋转的角度范围是0 度到180 度。&lt;/p&gt;
+&lt;p&gt;&lt;a href&gt;&lt;img src=&quot;/2019/05/02/arduino-18/image001.jpg&quot; alt&gt;&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Arduino" scheme="https://yuan901202.github.io/categories/Arduino/"/>
+    
+    
+      <category term="arduino" scheme="https://yuan901202.github.io/tags/arduino/"/>
+    
+      <category term="chinese" scheme="https://yuan901202.github.io/tags/chinese/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Arduino 17 - 1602 Liquid Crystal液晶实验</title>
+    <link href="https://yuan901202.github.io/2019/04/29/arduino-17/"/>
+    <id>https://yuan901202.github.io/2019/04/29/arduino-17/</id>
+    <published>2019-04-29T05:30:55.000Z</published>
+    <updated>2019-06-03T07:29:34.282Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本次试验使用arduino直接驱动1602液晶显示文字。&lt;/p&gt;
+&lt;p&gt;1602液晶在应用中非常广泛，最初的1602液晶使用的是HD44780控制器，现在各个厂家的1602模块基本上都是采用了与之兼容的IC，所以特性上基本都是一致的。&lt;/p&gt;
+&lt;p&gt;1602LCD主要技术参数: &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;显示容量为16×2个字符；&lt;/li&gt;
+&lt;li&gt;芯片工作电压为4.5～5.5V；&lt;/li&gt;
+&lt;li&gt;工作电流为2.0mA（5.0V）；&lt;/li&gt;
+&lt;li&gt;模块最佳工作电压为5.0V；&lt;/li&gt;
+&lt;li&gt;字符尺寸为2.95×4.35（W×H）mm。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1602液晶接口引脚定义&lt;/p&gt;
+&lt;p&gt;&lt;a href&gt;&lt;img src=&quot;/2019/04/29/arduino-17/image001.jpg&quot; alt&gt;&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Arduino" scheme="https://yuan901202.github.io/categories/Arduino/"/>
+    
+    
+      <category term="arduino" scheme="https://yuan901202.github.io/tags/arduino/"/>
+    
+      <category term="chinese" scheme="https://yuan901202.github.io/tags/chinese/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Arduino 16 - Four Digital Tubes四位数码管实验</title>
+    <link href="https://yuan901202.github.io/2019/04/22/arduino-16/"/>
+    <id>https://yuan901202.github.io/2019/04/22/arduino-16/</id>
+    <published>2019-04-22T05:30:52.000Z</published>
+    <updated>2019-06-03T07:17:29.527Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这次我们进行的实验是使用Arduino驱动一块共阳四位数码管。驱动数码管限流电阻肯定是必不可少的，限流电阻有两种接法，一种是在d1-d4阳极接，总共接4颗。这种接法好处是需求电阻比较少，但是会产生每一位上显示不同数字亮度会不一样，1最亮，8最暗。另外一种接法就是在其他8个引脚上接，这种接法亮度显示均匀，但是用电阻较多。本次实验使用8颗220Ω电阻（因为没有100Ω电阻，所以使用220Ω的代替，100欧姆亮度会比较高）。&lt;/p&gt;
+&lt;p&gt;&lt;a href&gt;&lt;img src=&quot;/2019/04/22/arduino-16/image001.jpg&quot; alt&gt;&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Arduino" scheme="https://yuan901202.github.io/categories/Arduino/"/>
+    
+    
+      <category term="arduino" scheme="https://yuan901202.github.io/tags/arduino/"/>
+    
+      <category term="chinese" scheme="https://yuan901202.github.io/tags/chinese/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Arduino 15 - Digital Tube Display数码管显示实验</title>
+    <link href="https://yuan901202.github.io/2019/04/17/arduino-15/"/>
+    <id>https://yuan901202.github.io/2019/04/17/arduino-15/</id>
+    <published>2019-04-17T05:30:37.000Z</published>
+    <updated>2019-06-03T07:07:30.763Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;数码管是一种半导体发光器件，其基本单元是发光二极管。数码管按段数分为七段数码管和八段数码管，八段数码管比七段数码管多一个发光二极管单元（多一个小数点显示），本实验所使用的是八段数码管。按发光二极管单元连接方式分为共阳极数码管和共阴极数码管。共阳数码管是指将所有发光二极管的阳极接到一起形成公共阳极(COM)的数码管。共阳数码管在应用时应将公共极COM 接到+5V，当某一字段发光二极管的阴极为低电平时，相应字段就点亮。当某一字段的阴极为高电平时，相应字段就不亮。共阴数码管是指将所有发光二极管的阴极接到一起形成公共阴极(COM)的数码管。共阴数码管在应用时应将公共极COM 接到地线GND 上，当某一字段发光二极管的阳极为高电平时，相应字段就点亮。当某一字段的阳极为低电平时，相应字段就不亮。&lt;/p&gt;
+&lt;p&gt;&lt;a href&gt;&lt;img src=&quot;/2019/04/17/arduino-15/image001.jpg&quot; alt&gt;&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Arduino" scheme="https://yuan901202.github.io/categories/Arduino/"/>
+    
+    
+      <category term="arduino" scheme="https://yuan901202.github.io/tags/arduino/"/>
+    
+      <category term="chinese" scheme="https://yuan901202.github.io/tags/chinese/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Arduino 14 - Flame Alarm火焰报警实验</title>
+    <link href="https://yuan901202.github.io/2019/04/10/arduino-14/"/>
+    <id>https://yuan901202.github.io/2019/04/10/arduino-14/</id>
+    <published>2019-04-10T05:30:35.000Z</published>
+    <updated>2019-06-03T07:03:27.760Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;火焰传感器介绍&quot;&gt;&lt;a href=&quot;#火焰传感器介绍&quot; class=&quot;headerlink&quot; title=&quot;火焰传感器介绍&quot;&gt;&lt;/a&gt;火焰传感器介绍&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;认识火焰传感器 &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;火焰传感器（即红外接收三极管）是机器人专门用来搜寻火源的传感器，本传感器对火焰特别灵敏。实物如图：&lt;/p&gt;
+&lt;p&gt;&lt;a href&gt;&lt;img src=&quot;/2019/04/10/arduino-14/image001.jpg&quot; alt&gt;&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Arduino" scheme="https://yuan901202.github.io/categories/Arduino/"/>
+    
+    
+      <category term="arduino" scheme="https://yuan901202.github.io/tags/arduino/"/>
+    
+      <category term="chinese" scheme="https://yuan901202.github.io/tags/chinese/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Arduino 13 - Tilt Switch倾斜开关实验</title>
+    <link href="https://yuan901202.github.io/2019/04/05/arduino-13/"/>
+    <id>https://yuan901202.github.io/2019/04/05/arduino-13/</id>
+    <published>2019-04-05T04:30:32.000Z</published>
+    <updated>2019-06-03T06:56:36.794Z</updated>
+    
+    <summary type="html">
+    
+      &lt;ol&gt;
+&lt;li&gt;实验器件&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;滚珠开关：1个 &lt;/li&gt;
+&lt;li&gt;LED灯：1个 &lt;/li&gt;
+&lt;li&gt;220Ω电阻：1个&lt;/li&gt;
+&lt;li&gt;多彩面包板实验跳线：若干&lt;/li&gt;&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Arduino" scheme="https://yuan901202.github.io/categories/Arduino/"/>
+    
+    
+      <category term="arduino" scheme="https://yuan901202.github.io/tags/arduino/"/>
+    
+      <category term="chinese" scheme="https://yuan901202.github.io/tags/chinese/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Arduino 12 - LM35 Temperature Sensor温度传感器实验</title>
+    <link href="https://yuan901202.github.io/2019/03/29/arduino-12/"/>
+    <id>https://yuan901202.github.io/2019/03/29/arduino-12/</id>
+    <published>2019-03-29T04:30:30.000Z</published>
+    <updated>2019-06-03T06:52:14.025Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;LM35 是很常用且易用的温度传感器元件，在元器件的应用上也只需要一个LM35元件，只利用一个模拟接口就可以，难点在于算法上的将读取的模拟值转换为实际的温度。&lt;/p&gt;
+&lt;p&gt;所需的元器件如下:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;直插LM35*1 &lt;/li&gt;
+&lt;li&gt;面包板*1&lt;/li&gt;
+&lt;li&gt;面包板跳线*1 扎&lt;/li&gt;&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Arduino" scheme="https://yuan901202.github.io/categories/Arduino/"/>
+    
+    
+      <category term="arduino" scheme="https://yuan901202.github.io/tags/arduino/"/>
+    
+      <category term="chinese" scheme="https://yuan901202.github.io/tags/chinese/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Arduino 11 - Light Sensor感光灯实验</title>
+    <link href="https://yuan901202.github.io/2019/03/20/arduino-11/"/>
+    <id>https://yuan901202.github.io/2019/03/20/arduino-11/</id>
+    <published>2019-03-20T04:30:27.000Z</published>
+    <updated>2019-06-03T06:48:38.711Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;完成以上的各种实验后，我们对Arduino 的应用也应该有一些认识和了解了，在基本的数字量输入输出和模拟量输入以及PWM 的产生都掌握以后，我们就可以开始进行一些传感器的应用了。&lt;/p&gt;
+&lt;p&gt;光敏电阻器（photovaristor）又叫光感电阻，是利用半导体的光电效应制成的一种电阻值随入射光的强弱而改变的电阻器；入射光强，电阻减小，入射光弱，电阻增大。光敏电阻器一般用于光的测量、光的控制和光电转换（将光的变化转换为电的变化）。光敏电阻可广泛应用于各种光控电路，如对灯光的控制、调节等场合，也可用于光控开关。&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Arduino" scheme="https://yuan901202.github.io/categories/Arduino/"/>
+    
+    
+      <category term="arduino" scheme="https://yuan901202.github.io/tags/arduino/"/>
+    
+      <category term="chinese" scheme="https://yuan901202.github.io/tags/chinese/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Arduino 10 - Light Controlled Sound光控声音实验</title>
+    <link href="https://yuan901202.github.io/2019/03/16/arduino-10/"/>
+    <id>https://yuan901202.github.io/2019/03/16/arduino-10/</id>
+    <published>2019-03-16T04:30:25.000Z</published>
+    <updated>2019-06-03T06:45:33.532Z</updated>
+    
+    <summary type="html">
+    
+      &lt;ol&gt;
+&lt;li&gt;实验器件 &lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;光敏电阻：1个 &lt;/li&gt;
+&lt;li&gt;蜂鸣器：1个 &lt;/li&gt;
+&lt;li&gt;多彩面包板实验跳线：若干&lt;/li&gt;&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Arduino" scheme="https://yuan901202.github.io/categories/Arduino/"/>
+    
+    
+      <category term="arduino" scheme="https://yuan901202.github.io/tags/arduino/"/>
+    
+      <category term="chinese" scheme="https://yuan901202.github.io/tags/chinese/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Arduino 9 - Analog Value Reading模拟值读取实验</title>
+    <link href="https://yuan901202.github.io/2019/03/11/arduino-9/"/>
+    <id>https://yuan901202.github.io/2019/03/11/arduino-9/</id>
+    <published>2019-03-11T04:30:22.000Z</published>
+    <updated>2019-06-03T06:42:20.341Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本个实验我们就来开始学习一下模拟I/O 接口的使用，Arduino 有模拟0—模拟5 共计6 个模拟接口，这6 个接口也可以算作为接口功能复用，除模拟接口功能以外，这6 个接口可作为数字接口使用，编号为数字14—数字19，简单了解以后，下面就来开始我们的实验。电位计是大家比较熟悉的典型的模拟值输出元件，本实验就用它来完成。&lt;/p&gt;
+&lt;p&gt;所需元器件有：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;电位计*1 &lt;/li&gt;
+&lt;li&gt;面包板*1&lt;/li&gt;
+&lt;li&gt;面包板跳线*1 扎&lt;/li&gt;&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Arduino" scheme="https://yuan901202.github.io/categories/Arduino/"/>
+    
+    
+      <category term="arduino" scheme="https://yuan901202.github.io/tags/arduino/"/>
+    
+      <category term="chinese" scheme="https://yuan901202.github.io/tags/chinese/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Arduino 8 - Buzzer蜂鸣器发声实验</title>
+    <link href="https://yuan901202.github.io/2019/03/01/arduino-8/"/>
+    <id>https://yuan901202.github.io/2019/03/01/arduino-8/</id>
+    <published>2019-03-01T04:30:19.000Z</published>
+    <updated>2019-06-03T06:38:53.257Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;用Arduino 可以完成的互动作品有很多，最常见也最常用的就是声光展示了，前面一直都是在用LED 小灯在做实验，本个实验就让大家的电路发出声音，能够发出声音的最常见的元器件就是蜂鸣器和喇叭了，两者相比较蜂鸣器更简单和易用所以我们本实验采用蜂鸣器。&lt;/p&gt;
+&lt;p&gt;以下是要准备的元件：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;蜂鸣器*1&lt;/li&gt;
+&lt;li&gt;按键*1 &lt;/li&gt;
+&lt;li&gt;面包板*1 &lt;/li&gt;
+&lt;li&gt;面包板跳线*1 扎&lt;/li&gt;&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Arduino" scheme="https://yuan901202.github.io/categories/Arduino/"/>
+    
+    
+      <category term="arduino" scheme="https://yuan901202.github.io/tags/arduino/"/>
+    
+      <category term="chinese" scheme="https://yuan901202.github.io/tags/chinese/"/>
     
   </entry>
   
