@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yuan901202.github.io/"/>
-  <updated>2019-06-03T09:03:08.830Z</updated>
+  <updated>2019-06-04T07:19:18.065Z</updated>
   <id>https://yuan901202.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>What is WWDC 2014 about?</title>
+    <link href="https://yuan901202.github.io/2019/06/04/2019-06-04-wwdc2019/"/>
+    <id>https://yuan901202.github.io/2019/06/04/2019-06-04-wwdc2019/</id>
+    <published>2019-06-04T04:45:31.000Z</published>
+    <updated>2019-06-04T07:19:18.065Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://developer.apple.com/wwdc19/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;/2019/06/04/2019-06-04-wwdc2019/1.jpg&quot; alt=&quot;Apple WWDC 2019&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;On 4th June, 2019, 5:00 am NZ time, the Apple WWDC Developers Conference was held at the San Jose Convention Center. As an annual regular meeting, Apple is showcasing the latest technology changes to global developers. This conference continues the previous main tone of WWDC “software-based, hardware-assisted”, software upgrades in the operating system: in addition to bringing iOS 13, watchOS 6, tvOS, the biggest highlight is the independent iPadOS finally “Qian Huwan Called out”; hardware has introduced a powerful new modular workstation host - Mac Pro, of course, the price is still showing Apple’s true native.&lt;/p&gt;
+&lt;p&gt;WWDC 2019: &lt;a href=&quot;https://developer.apple.com/wwdc19/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://developer.apple.com/wwdc19/&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Some some" scheme="https://yuan901202.github.io/categories/Some-some/"/>
+    
+    
+      <category term="news" scheme="https://yuan901202.github.io/tags/news/"/>
+    
+      <category term="apple" scheme="https://yuan901202.github.io/tags/apple/"/>
+    
+      <category term="wwdc" scheme="https://yuan901202.github.io/tags/wwdc/"/>
+    
+  </entry>
   
   <entry>
     <title>Arduino 21 - Stepper Motor步进电机实验</title>
@@ -35,6 +61,37 @@
       <category term="arduino" scheme="https://yuan901202.github.io/tags/arduino/"/>
     
       <category term="chinese" scheme="https://yuan901202.github.io/tags/chinese/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>11 most popular static (blog) website frameworks</title>
+    <link href="https://yuan901202.github.io/2019/06/02/2019-06-02-static-framework/"/>
+    <id>https://yuan901202.github.io/2019/06/02/2019-06-02-static-framework/</id>
+    <published>2019-06-02T04:46:54.000Z</published>
+    <updated>2019-06-04T07:37:03.354Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Recently, it has been particularly popular to use static websites to build blogs. This blog is a static website hosted by GitHub Pages. Static websites are great for sites that focus on content, such as blogs. Then you might ask why you don’t need a wordpress (dynamic website).&lt;/p&gt;
+&lt;p&gt;Static websites have the following advantages over dynamic websites:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Save money.&lt;/strong&gt; Static websites consume less system resources. If you hang on github pages, just register a domain name.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;High speed.&lt;/strong&gt; Without php parser, no database, the speed is naturally faster than dynamic website&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Safety.&lt;/strong&gt; Due to the simplicity of static websites, many web attacks are immune.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Simple configuration.&lt;/strong&gt; Only need a web server (apache, nginx).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Easy to maintain.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The disadvantage of static websites is that they are weak in function and the interaction ability of users is not strong.&lt;/p&gt;
+&lt;p&gt;The static website generation tool can generate a website/blog from a simple plain text file. Common text formats are reStructuredText and Markdown, I am used to using Markdown.&lt;/p&gt;
+&lt;p&gt;If you want to build your own static website, you can use the 11 tools listed below:&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Technique" scheme="https://yuan901202.github.io/categories/Technique/"/>
+    
+    
+      <category term="github pages" scheme="https://yuan901202.github.io/tags/github-pages/"/>
     
   </entry>
   
@@ -63,9 +120,9 @@
       <category term="Technique" scheme="https://yuan901202.github.io/categories/Technique/"/>
     
     
-      <category term="hexo" scheme="https://yuan901202.github.io/tags/hexo/"/>
-    
       <category term="github pages" scheme="https://yuan901202.github.io/tags/github-pages/"/>
+    
+      <category term="hexo" scheme="https://yuan901202.github.io/tags/hexo/"/>
     
   </entry>
   
@@ -470,61 +527,6 @@
 &lt;li&gt;光敏电阻：1个 &lt;/li&gt;
 &lt;li&gt;蜂鸣器：1个 &lt;/li&gt;
 &lt;li&gt;多彩面包板实验跳线：若干&lt;/li&gt;&lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="Arduino" scheme="https://yuan901202.github.io/categories/Arduino/"/>
-    
-    
-      <category term="arduino" scheme="https://yuan901202.github.io/tags/arduino/"/>
-    
-      <category term="chinese" scheme="https://yuan901202.github.io/tags/chinese/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Arduino 9 - Analog Value Reading模拟值读取实验</title>
-    <link href="https://yuan901202.github.io/2019/03/11/arduino-9/"/>
-    <id>https://yuan901202.github.io/2019/03/11/arduino-9/</id>
-    <published>2019-03-11T04:30:22.000Z</published>
-    <updated>2019-06-03T06:42:20.341Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;本个实验我们就来开始学习一下模拟I/O 接口的使用，Arduino 有模拟0—模拟5 共计6 个模拟接口，这6 个接口也可以算作为接口功能复用，除模拟接口功能以外，这6 个接口可作为数字接口使用，编号为数字14—数字19，简单了解以后，下面就来开始我们的实验。电位计是大家比较熟悉的典型的模拟值输出元件，本实验就用它来完成。&lt;/p&gt;
-&lt;p&gt;所需元器件有：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;电位计*1 &lt;/li&gt;
-&lt;li&gt;面包板*1&lt;/li&gt;
-&lt;li&gt;面包板跳线*1 扎&lt;/li&gt;&lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="Arduino" scheme="https://yuan901202.github.io/categories/Arduino/"/>
-    
-    
-      <category term="arduino" scheme="https://yuan901202.github.io/tags/arduino/"/>
-    
-      <category term="chinese" scheme="https://yuan901202.github.io/tags/chinese/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Arduino 8 - Buzzer蜂鸣器发声实验</title>
-    <link href="https://yuan901202.github.io/2019/03/01/arduino-8/"/>
-    <id>https://yuan901202.github.io/2019/03/01/arduino-8/</id>
-    <published>2019-03-01T04:30:19.000Z</published>
-    <updated>2019-06-03T06:38:53.257Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;用Arduino 可以完成的互动作品有很多，最常见也最常用的就是声光展示了，前面一直都是在用LED 小灯在做实验，本个实验就让大家的电路发出声音，能够发出声音的最常见的元器件就是蜂鸣器和喇叭了，两者相比较蜂鸣器更简单和易用所以我们本实验采用蜂鸣器。&lt;/p&gt;
-&lt;p&gt;以下是要准备的元件：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;蜂鸣器*1&lt;/li&gt;
-&lt;li&gt;按键*1 &lt;/li&gt;
-&lt;li&gt;面包板*1 &lt;/li&gt;
-&lt;li&gt;面包板跳线*1 扎&lt;/li&gt;&lt;/ul&gt;
     
     </summary>
     
