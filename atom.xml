@@ -96,6 +96,26 @@
   </entry>
   
   <entry>
+    <title>Change DNS for Better Internet</title>
+    <link href="https://yuan901202.github.io/2019/06/01/2019-06-01-dns/"/>
+    <id>https://yuan901202.github.io/2019/06/01/2019-06-01-dns/</id>
+    <published>2019-06-01T01:52:24.000Z</published>
+    <updated>2019-06-10T02:54:10.115Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;What-is-DNS&quot;&gt;&lt;a href=&quot;#What-is-DNS&quot; class=&quot;headerlink&quot; title=&quot;What is DNS?&quot;&gt;&lt;/a&gt;What is DNS?&lt;/h2&gt;&lt;p&gt;The &lt;strong&gt;Domain Name System (DNS)&lt;/strong&gt; is a hierarchical and decentralized naming system for computers, services, or other resources connected to the Internet or a private network. It associates various information with domain names assigned to each of the participating entities. Most prominently, it translates more readily memorized domain names to the numerical IP addresses needed for locating and identifying computer services and devices with the underlying network protocols. By providing a worldwide, distributed directory service, the Domain Name System has been an essential component of the functionality of the Internet since 1985.&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Technique" scheme="https://yuan901202.github.io/categories/Technique/"/>
+    
+    
+      <category term="DNS" scheme="https://yuan901202.github.io/tags/DNS/"/>
+    
+  </entry>
+  
+  <entry>
     <title>How to build a bolg with Hexo framework?</title>
     <link href="https://yuan901202.github.io/2019/05/31/2019-05-31-how-to-build-blog-with-hexo/"/>
     <id>https://yuan901202.github.io/2019/05/31/2019-05-31-how-to-build-blog-with-hexo/</id>
@@ -499,34 +519,6 @@
     
       &lt;p&gt;完成以上的各种实验后，我们对Arduino 的应用也应该有一些认识和了解了，在基本的数字量输入输出和模拟量输入以及PWM 的产生都掌握以后，我们就可以开始进行一些传感器的应用了。&lt;/p&gt;
 &lt;p&gt;光敏电阻器（photovaristor）又叫光感电阻，是利用半导体的光电效应制成的一种电阻值随入射光的强弱而改变的电阻器；入射光强，电阻减小，入射光弱，电阻增大。光敏电阻器一般用于光的测量、光的控制和光电转换（将光的变化转换为电的变化）。光敏电阻可广泛应用于各种光控电路，如对灯光的控制、调节等场合，也可用于光控开关。&lt;br&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Arduino" scheme="https://yuan901202.github.io/categories/Arduino/"/>
-    
-    
-      <category term="arduino" scheme="https://yuan901202.github.io/tags/arduino/"/>
-    
-      <category term="chinese" scheme="https://yuan901202.github.io/tags/chinese/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Arduino 10 - Light Controlled Sound光控声音实验</title>
-    <link href="https://yuan901202.github.io/2019/03/16/arduino-10/"/>
-    <id>https://yuan901202.github.io/2019/03/16/arduino-10/</id>
-    <published>2019-03-16T04:30:25.000Z</published>
-    <updated>2019-06-03T06:45:33.532Z</updated>
-    
-    <summary type="html">
-    
-      &lt;ol&gt;
-&lt;li&gt;实验器件 &lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;光敏电阻：1个 &lt;/li&gt;
-&lt;li&gt;蜂鸣器：1个 &lt;/li&gt;
-&lt;li&gt;多彩面包板实验跳线：若干&lt;/li&gt;&lt;/ul&gt;
     
     </summary>
     

@@ -114,7 +114,7 @@
   <meta name="description" content="Kia Ora! My name is Tianfu (Tony) Yuan. And I’m a young passionate website developer living at New Zealand.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Walking on the Earth">
-<meta property="og:url" content="https://yuan901202.github.io/archives/2013/index.html">
+<meta property="og:url" content="https://yuan901202.github.io/tags/DNS/index.html">
 <meta property="og:site_name" content="Walking on the Earth">
 <meta property="og:description" content="Kia Ora! My name is Tianfu (Tony) Yuan. And I’m a young passionate website developer living at New Zealand.">
 <meta property="og:locale" content="en">
@@ -130,7 +130,7 @@
 
   
   
-  <link rel="canonical" href="https://yuan901202.github.io/archives/2013/">
+  <link rel="canonical" href="https://yuan901202.github.io/tags/DNS/">
 
 
 
@@ -140,7 +140,7 @@
   };
 </script>
 
-  <title>Archive | Walking on the Earth</title>
+  <title>Tag: DNS | Walking on the Earth</title>
   
   <script>
     window.fbAsyncInit = function() {
@@ -216,7 +216,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -277,7 +277,7 @@
         
         
           
-          <li class="menu-item menu-item-tags">
+          <li class="menu-item menu-item-tags menu-item-active">
 
     
     
@@ -315,7 +315,7 @@
         
         
           
-          <li class="menu-item menu-item-archives menu-item-active">
+          <li class="menu-item menu-item-archives">
 
     
     
@@ -443,34 +443,15 @@
   
   
   
-  <div class="post-block archive">
+  <div class="post-block tag">
+
     <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+      <div class="collection-title">
+        <h2>DNS<small>Tag</small>
+        </h2>
+      </div>
 
       
-      <span class="archive-page-counter">
-        
-        
-         
-          
-        Nice! 56 posts in total. Keep on posting.
-      </span>
-      
-
-      
-
-        
-        
-        
-
-        
-          
-          <div class="collection-title">
-            <h2 class="archive-year" id="archive-year-2013">2013</h2>
-          </div>
-        
-        
-
         
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
@@ -478,17 +459,17 @@
 
       <h3 class="post-title">
         
-          <a class="post-title-link" href="/2013/08/16/uni1/" itemprop="url">
+          <a class="post-title-link" href="/2019/06/01/2019-06-01-dns/" itemprop="url">
             
-              <span itemprop="name">Analyse the role of information business systems in decision-making process</span>
+              <span itemprop="name">Change DNS for Better Internet</span>
             
           </a>
         
       </h3>
 
       <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2013-08-16T14:32:46+12:00" content="16-08-2013">
-          08-16
+        <time class="post-time" itemprop="dateCreated" datetime="2019-06-01T13:52:24+12:00" content="01-06-2019">
+          06-01
         </time>
       </div>
 
@@ -496,10 +477,9 @@
   </article>
 
 
-
       
-
     </div>
+
   </div>
   
   
@@ -1432,9 +1412,9 @@
 
       //https://hexo.io/docs/variables.html
       var isPost = ''.length > 0
-      var isArchive = 'true' === 'true'
+      var isArchive = '' === 'true'
       var isCategory = ''.length > 0
-      var isTag = ''.length > 0
+      var isTag = 'DNS'.length > 0
 
       if (isPost) { //is article page
         var title = ''
@@ -1445,7 +1425,7 @@
       else if (!isArchive && !isCategory && !isTag) { //is index page
         var titles = [] //array to titles
 
-        var postsstr = 'titles.push("Analyse the role of information business systems in decision-making process");' //if you have a better way to get titles of posts, please change it
+        var postsstr = 'titles.push("Change DNS for Better Internet");' //if you have a better way to get titles of posts, please change it
         eval(postsstr)
 
         var promises = titles.map(function (title) {
