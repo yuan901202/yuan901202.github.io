@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yuan901202.github.io/"/>
-  <updated>2019-06-12T07:29:15.609Z</updated>
+  <updated>2019-06-12T07:33:19.302Z</updated>
   <id>https://yuan901202.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://yuan901202.github.io/2019/06/12/2019-06-12-taste-coffee-beginner/"/>
     <id>https://yuan901202.github.io/2019/06/12/2019-06-12-taste-coffee-beginner/</id>
     <published>2019-06-12T07:15:55.000Z</published>
-    <updated>2019-06-12T07:29:15.609Z</updated>
+    <updated>2019-06-12T07:33:19.302Z</updated>
     
     <summary type="html">
     
@@ -37,6 +37,8 @@
     
     
       <category term="coffee" scheme="https://yuan901202.github.io/tags/coffee/"/>
+    
+      <category term="chinese" scheme="https://yuan901202.github.io/tags/chinese/"/>
     
   </entry>
   
@@ -82,9 +84,9 @@
       <category term="Arduino" scheme="https://yuan901202.github.io/categories/Arduino/"/>
     
     
-      <category term="arduino" scheme="https://yuan901202.github.io/tags/arduino/"/>
-    
       <category term="chinese" scheme="https://yuan901202.github.io/tags/chinese/"/>
+    
+      <category term="arduino" scheme="https://yuan901202.github.io/tags/arduino/"/>
     
   </entry>
   
@@ -315,9 +317,9 @@
       <category term="Arduino" scheme="https://yuan901202.github.io/categories/Arduino/"/>
     
     
-      <category term="arduino" scheme="https://yuan901202.github.io/tags/arduino/"/>
-    
       <category term="chinese" scheme="https://yuan901202.github.io/tags/chinese/"/>
+    
+      <category term="arduino" scheme="https://yuan901202.github.io/tags/arduino/"/>
     
   </entry>
   
@@ -342,9 +344,9 @@
       <category term="Arduino" scheme="https://yuan901202.github.io/categories/Arduino/"/>
     
     
-      <category term="arduino" scheme="https://yuan901202.github.io/tags/arduino/"/>
-    
       <category term="chinese" scheme="https://yuan901202.github.io/tags/chinese/"/>
+    
+      <category term="arduino" scheme="https://yuan901202.github.io/tags/arduino/"/>
     
   </entry>
   
@@ -365,9 +367,9 @@
       <category term="Arduino" scheme="https://yuan901202.github.io/categories/Arduino/"/>
     
     
-      <category term="arduino" scheme="https://yuan901202.github.io/tags/arduino/"/>
-    
       <category term="chinese" scheme="https://yuan901202.github.io/tags/chinese/"/>
+    
+      <category term="arduino" scheme="https://yuan901202.github.io/tags/arduino/"/>
     
   </entry>
   
@@ -398,9 +400,9 @@
       <category term="Arduino" scheme="https://yuan901202.github.io/categories/Arduino/"/>
     
     
-      <category term="arduino" scheme="https://yuan901202.github.io/tags/arduino/"/>
-    
       <category term="chinese" scheme="https://yuan901202.github.io/tags/chinese/"/>
+    
+      <category term="arduino" scheme="https://yuan901202.github.io/tags/arduino/"/>
     
   </entry>
   
@@ -421,9 +423,9 @@
       <category term="Arduino" scheme="https://yuan901202.github.io/categories/Arduino/"/>
     
     
-      <category term="arduino" scheme="https://yuan901202.github.io/tags/arduino/"/>
-    
       <category term="chinese" scheme="https://yuan901202.github.io/tags/chinese/"/>
+    
+      <category term="arduino" scheme="https://yuan901202.github.io/tags/arduino/"/>
     
   </entry>
   
@@ -444,9 +446,9 @@
       <category term="Arduino" scheme="https://yuan901202.github.io/categories/Arduino/"/>
     
     
-      <category term="arduino" scheme="https://yuan901202.github.io/tags/arduino/"/>
-    
       <category term="chinese" scheme="https://yuan901202.github.io/tags/chinese/"/>
+    
+      <category term="arduino" scheme="https://yuan901202.github.io/tags/arduino/"/>
     
   </entry>
   
@@ -470,9 +472,9 @@
       <category term="Arduino" scheme="https://yuan901202.github.io/categories/Arduino/"/>
     
     
-      <category term="arduino" scheme="https://yuan901202.github.io/tags/arduino/"/>
-    
       <category term="chinese" scheme="https://yuan901202.github.io/tags/chinese/"/>
+    
+      <category term="arduino" scheme="https://yuan901202.github.io/tags/arduino/"/>
     
   </entry>
   
@@ -499,9 +501,9 @@
       <category term="Arduino" scheme="https://yuan901202.github.io/categories/Arduino/"/>
     
     
-      <category term="arduino" scheme="https://yuan901202.github.io/tags/arduino/"/>
-    
       <category term="chinese" scheme="https://yuan901202.github.io/tags/chinese/"/>
+    
+      <category term="arduino" scheme="https://yuan901202.github.io/tags/arduino/"/>
     
   </entry>
   
