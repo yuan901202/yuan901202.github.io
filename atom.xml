@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yuan901202.github.io/"/>
-  <updated>2019-06-08T02:29:40.068Z</updated>
+  <updated>2019-06-12T07:29:15.609Z</updated>
   <id>https://yuan901202.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Taste Coffee Beginner Guide (Chinese)</title>
+    <link href="https://yuan901202.github.io/2019/06/12/2019-06-12-taste-coffee-beginner/"/>
+    <id>https://yuan901202.github.io/2019/06/12/2019-06-12-taste-coffee-beginner/</id>
+    <published>2019-06-12T07:15:55.000Z</published>
+    <updated>2019-06-12T07:29:15.609Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Topic: 小白怎么品鉴咖啡&lt;/p&gt;
+&lt;p&gt;Author: Xue Zhang (Q-Grader &amp;amp; Professional Barista &amp;amp; NZSCA Guild Member)&lt;/p&gt;
+&lt;p&gt;Date: 12/June/2019&lt;/p&gt;
+&lt;p&gt;本文主要以简体中文陈述。&lt;/p&gt;
+&lt;p&gt;因今天喝到好喝的咖啡，然后问老板，这么好喝的咖啡外国人能喝出来吗？老板可怜巴巴的说：他们喝不太出来。本仙女听到真心难过，心酸。想起自己刚开始品鉴咖啡的时候也是这样，咖啡同学各种评价讨论咖啡里都有什么风味，但是我却着急喝不出来，曾一度认为是不是嘴巴没别人灵敏，没有品鉴咖啡的天赋。学习咖啡的那几个月都过的很自卑。但现在我是一名国际认证的咖啡师，拥有咖啡品鉴师（Q-Grader）和SCA品鉴技能中级国际认证。&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Coffee" scheme="https://yuan901202.github.io/categories/Coffee/"/>
+    
+    
+      <category term="coffee" scheme="https://yuan901202.github.io/tags/coffee/"/>
+    
+  </entry>
   
   <entry>
     <title>What is WWDC 2019 about?</title>
@@ -482,52 +506,36 @@
   </entry>
   
   <entry>
-    <title>Arduino 12 - LM35 Temperature Sensor温度传感器实验</title>
-    <link href="https://yuan901202.github.io/2019/03/29/arduino-12/"/>
-    <id>https://yuan901202.github.io/2019/03/29/arduino-12/</id>
-    <published>2019-03-29T04:30:30.000Z</published>
-    <updated>2019-06-03T06:52:14.025Z</updated>
+    <title>React JS Learning Notes</title>
+    <link href="https://yuan901202.github.io/2019/04/03/2019-04-03-reactjs/"/>
+    <id>https://yuan901202.github.io/2019/04/03/2019-04-03-reactjs/</id>
+    <published>2019-04-03T00:04:19.000Z</published>
+    <updated>2019-06-12T01:37:22.897Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;LM35 是很常用且易用的温度传感器元件，在元器件的应用上也只需要一个LM35元件，只利用一个模拟接口就可以，难点在于算法上的将读取的模拟值转换为实际的温度。&lt;/p&gt;
-&lt;p&gt;所需的元器件如下:&lt;/p&gt;
+      &lt;h2 id=&quot;What-is-React&quot;&gt;&lt;a href=&quot;#What-is-React&quot; class=&quot;headerlink&quot; title=&quot;What is React?&quot;&gt;&lt;/a&gt;What is React?&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://reactjs.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;React JS&lt;/a&gt; is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Latest Version: v16.8.6 (Checked 03/April/2019)&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;直插LM35*1 &lt;/li&gt;
-&lt;li&gt;面包板*1&lt;/li&gt;
-&lt;li&gt;面包板跳线*1 扎&lt;/li&gt;&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;Docs: &lt;a href=&quot;https://reactjs.org/docs/getting-started.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://reactjs.org/docs/getting-started.html&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Tutorial: &lt;a href=&quot;https://reactjs.org/tutorial/tutorial.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://reactjs.org/tutorial/tutorial.html&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;React on Github: &lt;a href=&quot;https://github.com/facebook/react&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/facebook/react&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;React in Chinese (简体中文): &lt;a href=&quot;https://zh-hans.reactjs.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://zh-hans.reactjs.org/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;React can be used as a base in the development of single-page or mobile applications, as it is optimal for fetching rapidly changing data that needs to be recorded. However, fetching data is only the beginning of what happens on a web page, which is why complex React applications usually require the use of additional libraries for state management, routing, and interaction with an API.&lt;br&gt;&lt;/p&gt;
     
     </summary>
     
-      <category term="Arduino" scheme="https://yuan901202.github.io/categories/Arduino/"/>
+      <category term="Technique" scheme="https://yuan901202.github.io/categories/Technique/"/>
     
     
-      <category term="arduino" scheme="https://yuan901202.github.io/tags/arduino/"/>
+      <category term="javascript" scheme="https://yuan901202.github.io/tags/javascript/"/>
     
-      <category term="chinese" scheme="https://yuan901202.github.io/tags/chinese/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Arduino 11 - Light Sensor感光灯实验</title>
-    <link href="https://yuan901202.github.io/2019/03/20/arduino-11/"/>
-    <id>https://yuan901202.github.io/2019/03/20/arduino-11/</id>
-    <published>2019-03-20T04:30:27.000Z</published>
-    <updated>2019-06-03T06:48:38.711Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;完成以上的各种实验后，我们对Arduino 的应用也应该有一些认识和了解了，在基本的数字量输入输出和模拟量输入以及PWM 的产生都掌握以后，我们就可以开始进行一些传感器的应用了。&lt;/p&gt;
-&lt;p&gt;光敏电阻器（photovaristor）又叫光感电阻，是利用半导体的光电效应制成的一种电阻值随入射光的强弱而改变的电阻器；入射光强，电阻减小，入射光弱，电阻增大。光敏电阻器一般用于光的测量、光的控制和光电转换（将光的变化转换为电的变化）。光敏电阻可广泛应用于各种光控电路，如对灯光的控制、调节等场合，也可用于光控开关。&lt;br&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Arduino" scheme="https://yuan901202.github.io/categories/Arduino/"/>
-    
-    
-      <category term="arduino" scheme="https://yuan901202.github.io/tags/arduino/"/>
-    
-      <category term="chinese" scheme="https://yuan901202.github.io/tags/chinese/"/>
+      <category term="reactJS" scheme="https://yuan901202.github.io/tags/reactJS/"/>
     
   </entry>
   
