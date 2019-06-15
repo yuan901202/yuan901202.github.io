@@ -112,7 +112,7 @@
 
 
   <meta name="description" content="What is React?React JS is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies. Latest Version: v16.8.6 (Checked 03/Ap">
-<meta name="keywords" content="reactJS,javascript">
+<meta name="keywords" content="javascript,reactJS">
 <meta property="og:type" content="article">
 <meta property="og:title" content="React JS Learning Notes">
 <meta property="og:url" content="https://yuan901202.github.io/2019/04/03/2019-04-03-reactjs/index.html">
@@ -120,7 +120,7 @@
 <meta property="og:description" content="What is React?React JS is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies. Latest Version: v16.8.6 (Checked 03/Ap">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://yuan901202.github.io/2019/04/03/2019-04-03-reactjs/roadmap.png">
-<meta property="og:updated_time" content="2019-06-12T01:37:22.897Z">
+<meta property="og:updated_time" content="2019-06-13T09:30:04.475Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="React JS Learning Notes">
 <meta name="twitter:description" content="What is React?React JS is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies. Latest Version: v16.8.6 (Checked 03/Ap">
@@ -498,7 +498,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 12-06-2019 13:37:22" itemprop="dateModified" datetime="2019-06-12T13:37:22+12:00">12-06-2019</time>
+                <time title="Modified: 13-06-2019 21:30:04" itemprop="dateModified" datetime="2019-06-13T21:30:04+12:00">13-06-2019</time>
               
             
           </span>
@@ -626,7 +626,7 @@
 </li>
 </ul>
 <h2 id="Basic-usage"><a href="#Basic-usage" class="headerlink" title="Basic usage"></a>Basic usage</h2><p>The following is a rudimentary example of React usage in HTML with JSX and JavaScript.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=&quot;myReactApp&quot;&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;script type=&quot;text/babel&quot;&gt;</span><br><span class="line">  class Greeter extends React.Component &#123; </span><br><span class="line">    render() &#123; </span><br><span class="line">      return &lt;h1&gt;&#123;this.props.greeting&#125;&lt;/h1&gt;</span><br><span class="line">    &#125; </span><br><span class="line">  &#125; </span><br><span class="line"></span><br><span class="line">  ReactDOM.render(&lt;Greeter greeting=&quot;Hello World!&quot; /&gt;, document.getElementById(&apos;myReactApp&apos;));</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">``` </span><br><span class="line"></span><br><span class="line">The ```Greeter``` class is a React component that accepts a property ```greeting```. The ```ReactDOM.render``` method creates an instance of the ```Greeter``` component, sets the greeting property to ```&apos;Hello World&apos;``` and inserts the rendered component as a child element to the DOM element with id ```myReactApp```.</span><br><span class="line"></span><br><span class="line">When displayed in a web browser the result will be</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=&quot;myReactApp&quot;&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;script type=&quot;text/babel&quot;&gt;</span><br><span class="line">  class Greeter extends React.Component &#123; </span><br><span class="line">    render() &#123; </span><br><span class="line">      return &lt;h1&gt;&#123;this.props.greeting&#125;&lt;/h1&gt;</span><br><span class="line">    &#125; </span><br><span class="line">  &#125; </span><br><span class="line"></span><br><span class="line">  ReactDOM.render(&lt;Greeter greeting=&quot;Hello World!&quot; /&gt;, document.getElementById(&apos;myReactApp&apos;));</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">``` </span><br><span class="line"></span><br><span class="line">The Greeter class is a React component that accepts a property greeting. The ReactDOM.render method creates an instance of the Greeter component, sets the greeting property to &apos;Hello World&apos; and inserts the rendered component as a child element to the DOM element with id myReactApp.</span><br><span class="line"></span><br><span class="line">When displayed in a web browser the result will be</span><br></pre></td></tr></table></figure>
 <p><div id="myReactApp"><br>  <h1>Hello World!</h1><br></div><br><code>`</code></p>
 
       
@@ -708,9 +708,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/reactJS/" rel="tag"># reactJS</a>
-          
             <a href="/tags/javascript/" rel="tag"># javascript</a>
+          
+            <a href="/tags/reactJS/" rel="tag"># reactJS</a>
           
         </div>
       
