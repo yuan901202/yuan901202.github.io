@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://yuan901202.github.io/about/index.html</loc>
+    
+    <lastmod>2019-06-22T03:00:01.767Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://yuan901202.github.io/schedule/index.html</loc>
+    
+    <lastmod>2019-06-21T09:47:02.122Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://yuan901202.github.io/404.html</loc>
     
     <lastmod>2019-06-16T09:35:24.078Z</lastmod>
@@ -194,13 +208,6 @@
     <loc>https://yuan901202.github.io/2019/05/31/2019-05-31-how-to-build-blog-with-hexo/</loc>
     
     <lastmod>2019-06-02T06:02:33.745Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://yuan901202.github.io/about/index.html</loc>
-    
-    <lastmod>2019-05-31T09:42:37.467Z</lastmod>
     
   </url>
   
