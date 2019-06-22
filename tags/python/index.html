@@ -114,7 +114,7 @@
   <meta name="description" content="Kia Ora! My name is Tianfu (Tony) Yuan. And I’m a young passionate website developer living at New Zealand.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Blog of Tony Yuan">
-<meta property="og:url" content="https://yuan901202.github.io/archives/2015/05/index.html">
+<meta property="og:url" content="https://yuan901202.github.io/tags/python/index.html">
 <meta property="og:site_name" content="Blog of Tony Yuan">
 <meta property="og:description" content="Kia Ora! My name is Tianfu (Tony) Yuan. And I’m a young passionate website developer living at New Zealand.">
 <meta property="og:locale" content="en">
@@ -130,7 +130,7 @@
 
   
   
-  <link rel="canonical" href="https://yuan901202.github.io/archives/2015/05/">
+  <link rel="canonical" href="https://yuan901202.github.io/tags/python/">
 
 
 
@@ -140,7 +140,7 @@
   };
 </script>
 
-  <title>Archive | Blog of Tony Yuan</title>
+  <title>Tag: python | Blog of Tony Yuan</title>
   
   <script>
     window.fbAsyncInit = function() {
@@ -216,7 +216,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -277,7 +277,7 @@
         
         
           
-          <li class="menu-item menu-item-tags">
+          <li class="menu-item menu-item-tags menu-item-active">
 
     
     
@@ -315,7 +315,7 @@
         
         
           
-          <li class="menu-item menu-item-archives menu-item-active">
+          <li class="menu-item menu-item-archives">
 
     
     
@@ -465,34 +465,15 @@
   
   
   
-  <div class="post-block archive">
+  <div class="post-block tag">
+
     <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+      <div class="collection-title">
+        <h2>python<small>Tag</small>
+        </h2>
+      </div>
 
       
-      <span class="archive-page-counter">
-        
-        
-         
-          
-        Nice! 59 posts in total. Keep on posting.
-      </span>
-      
-
-      
-
-        
-        
-        
-
-        
-          
-          <div class="collection-title">
-            <h2 class="archive-year" id="archive-year-2015">2015</h2>
-          </div>
-        
-        
-
         
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
@@ -500,17 +481,17 @@
 
       <h3 class="post-title">
         
-          <a class="post-title-link" href="/2015/05/11/uni5/" itemprop="url">
+          <a class="post-title-link" href="/2019/06/22/2019-06-22-Pypypy-python-learning/" itemprop="url">
             
-              <span itemprop="name">Take one of the areas of astronomy, optics, or the physics of motion. Give an overview of Newton’s theories in this area and explain how they are advances over what came before.</span>
+              <span itemprop="name">风变编程 - Python基础语法</span>
             
           </a>
         
       </h3>
 
       <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2015-05-11T14:32:57+12:00" content="11-05-2015">
-          05-11
+        <time class="post-time" itemprop="dateCreated" datetime="2019-06-22T16:38:23+12:00" content="22-06-2019">
+          06-22
         </time>
       </div>
 
@@ -518,10 +499,9 @@
   </article>
 
 
-
       
-
     </div>
+
   </div>
   
   
@@ -1460,9 +1440,9 @@
 
       //https://hexo.io/docs/variables.html
       var isPost = ''.length > 0
-      var isArchive = 'true' === 'true'
+      var isArchive = '' === 'true'
       var isCategory = ''.length > 0
-      var isTag = ''.length > 0
+      var isTag = 'python'.length > 0
 
       if (isPost) { //is article page
         var title = ''
@@ -1473,7 +1453,7 @@
       else if (!isArchive && !isCategory && !isTag) { //is index page
         var titles = [] //array to titles
 
-        var postsstr = 'titles.push("Take one of the areas of astronomy, optics, or the physics of motion. Give an overview of Newton’s theories in this area and explain how they are advances over what came before.");' //if you have a better way to get titles of posts, please change it
+        var postsstr = 'titles.push("风变编程 - Python基础语法");' //if you have a better way to get titles of posts, please change it
         eval(postsstr)
 
         var promises = titles.map(function (title) {
