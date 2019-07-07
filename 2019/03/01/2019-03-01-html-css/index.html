@@ -122,7 +122,10 @@
 <meta property="og:image" content="https://yuan901202.github.io/2019/03/01/2019-03-01-html-css/1.jpg">
 <meta property="og:image" content="https://yuan901202.github.io/2019/03/01/2019-03-01-html-css/2.jpg">
 <meta property="og:image" content="https://yuan901202.github.io/2019/03/01/2019-03-01-html-css/3.jpg">
-<meta property="og:updated_time" content="2019-07-07T04:53:34.057Z">
+<meta property="og:image" content="https://yuan901202.github.io/2019/03/01/2019-03-01-html-css/4.jpg">
+<meta property="og:image" content="https://yuan901202.github.io/2019/03/01/2019-03-01-html-css/5.jpg">
+<meta property="og:image" content="https://yuan901202.github.io/2019/03/01/2019-03-01-html-css/6.jpg">
+<meta property="og:updated_time" content="2019-07-07T08:45:44.165Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HTML+CSS Learning Notes">
 <meta name="twitter:description" content="What is HTML?Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets">
@@ -519,7 +522,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 07-07-2019 16:53:34" itemprop="dateModified" datetime="2019-07-07T16:53:34+12:00">07-07-2019</time>
+                <time title="Modified: 07-07-2019 20:45:44" itemprop="dateModified" datetime="2019-07-07T20:45:44+12:00">07-07-2019</time>
               
             
           </span>
@@ -585,7 +588,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">20k</span>
+                <span title="Symbols count in article">28k</span>
               
 
               
@@ -599,7 +602,7 @@
                 
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
-                <span title="Reading time">18 mins.</span>
+                <span title="Reading time">26 mins.</span>
               
             </div>
           
@@ -1046,13 +1049,229 @@
 <p>还可以设置居右：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">h1&#123;</span><br><span class="line">    text-align:right;</span><br><span class="line">&#125;</span><br><span class="line">&lt;h1&gt;了不起的盖茨比&lt;/h1&gt;</span><br></pre></td></tr></table></figure>
 <h4 id="3-7CSS盒模型"><a href="#3-7CSS盒模型" class="headerlink" title="3.7CSS盒模型"></a>3.7CSS盒模型</h4><h5 id="3-7-1元素分类"><a href="#3-7-1元素分类" class="headerlink" title="3.7.1元素分类"></a>3.7.1元素分类</h5><p>在CSS中，html中的标签元素大体被分为三种不同的类型：块状元素、内联元素(又叫行内元素)和内联块状元素。</p>
-<p>常用的块状元素有：</p>
+<p>(1) 常用的块状元素有：</p>
 <p><code>&lt;div&gt;、&lt;p&gt;、&lt;h1&gt;...&lt;h6&gt;、&lt;ol&gt;、&lt;ul&gt;、&lt;dl&gt;、&lt;table&gt;、&lt;address&gt;、&lt;blockquote&gt; 、&lt;form&gt;</code></p>
-<p>常用的内联元素有：</p>
+<p>什么是块级元素？在html中<code>&lt;div&gt;、 &lt;p&gt;、&lt;h1&gt;、&lt;form&gt;、&lt;ul&gt; 和 &lt;li&gt;</code>就是块级元素。设置display:block就是将元素显示为块级元素。如下代码就是将内联元素a转换为块状元素，从而使a元素具有块状元素特点。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a&#123;display:block;&#125;</span><br></pre></td></tr></table></figure>
+<p>块级元素特点：</p>
+<ol>
+<li><p>每个块级元素都从新的一行开始，并且其后的元素也另起一行。（真霸道，一个块级元素独占一行）</p>
+</li>
+<li><p>元素的高度、宽度、行高以及顶和底边距都可设置。</p>
+</li>
+<li><p>元素宽度在不设置的情况下，是它本身父容器的100%（和父元素的宽度一致），除非设定一个宽度。</p>
+</li>
+</ol>
+<p>(2) 常用的内联元素有：</p>
 <p><code>&lt;a&gt;、&lt;span&gt;、&lt;br&gt;、&lt;i&gt;、&lt;em&gt;、&lt;strong&gt;、&lt;label&gt;、&lt;q&gt;、&lt;var&gt;、&lt;cite&gt;、&lt;code&gt;</code></p>
-<p>常用的内联块状元素有：</p>
+<p>在html中，<code>&lt;span&gt;、&lt;a&gt;、&lt;label&gt;、 &lt;strong&gt; 和&lt;em&gt;</code>就是典型的内联元素（行内元素）（inline）元素。当然块状元素也可以通过代码display:inline将元素设置为内联元素。如下代码就是将块状元素div转换为内联元素，从而使 div 元素具有内联元素特点。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">div&#123;</span><br><span class="line">     display:inline;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">......</span><br><span class="line"></span><br><span class="line">&lt;div&gt;我要变成内联元素&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<p>内联元素特点：</p>
+<ol>
+<li><p>和其他元素都在一行上；</p>
+</li>
+<li><p>元素的高度、宽度及顶部和底部边距不可设置；</p>
+</li>
+<li><p>元素的宽度就是它包含的文字或图片的宽度，不可改变。</p>
+</li>
+</ol>
+<p>(3) 常用的内联块状元素有：</p>
 <p><code>&lt;img&gt;、&lt;input&gt;</code></p>
-
+<p>内联块状元素（inline-block）就是同时具备内联元素、块状元素的特点，代码display:inline-block就是将元素设置为内联块状元素。(css2.1新增)，<code>&lt;img&gt;、&lt;input&gt;</code>标签就是这种内联块状标签。</p>
+<p>inline-block 元素特点：</p>
+<ol>
+<li><p>和其他元素都在一行上；</p>
+</li>
+<li><p>元素的高度、宽度、行高以及顶和底边距都可设置。</p>
+</li>
+</ol>
+<h5 id="3-7-2盒模型"><a href="#3-7-2盒模型" class="headerlink" title="3.7.2盒模型"></a>3.7.2盒模型</h5><h6 id="边框"><a href="#边框" class="headerlink" title="边框"></a>边框</h6><p>盒子模型的边框就是围绕着内容及补白的线，这条线你可以设置它的粗细、样式和颜色(边框三个属性)。</p>
+<p>如下面代码为 div 来设置边框粗细为 2px、样式为实心的、颜色为红色的边框：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">div&#123;</span><br><span class="line">    border:2px solid red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>上面是 border 代码的缩写形式，可以分开写：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">div&#123;</span><br><span class="line">    border-width:2px;</span><br><span class="line">    border-style:solid;</span><br><span class="line">    border-color:red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>注意：</p>
+<ol>
+<li>border-style（边框样式）常见样式有：</li>
+</ol>
+<p>dashed（虚线）| dotted（点线）| solid（实线）。</p>
+<ol start="2">
+<li>border-color（边框颜色）中的颜色可设置为十六进制颜色，如:</li>
+</ol>
+<p>border-color:#888;//前面的井号不要忘掉。</p>
+<ol start="3">
+<li>border-width（边框宽度）中的宽度也可以设置为：</li>
+</ol>
+<p>thin | medium | thick（但不是很常用），最常还是用像素（px）。</p>
+<p>现在有一个问题，如果有想为 p 标签单独设置下边框，而其它三边都不设置边框样式怎么办呢？css 样式中允许只为一个方向的边框设置样式：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">div&#123;border-bottom:1px solid red;&#125;</span><br></pre></td></tr></table></figure>
+<p>同样可以使用下面代码实现其它三边(上、右、左)边框的设置：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">border-top:1px solid red;</span><br><span class="line">border-right:1px solid red; </span><br><span class="line">border-left:1px solid red;</span><br></pre></td></tr></table></figure>
+<h6 id="宽度和高度"><a href="#宽度和高度" class="headerlink" title="宽度和高度"></a>宽度和高度</h6><p>盒模型宽度和高度和我们平常所说的物体的宽度和高度理解是不一样的，css内定义的宽（width）和高（height），指的是填充以里的内容范围。</p>
+<p>因此一个元素实际宽度（盒子的宽度）=左边界+左边框+左填充+内容宽度+右填充+右边框+右边界。</p>
+<p><a href><img src="/2019/03/01/2019-03-01-html-css/4.jpg" alt="宽度和高度"></a></p>
+<p>元素的高度也是同理。</p>
+<p>比如：</p>
+<p>css代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">div&#123;</span><br><span class="line">    width:200px;</span><br><span class="line">    padding:20px;</span><br><span class="line">    border:1px solid red;</span><br><span class="line">    margin:10px;    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>html代码：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">div</span>&gt;</span>文本内容<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>元素的实际长度为：10px+1px+20px+200px+20px+1px+10px=262px。在chrome浏览器下可查看元素盒模型，如下图：</p>
+<p><a href><img src="/2019/03/01/2019-03-01-html-css/5.jpg" alt></a></p>
+<h6 id="填充"><a href="#填充" class="headerlink" title="填充"></a>填充</h6><p>元素内容与边框之间是可以设置距离的，称之为“填充”。填充也可分为上、右、下、左(顺时针)。如下代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">div&#123;padding:20px 10px 15px 30px;&#125;</span><br></pre></td></tr></table></figure>
+<p>顺序一定不要搞混。可以分开写上面代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">div&#123;</span><br><span class="line">   padding-top:20px;</span><br><span class="line">   padding-right:10px;</span><br><span class="line">   padding-bottom:15px;</span><br><span class="line">   padding-left:30px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>如果上、右、下、左的填充都为10px;可以这么写</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">div&#123;padding:10px;&#125;</span><br></pre></td></tr></table></figure>
+<p>如果上下填充一样为10px，左右一样为20px，可以这么写：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">div&#123;padding:10px 20px;&#125;</span><br></pre></td></tr></table></figure>
+<h6 id="边界"><a href="#边界" class="headerlink" title="边界"></a>边界</h6><p>元素与其它元素之间的距离可以使用边界（margin）来设置。边界也是可分为上、右、下、左。如下代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">div&#123;margin:20px 10px 15px 30px;&#125;</span><br></pre></td></tr></table></figure>
+<p>也可以分开写：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">div&#123;</span><br><span class="line">   margin-top:20px;</span><br><span class="line">   margin-right:10px;</span><br><span class="line">   margin-bottom:15px;</span><br><span class="line">   margin-left:30px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>如果上右下左的边界都为10px;可以这么写：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">div&#123; margin:10px;&#125;</span><br></pre></td></tr></table></figure>
+<p>如果上下边界一样为10px，左右一样为20px，可以这么写：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">div&#123; margin:10px 20px;&#125;</span><br></pre></td></tr></table></figure>
+<p>总结一下：padding和margin的区别，padding在边框里，margin在边框外。</p>
+<h4 id="3-8CSS布局模型"><a href="#3-8CSS布局模型" class="headerlink" title="3.8CSS布局模型"></a>3.8CSS布局模型</h4><p>布局模型与盒模型一样都是 CSS 最基本、 最核心的概念。 但布局模型是建立在盒模型基础之上，又不同于我们常说的 CSS 布局样式或 CSS 布局模板。如果说布局模型是本，那么 CSS 布局模板就是末了，是外在的表现形式。 </p>
+<p>CSS包含3种基本的布局模型，用英文概括为：Flow、Layer 和 Float。<br>在网页中，元素有三种布局模型：</p>
+<ol>
+<li>流动模型（Flow）</li>
+<li>浮动模型 (Float)</li>
+<li>层模型（Layer）</li>
+</ol>
+<h5 id="3-8-1流动模型"><a href="#3-8-1流动模型" class="headerlink" title="3.8.1流动模型"></a>3.8.1流动模型</h5><p>流动（Flow）是默认的网页布局模式。也就是说网页在默认状态下的 HTML 网页元素都是根据流动模型来分布网页内容的。</p>
+<p>流动布局模型具有2个比较典型的特征：</p>
+<ol>
+<li><p>块状元素都会在所处的包含元素内自上而下按顺序垂直延伸分布，因为在默认状态下，块状元素的宽度都为100%。实际上，块状元素都会以行的形式占据位置。如右侧代码编辑器中三个块状元素标签(div，h1，p)宽度显示为100%。</p>
+</li>
+<li><p>在流动模型下，内联元素都会在所处的包含元素内从左到右水平分布显示。（内联元素可不像块状元素这么霸道独占一行）</p>
+</li>
+</ol>
+<h5 id="3-8-2浮动模型"><a href="#3-8-2浮动模型" class="headerlink" title="3.8.2浮动模型"></a>3.8.2浮动模型</h5><p>任何元素在默认情况下是不能浮动的，但可以用 CSS 定义为浮动，如 div、p、table、img 等元素都可以被定义为浮动。如下代码可以实现两个 div 元素一行显示。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">div&#123;</span><br><span class="line">    width:200px;</span><br><span class="line">    height:200px;</span><br><span class="line">    border:2px red solid;</span><br><span class="line">    float:left;</span><br><span class="line">&#125;</span><br><span class="line">&lt;div id=&quot;div1&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;div id=&quot;div2&quot;&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<h5 id="3-8-3层模型"><a href="#3-8-3层模型" class="headerlink" title="3.8.3层模型"></a>3.8.3层模型</h5><p>层布局模型就像是图像软件PhotoShop中非常流行的图层编辑功能一样，每个图层能够精确定位操作，但在网页设计领域，由于网页大小的活动性，层布局没能受到热捧。但是在网页上局部使用层布局还是有其方便之处的。下面我们来学习一下html中的层布局。</p>
+<p>如何让html元素在网页中精确定位，就像图像软件PhotoShop中的图层一样可以对每个图层能够精确定位操作。CSS定义了一组定位（positioning）属性来支持层布局模型。</p>
+<p>层模型有三种形式：</p>
+<ol>
+<li>绝对定位(position: absolute)</li>
+<li>相对定位(position: relative)</li>
+<li>固定定位(position: fixed)</li>
+</ol>
+<h6 id="3-8-3-1绝对定位"><a href="#3-8-3-1绝对定位" class="headerlink" title="3.8.3.1绝对定位"></a>3.8.3.1绝对定位</h6><p>如果想为元素设置层模型中的绝对定位，需要设置position:absolute(表示绝对定位)，这条语句的作用将元素从文档流中拖出来，然后使用left、right、top、bottom属性相对于其最接近的一个具有定位属性的父包含块进行绝对定位。如果不存在这样的包含块，则相对于body元素，即相对于浏览器窗口。</p>
+<p>如下面代码可以实现div元素相对于浏览器窗口向右移动100px，向下移动50px。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">div&#123;</span><br><span class="line">    width:200px;</span><br><span class="line">    height:200px;</span><br><span class="line">    border:2px red solid;</span><br><span class="line">    position:absolute;</span><br><span class="line">    left:100px;</span><br><span class="line">    top:50px;</span><br><span class="line">&#125;</span><br><span class="line">&lt;div id=&quot;div1&quot;&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<h6 id="3-8-3-2相对定位"><a href="#3-8-3-2相对定位" class="headerlink" title="3.8.3.2相对定位"></a>3.8.3.2相对定位</h6><p>如果想为元素设置层模型中的相对定位，需要设置position:relative（表示相对定位），它通过left、right、top、bottom属性确定元素在正常文档流中的偏移位置。相对定位完成的过程是首先按static(float)方式生成一个元素(并且元素像层一样浮动了起来)，然后相对于以前的位置移动，移动的方向和幅度由left、right、top、bottom属性确定，偏移前的位置保留不动。</p>
+<p>如下代码实现相对于以前位置向下移动50px，向右移动100px;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">#div1&#123;</span><br><span class="line">    width:200px;</span><br><span class="line">    height:200px;</span><br><span class="line">    border:2px red solid;</span><br><span class="line">    position:relative;</span><br><span class="line">    left:100px;</span><br><span class="line">    top:50px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&lt;div id=&quot;div1&quot;&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<h6 id="3-8-3-3固定定位"><a href="#3-8-3-3固定定位" class="headerlink" title="3.8.3.3固定定位"></a>3.8.3.3固定定位</h6><p>fixed：表示固定定位，与absolute定位类型类似，但它的相对移动的坐标是视图（屏幕内的网页窗口）本身。由于视图本身是固定的，它不会随浏览器窗口的滚动条滚动而变化，除非你在屏幕中移动浏览器窗口的屏幕位置，或改变浏览器窗口的显示大小，因此固定定位的元素会始终位于浏览器窗口内视图的某个位置，不会受文档流动影响，这与background-attachment:fixed;属性功能相同。以下代码可以实现相对于浏览器视图向右移动100px，向下移动50px。并且拖动滚动条时位置固定不变。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">#div1&#123;</span><br><span class="line">    width:200px;</span><br><span class="line">    height:200px;</span><br><span class="line">    border:2px red solid;</span><br><span class="line">    position:fixed;</span><br><span class="line">    left:100px;</span><br><span class="line">    top:50px;</span><br><span class="line">&#125;</span><br><span class="line">&lt;p&gt;文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本。&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+<h5 id="3-8-4Relative与Absolute组合使用"><a href="#3-8-4Relative与Absolute组合使用" class="headerlink" title="3.8.4Relative与Absolute组合使用"></a>3.8.4Relative与Absolute组合使用</h5><p>使用position:absolute可以实现被设置元素相对于浏览器（body）设置定位以后，大家有没有想过可不可以相对于其它元素进行定位呢？答案是肯定的，当然可以。使用position:relative来帮忙，但是必须遵守下面规范：</p>
+<ol>
+<li>参照定位的元素必须是相对定位元素的前辈元素：</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=&quot;box1&quot;&gt;&lt;!--参照定位的元素--&gt;</span><br><span class="line">    &lt;div id=&quot;box2&quot;&gt;相对参照元素进行定位&lt;/div&gt;&lt;!--相对定位元素--&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<p>从上面代码可以看出box1是box2的父元素（父元素当然也是前辈元素了）。</p>
+<ol start="2">
+<li>参照定位的元素必须加入position:relative;</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#box1&#123;</span><br><span class="line">    width:200px;</span><br><span class="line">    height:200px;</span><br><span class="line">    position:relative;        </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>定位元素加入position:absolute，便可以使用top、bottom、left、right来进行偏移定位了。</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#box2&#123;</span><br><span class="line">    position:absolute;</span><br><span class="line">    top:20px;</span><br><span class="line">    left:30px;         </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这样box2就可以相对于父元素box1定位了（这里注意参照物就可以不是浏览器了，而可以自由设置了）。</p>
+<h4 id="3-9CSS代码缩写"><a href="#3-9CSS代码缩写" class="headerlink" title="3.9CSS代码缩写"></a>3.9CSS代码缩写</h4><h5 id="3-9-1盒模型代码简写"><a href="#3-9-1盒模型代码简写" class="headerlink" title="3.9.1盒模型代码简写"></a>3.9.1盒模型代码简写</h5><p>还记得在讲盒模型时外边距(margin)、内边距(padding)和边框(border)设置上下左右四个方向的边距是按照顺时针方向设置的：上右下左。具体应用在margin和padding的例子如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">margin:10px 15px 12px 14px;/*上设置为10px、右设置为15px、下设置为12px、左设置为14px*/</span><br></pre></td></tr></table></figure>
+<p>通常有下面三种缩写方法:</p>
+<ol>
+<li>如果top、right、bottom、left的值相同，如下面代码：</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">margin:10px 10px 10px 10px;</span><br></pre></td></tr></table></figure>
+<p>可缩写为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">margin:10px;</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>如果top和bottom值相同、left和 right的值相同，如下面代码：</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">margin:10px 20px 10px 20px;</span><br></pre></td></tr></table></figure>
+<p>可缩写为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">margin:10px 20px;</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>如果left和right的值相同，如下面代码：</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">margin:10px 20px 30px 20px;</span><br></pre></td></tr></table></figure>
+<p>可缩写为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">margin:10px 20px 30px;</span><br></pre></td></tr></table></figure>
+<p>注意：padding、border的缩写方法和margin是一致的。</p>
+<h5 id="3-9-2颜色值缩写"><a href="#3-9-2颜色值缩写" class="headerlink" title="3.9.2颜色值缩写"></a>3.9.2颜色值缩写</h5><p>关于颜色的css样式也是可以缩写的，当你设置的颜色是16进制的色彩值时，如果每两位的值相同，可以缩写一半。</p>
+<p>例子1：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">p&#123;color:#000000;&#125;</span><br></pre></td></tr></table></figure>
+<p>可以缩写为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">p&#123;color: #000;&#125;</span><br></pre></td></tr></table></figure>
+<p>例子2：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">p&#123;color: #336699;&#125;</span><br></pre></td></tr></table></figure>
+<p>可以缩写为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">p&#123;color: #369;&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="3-9-3字体缩写"><a href="#3-9-3字体缩写" class="headerlink" title="3.9.3字体缩写"></a>3.9.3字体缩写</h5><p>网页中的字体css样式代码也有他自己的缩写方式，下面是给网页设置字体的代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">body&#123;</span><br><span class="line">    font-style:italic;</span><br><span class="line">    font-variant:small-caps; </span><br><span class="line">    font-weight:bold; </span><br><span class="line">    font-size:12px; </span><br><span class="line">    line-height:1.5em; </span><br><span class="line">    font-family:&quot;宋体&quot;,sans-serif;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这么多行的代码其实可以缩写为一句：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">body&#123;</span><br><span class="line">    font:italic  small-caps  bold  12px/1.5em  &quot;宋体&quot;,sans-serif;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>注意：</p>
+<ol>
+<li><p>使用这一简写方式你至少要指定 font-size 和 font-family 属性，其他的属性(如 font-weight、font-style、font-variant、line-height)如未指定将自动使用默认值。</p>
+</li>
+<li><p>在缩写时 font-size 与 line-height 中间要加入“/”斜扛。</p>
+</li>
+</ol>
+<p>一般情况下因为对于中文网站，英文还是比较少的，所以下面缩写代码比较常用：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">body&#123;</span><br><span class="line">    font:12px/1.5em  &quot;宋体&quot;,sans-serif;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>只是有字号、行间距、中文字体、英文字体设置。</p>
+<h4 id="3-10单位和值"><a href="#3-10单位和值" class="headerlink" title="3.10单位和值"></a>3.10单位和值</h4><h5 id="颜色值"><a href="#颜色值" class="headerlink" title="颜色值"></a>颜色值</h5><p>在网页中的颜色设置是非常重要，有字体颜色（color）、背景颜色（background-color）、边框颜色（border）等，设置颜色的方法也有很多种：</p>
+<ol>
+<li>英文命令颜色</li>
+</ol>
+<p>前面几个小节中经常用到的就是这种设置方法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">p&#123;color:red;&#125;</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>RGB颜色</li>
+</ol>
+<p>这个与 photoshop 中的 RGB 颜色是一致的，由 R(red)、G(green)、B(blue) 三种颜色的比例来配色。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">p&#123;color:rgb(133,45,200);&#125;</span><br></pre></td></tr></table></figure>
+<p>每一项的值可以是 0~255 之间的整数，也可以是 0%~100% 的百分数。如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">p&#123;color:rgb(20%,33%,25%);&#125;</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>十六进制颜色</li>
+</ol>
+<p>这种颜色设置方法是现在比较普遍使用的方法，其原理其实也是 RGB 设置，但是其每一项的值由 0-255 变成了十六进制 00-ff。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">p&#123;color:#00ffff;&#125;</span><br></pre></td></tr></table></figure>
+<p>配色表：</p>
+<p><a href><img src="/2019/03/01/2019-03-01-html-css/6.jpg" alt="配色表（单击图片可放大）"></a></p>
+<h5 id="长度值"><a href="#长度值" class="headerlink" title="长度值"></a>长度值</h5><p>长度单位总结一下，目前比较常用到px（像素）、em、% 百分比，要注意其实这三种单位都是相对单位。</p>
+<ol>
+<li>像素</li>
+</ol>
+<p>像素为什么是相对单位呢？因为像素指的是显示器上的小点（CSS规范中假设“90像素=1英寸”）。实际情况是浏览器会使用显示器的实际像素值有关，在目前大多数的设计者都倾向于使用像素（px）作为单位。</p>
+<ol start="2">
+<li>em</li>
+</ol>
+<p>就是本元素给定字体的 font-size 值，如果元素的 font-size 为 14px ，那么 1em = 14px；如果 font-size 为 18px，那么 1em = 18px。如下代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">p&#123;font-size:12px;text-indent:2em;&#125;</span><br></pre></td></tr></table></figure>
+<p>上面代码就是可以实现段落首行缩进 24px（也就是两个字体大小的距离）。</p>
+<p>下面注意一个特殊情况：</p>
+<p>但当给 font-size 设置单位为 em 时，此时计算的标准以 p 的父元素的 font-size 为基础。如下代码：</p>
+<p>html:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;以这个&lt;span&gt;例子&lt;/span&gt;为例。&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+<p>css:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">p&#123;font-size:14px&#125;</span><br><span class="line">span&#123;font-size:0.8em;&#125;</span><br></pre></td></tr></table></figure>
+<p>结果 span 中的字体“例子”字体大小就为 11.2px（14 * 0.8 = 11.2px）。</p>
+<ol start="3">
+<li>百分比</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">p&#123;font-size:12px;line-height:130%&#125;</span><br></pre></td></tr></table></figure>
+<p>设置行高（行间距）为字体的130%（12 * 1.3 = 15.6px）。</p>
+<h4 id="3-11小技巧"><a href="#3-11小技巧" class="headerlink" title="3.11小技巧"></a>3.11小技巧</h4>
       
     </div>
 
@@ -1543,7 +1762,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#What-is-HTML"><span class="nav-number">1.</span> <span class="nav-text">What is HTML?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#What-is-CSS"><span class="nav-number">2.</span> <span class="nav-text">What is CSS?</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-HTML介绍"><span class="nav-number">2.1.</span> <span class="nav-text">1.HTML介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-1认识html文件基本结构"><span class="nav-number">2.1.1.</span> <span class="nav-text">1.1认识html文件基本结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2认识head标签"><span class="nav-number">2.1.2.</span> <span class="nav-text">1.2认识head标签</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-3了解HTML的代码注释"><span class="nav-number">2.1.3.</span> <span class="nav-text">1.3了解HTML的代码注释</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-认识标签"><span class="nav-number">2.2.</span> <span class="nav-text">2.认识标签</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1标签的用途"><span class="nav-number">2.2.1.</span> <span class="nav-text">2.1标签的用途</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2HTML标签"><span class="nav-number">2.2.2.</span> <span class="nav-text">2.2HTML标签</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#表单标签"><span class="nav-number">2.2.2.1.</span> <span class="nav-text">表单标签</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#文本输入框、密码输入框"><span class="nav-number">2.2.2.2.</span> <span class="nav-text">文本输入框、密码输入框</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#文本域，支持多行文本输入"><span class="nav-number">2.2.2.3.</span> <span class="nav-text">文本域，支持多行文本输入</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#使用单选框、复选框，让用户选择"><span class="nav-number">2.2.2.4.</span> <span class="nav-text">使用单选框、复选框，让用户选择</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#使用下拉列表框，节省空间"><span class="nav-number">2.2.2.5.</span> <span class="nav-text">使用下拉列表框，节省空间</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#使用下拉列表框进行多选"><span class="nav-number">2.2.2.6.</span> <span class="nav-text">使用下拉列表框进行多选</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#使用提交按钮，提交数据"><span class="nav-number">2.2.2.7.</span> <span class="nav-text">使用提交按钮，提交数据</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#使用重置按钮，重置表单信息"><span class="nav-number">2.2.2.8.</span> <span class="nav-text">使用重置按钮，重置表单信息</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#form表单中的label标签"><span class="nav-number">2.2.2.9.</span> <span class="nav-text">form表单中的label标签</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-CSS"><span class="nav-number">2.3.</span> <span class="nav-text">3.CSS</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-1CSS代码语法"><span class="nav-number">2.3.1.</span> <span class="nav-text">3.1CSS代码语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-2CSS注释代码"><span class="nav-number">2.3.2.</span> <span class="nav-text">3.2CSS注释代码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-3CSS样式"><span class="nav-number">2.3.3.</span> <span class="nav-text">3.3CSS样式</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#3-3-1内联式css样式，直接写在现有的HTML标签中"><span class="nav-number">2.3.3.1.</span> <span class="nav-text">3.3.1内联式css样式，直接写在现有的HTML标签中</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-3-2嵌入式css样式，写在当前的文件中"><span class="nav-number">2.3.3.2.</span> <span class="nav-text">3.3.2嵌入式css样式，写在当前的文件中</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-3-3外部式css样式，写在单独的一个文件中"><span class="nav-number">2.3.3.3.</span> <span class="nav-text">3.3.3外部式css样式，写在单独的一个文件中</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-3-4三种方法的优先级"><span class="nav-number">2.3.3.4.</span> <span class="nav-text">3.3.4三种方法的优先级</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-4CSS选择器"><span class="nav-number">2.3.4.</span> <span class="nav-text">3.4CSS选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#3-4-1类选择器"><span class="nav-number">2.3.4.1.</span> <span class="nav-text">3.4.1类选择器</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-4-2ID选择器"><span class="nav-number">2.3.4.2.</span> <span class="nav-text">3.4.2ID选择器</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-4-3类和ID选择器的区别"><span class="nav-number">2.3.4.3.</span> <span class="nav-text">3.4.3类和ID选择器的区别</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-4-4子选择器"><span class="nav-number">2.3.4.4.</span> <span class="nav-text">3.4.4子选择器</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-4-5包含-后代-选择器"><span class="nav-number">2.3.4.5.</span> <span class="nav-text">3.4.5包含(后代)选择器</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-4-6通用选择器"><span class="nav-number">2.3.4.6.</span> <span class="nav-text">3.4.6通用选择器</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-4-7伪类选择符"><span class="nav-number">2.3.4.7.</span> <span class="nav-text">3.4.7伪类选择符</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-4-8分组选择符"><span class="nav-number">2.3.4.8.</span> <span class="nav-text">3.4.8分组选择符</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-5CSS的继承、层叠和特殊性"><span class="nav-number">2.3.5.</span> <span class="nav-text">3.5CSS的继承、层叠和特殊性</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#3-5-1继承"><span class="nav-number">2.3.5.1.</span> <span class="nav-text">3.5.1继承</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-5-2层叠"><span class="nav-number">2.3.5.2.</span> <span class="nav-text">3.5.2层叠</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-5-3特殊性"><span class="nav-number">2.3.5.3.</span> <span class="nav-text">3.5.3特殊性</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-5-4重要性"><span class="nav-number">2.3.5.4.</span> <span class="nav-text">3.5.4重要性</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-6CSS格式化排版"><span class="nav-number">2.3.6.</span> <span class="nav-text">3.6CSS格式化排版</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#3-6-1文字排版"><span class="nav-number">2.3.6.1.</span> <span class="nav-text">3.6.1文字排版</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#字体"><span class="nav-number">2.3.6.1.1.</span> <span class="nav-text">字体</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#字号、颜色"><span class="nav-number">2.3.6.1.2.</span> <span class="nav-text">字号、颜色</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#粗体"><span class="nav-number">2.3.6.1.3.</span> <span class="nav-text">粗体</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#斜体"><span class="nav-number">2.3.6.1.4.</span> <span class="nav-text">斜体</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#下划线"><span class="nav-number">2.3.6.1.5.</span> <span class="nav-text">下划线</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#删除线"><span class="nav-number">2.3.6.1.6.</span> <span class="nav-text">删除线</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-6-2段落排版"><span class="nav-number">2.3.6.2.</span> <span class="nav-text">3.6.2段落排版</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#缩进"><span class="nav-number">2.3.6.2.1.</span> <span class="nav-text">缩进</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#行间距（行高）"><span class="nav-number">2.3.6.2.2.</span> <span class="nav-text">行间距（行高）</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#中文字间距、字母间距"><span class="nav-number">2.3.6.2.3.</span> <span class="nav-text">中文字间距、字母间距</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#对齐"><span class="nav-number">2.3.6.2.4.</span> <span class="nav-text">对齐</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-7CSS盒模型"><span class="nav-number">2.3.7.</span> <span class="nav-text">3.7CSS盒模型</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#3-7-1元素分类"><span class="nav-number">2.3.7.1.</span> <span class="nav-text">3.7.1元素分类</span></a></li></ol></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#What-is-HTML"><span class="nav-number">1.</span> <span class="nav-text">What is HTML?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#What-is-CSS"><span class="nav-number">2.</span> <span class="nav-text">What is CSS?</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-HTML介绍"><span class="nav-number">2.1.</span> <span class="nav-text">1.HTML介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-1认识html文件基本结构"><span class="nav-number">2.1.1.</span> <span class="nav-text">1.1认识html文件基本结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2认识head标签"><span class="nav-number">2.1.2.</span> <span class="nav-text">1.2认识head标签</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-3了解HTML的代码注释"><span class="nav-number">2.1.3.</span> <span class="nav-text">1.3了解HTML的代码注释</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-认识标签"><span class="nav-number">2.2.</span> <span class="nav-text">2.认识标签</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1标签的用途"><span class="nav-number">2.2.1.</span> <span class="nav-text">2.1标签的用途</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2HTML标签"><span class="nav-number">2.2.2.</span> <span class="nav-text">2.2HTML标签</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#表单标签"><span class="nav-number">2.2.2.1.</span> <span class="nav-text">表单标签</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#文本输入框、密码输入框"><span class="nav-number">2.2.2.2.</span> <span class="nav-text">文本输入框、密码输入框</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#文本域，支持多行文本输入"><span class="nav-number">2.2.2.3.</span> <span class="nav-text">文本域，支持多行文本输入</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#使用单选框、复选框，让用户选择"><span class="nav-number">2.2.2.4.</span> <span class="nav-text">使用单选框、复选框，让用户选择</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#使用下拉列表框，节省空间"><span class="nav-number">2.2.2.5.</span> <span class="nav-text">使用下拉列表框，节省空间</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#使用下拉列表框进行多选"><span class="nav-number">2.2.2.6.</span> <span class="nav-text">使用下拉列表框进行多选</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#使用提交按钮，提交数据"><span class="nav-number">2.2.2.7.</span> <span class="nav-text">使用提交按钮，提交数据</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#使用重置按钮，重置表单信息"><span class="nav-number">2.2.2.8.</span> <span class="nav-text">使用重置按钮，重置表单信息</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#form表单中的label标签"><span class="nav-number">2.2.2.9.</span> <span class="nav-text">form表单中的label标签</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-CSS"><span class="nav-number">2.3.</span> <span class="nav-text">3.CSS</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-1CSS代码语法"><span class="nav-number">2.3.1.</span> <span class="nav-text">3.1CSS代码语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-2CSS注释代码"><span class="nav-number">2.3.2.</span> <span class="nav-text">3.2CSS注释代码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-3CSS样式"><span class="nav-number">2.3.3.</span> <span class="nav-text">3.3CSS样式</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#3-3-1内联式css样式，直接写在现有的HTML标签中"><span class="nav-number">2.3.3.1.</span> <span class="nav-text">3.3.1内联式css样式，直接写在现有的HTML标签中</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-3-2嵌入式css样式，写在当前的文件中"><span class="nav-number">2.3.3.2.</span> <span class="nav-text">3.3.2嵌入式css样式，写在当前的文件中</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-3-3外部式css样式，写在单独的一个文件中"><span class="nav-number">2.3.3.3.</span> <span class="nav-text">3.3.3外部式css样式，写在单独的一个文件中</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-3-4三种方法的优先级"><span class="nav-number">2.3.3.4.</span> <span class="nav-text">3.3.4三种方法的优先级</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-4CSS选择器"><span class="nav-number">2.3.4.</span> <span class="nav-text">3.4CSS选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#3-4-1类选择器"><span class="nav-number">2.3.4.1.</span> <span class="nav-text">3.4.1类选择器</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-4-2ID选择器"><span class="nav-number">2.3.4.2.</span> <span class="nav-text">3.4.2ID选择器</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-4-3类和ID选择器的区别"><span class="nav-number">2.3.4.3.</span> <span class="nav-text">3.4.3类和ID选择器的区别</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-4-4子选择器"><span class="nav-number">2.3.4.4.</span> <span class="nav-text">3.4.4子选择器</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-4-5包含-后代-选择器"><span class="nav-number">2.3.4.5.</span> <span class="nav-text">3.4.5包含(后代)选择器</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-4-6通用选择器"><span class="nav-number">2.3.4.6.</span> <span class="nav-text">3.4.6通用选择器</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-4-7伪类选择符"><span class="nav-number">2.3.4.7.</span> <span class="nav-text">3.4.7伪类选择符</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-4-8分组选择符"><span class="nav-number">2.3.4.8.</span> <span class="nav-text">3.4.8分组选择符</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-5CSS的继承、层叠和特殊性"><span class="nav-number">2.3.5.</span> <span class="nav-text">3.5CSS的继承、层叠和特殊性</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#3-5-1继承"><span class="nav-number">2.3.5.1.</span> <span class="nav-text">3.5.1继承</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-5-2层叠"><span class="nav-number">2.3.5.2.</span> <span class="nav-text">3.5.2层叠</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-5-3特殊性"><span class="nav-number">2.3.5.3.</span> <span class="nav-text">3.5.3特殊性</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-5-4重要性"><span class="nav-number">2.3.5.4.</span> <span class="nav-text">3.5.4重要性</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-6CSS格式化排版"><span class="nav-number">2.3.6.</span> <span class="nav-text">3.6CSS格式化排版</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#3-6-1文字排版"><span class="nav-number">2.3.6.1.</span> <span class="nav-text">3.6.1文字排版</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#字体"><span class="nav-number">2.3.6.1.1.</span> <span class="nav-text">字体</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#字号、颜色"><span class="nav-number">2.3.6.1.2.</span> <span class="nav-text">字号、颜色</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#粗体"><span class="nav-number">2.3.6.1.3.</span> <span class="nav-text">粗体</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#斜体"><span class="nav-number">2.3.6.1.4.</span> <span class="nav-text">斜体</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#下划线"><span class="nav-number">2.3.6.1.5.</span> <span class="nav-text">下划线</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#删除线"><span class="nav-number">2.3.6.1.6.</span> <span class="nav-text">删除线</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-6-2段落排版"><span class="nav-number">2.3.6.2.</span> <span class="nav-text">3.6.2段落排版</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#缩进"><span class="nav-number">2.3.6.2.1.</span> <span class="nav-text">缩进</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#行间距（行高）"><span class="nav-number">2.3.6.2.2.</span> <span class="nav-text">行间距（行高）</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#中文字间距、字母间距"><span class="nav-number">2.3.6.2.3.</span> <span class="nav-text">中文字间距、字母间距</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#对齐"><span class="nav-number">2.3.6.2.4.</span> <span class="nav-text">对齐</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-7CSS盒模型"><span class="nav-number">2.3.7.</span> <span class="nav-text">3.7CSS盒模型</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#3-7-1元素分类"><span class="nav-number">2.3.7.1.</span> <span class="nav-text">3.7.1元素分类</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-7-2盒模型"><span class="nav-number">2.3.7.2.</span> <span class="nav-text">3.7.2盒模型</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#边框"><span class="nav-number">2.3.7.2.1.</span> <span class="nav-text">边框</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#宽度和高度"><span class="nav-number">2.3.7.2.2.</span> <span class="nav-text">宽度和高度</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#填充"><span class="nav-number">2.3.7.2.3.</span> <span class="nav-text">填充</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#边界"><span class="nav-number">2.3.7.2.4.</span> <span class="nav-text">边界</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-8CSS布局模型"><span class="nav-number">2.3.8.</span> <span class="nav-text">3.8CSS布局模型</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#3-8-1流动模型"><span class="nav-number">2.3.8.1.</span> <span class="nav-text">3.8.1流动模型</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-8-2浮动模型"><span class="nav-number">2.3.8.2.</span> <span class="nav-text">3.8.2浮动模型</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-8-3层模型"><span class="nav-number">2.3.8.3.</span> <span class="nav-text">3.8.3层模型</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#3-8-3-1绝对定位"><span class="nav-number">2.3.8.3.1.</span> <span class="nav-text">3.8.3.1绝对定位</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#3-8-3-2相对定位"><span class="nav-number">2.3.8.3.2.</span> <span class="nav-text">3.8.3.2相对定位</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#3-8-3-3固定定位"><span class="nav-number">2.3.8.3.3.</span> <span class="nav-text">3.8.3.3固定定位</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-8-4Relative与Absolute组合使用"><span class="nav-number">2.3.8.4.</span> <span class="nav-text">3.8.4Relative与Absolute组合使用</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-9CSS代码缩写"><span class="nav-number">2.3.9.</span> <span class="nav-text">3.9CSS代码缩写</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#3-9-1盒模型代码简写"><span class="nav-number">2.3.9.1.</span> <span class="nav-text">3.9.1盒模型代码简写</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-9-2颜色值缩写"><span class="nav-number">2.3.9.2.</span> <span class="nav-text">3.9.2颜色值缩写</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-9-3字体缩写"><span class="nav-number">2.3.9.3.</span> <span class="nav-text">3.9.3字体缩写</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-10单位和值"><span class="nav-number">2.3.10.</span> <span class="nav-text">3.10单位和值</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#颜色值"><span class="nav-number">2.3.10.1.</span> <span class="nav-text">颜色值</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#长度值"><span class="nav-number">2.3.10.2.</span> <span class="nav-text">长度值</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-11小技巧"><span class="nav-number">2.3.11.</span> <span class="nav-text">3.11小技巧</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -1576,7 +1795,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="Symbols count total">447k</span>
+    <span title="Symbols count total">455k</span>
   
 
   
@@ -1585,7 +1804,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="Reading time total">6:46</span>
+    <span title="Reading time total">6:54</span>
   
 </div>
 
