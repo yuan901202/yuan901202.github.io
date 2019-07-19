@@ -111,24 +111,16 @@
 
 
 
-  <meta name="description" content="红外接收头介绍 什么是红外接收头？红外遥控器发出的信号是一连串的二进制脉冲码。为了使其在无线传输过程中免受其他红外信号的干扰,通常都是先将其调制在特定的载波频率上,然后再经红外发射二极管发射出去,而红外线接收装置则要滤除其他杂波,叧接收该特定频率的信号并将其还原成二进制脉冲码,也就是解调.   工作原理内置接收管将红外发射管发射出来癿光信号转换为微弱的电信号，此信号经由IC内部放大器进行放大，然后">
-<meta name="keywords" content="arduino,chinese">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Arduino 19 - Infrared Remote Control红外遥控实验">
-<meta property="og:url" content="https://yuan901202.github.io/2019/05/12/arduino-19/index.html">
+  <meta name="description" content="Life is a song - sing it.         .hexo-douban-tabs {     margin-bottom: 15px;     margin-top: 15px; }  .hexo-douban-tab {     padding: 5px; }  .hexo-douban-active {     backgroun">
+<meta property="og:type" content="website">
+<meta property="og:title" content="My Games on Douban">
+<meta property="og:url" content="https://yuan901202.github.io/games/index.html">
 <meta property="og:site_name" content="Blog of Tony Yuan">
-<meta property="og:description" content="红外接收头介绍 什么是红外接收头？红外遥控器发出的信号是一连串的二进制脉冲码。为了使其在无线传输过程中免受其他红外信号的干扰,通常都是先将其调制在特定的载波频率上,然后再经红外发射二极管发射出去,而红外线接收装置则要滤除其他杂波,叧接收该特定频率的信号并将其还原成二进制脉冲码,也就是解调.   工作原理内置接收管将红外发射管发射出来癿光信号转换为微弱的电信号，此信号经由IC内部放大器进行放大，然后">
+<meta property="og:description" content="Life is a song - sing it.         .hexo-douban-tabs {     margin-bottom: 15px;     margin-top: 15px; }  .hexo-douban-tab {     padding: 5px; }  .hexo-douban-active {     backgroun">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="https://yuan901202.github.io/2019/05/12/arduino-19/image001.jpg">
-<meta property="og:image" content="https://yuan901202.github.io/2019/05/12/arduino-19/image002.jpg">
-<meta property="og:image" content="https://yuan901202.github.io/2019/05/12/arduino-19/image003.jpg">
-<meta property="og:image" content="https://yuan901202.github.io/2019/05/12/arduino-19/image004.jpg">
-<meta property="og:image" content="https://yuan901202.github.io/2019/05/12/arduino-19/image005.jpg">
-<meta property="og:updated_time" content="2019-06-03T07:39:21.342Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Arduino 19 - Infrared Remote Control红外遥控实验">
-<meta name="twitter:description" content="红外接收头介绍 什么是红外接收头？红外遥控器发出的信号是一连串的二进制脉冲码。为了使其在无线传输过程中免受其他红外信号的干扰,通常都是先将其调制在特定的载波频率上,然后再经红外发射二极管发射出去,而红外线接收装置则要滤除其他杂波,叧接收该特定频率的信号并将其还原成二进制脉冲码,也就是解调.   工作原理内置接收管将红外发射管发射出来癿光信号转换为微弱的电信号，此信号经由IC内部放大器进行放大，然后">
-<meta name="twitter:image" content="https://yuan901202.github.io/2019/05/12/arduino-19/image001.jpg">
+<meta name="twitter:title" content="My Games on Douban">
+<meta name="twitter:description" content="Life is a song - sing it.         .hexo-douban-tabs {     margin-bottom: 15px;     margin-top: 15px; }  .hexo-douban-tab {     padding: 5px; }  .hexo-douban-active {     backgroun">
 
 
 
@@ -138,7 +130,7 @@
 
   
   
-  <link rel="canonical" href="https://yuan901202.github.io/2019/05/12/arduino-19/">
+  <link rel="canonical" href="https://yuan901202.github.io/games/">
 
 
 
@@ -148,7 +140,7 @@
   };
 </script>
 
-  <title>Arduino 19 - Infrared Remote Control红外遥控实验 | Blog of Tony Yuan</title>
+  <title>My Games on Douban | Blog of Tony Yuan</title>
   
   <script>
     window.fbAsyncInit = function() {
@@ -399,7 +391,7 @@
         
         
           
-          <li class="menu-item menu-item-games">
+          <li class="menu-item menu-item-games menu-item-active">
 
     
     
@@ -498,419 +490,331 @@
           
             
 
+    
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+    
+
+  
+
+
           
           <div id="content" class="content">
             
 
   <div id="posts" class="posts-expand">
     
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://yuan901202.github.io/2019/05/12/arduino-19/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Tony Yuan">
-      <meta itemprop="description" content="Kia Ora! My name is Tianfu (Tony) Yuan. And I’m a young passionate website developer living at New Zealand.">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Blog of Tony Yuan">
-    </span>
-
     
+    
+    <div class="post-block page">
       <header class="post-header">
 
-        
-        
-          <h2 class="post-title" itemprop="name headline">Arduino 19 - Infrared Remote Control红外遥控实验
+<h2 class="post-title" itemprop="name headline">My Games on Douban
 
-              
-            
-          </h2>
-        
+</h2>
 
-        <div class="post-meta">
-          <span class="post-time">
+<div class="post-meta">
+  
+  
 
-            
-            
-            
 
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
 
-              
-                
-              
-
-              <time title="Created: 12-05-2019 17:31:00" itemprop="dateCreated datePublished" datetime="2019-05-12T17:31:00+12:00">12-05-2019</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 03-06-2019 19:39:21" itemprop="dateModified" datetime="2019-06-03T19:39:21+12:00">03-06-2019</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Arduino/" itemprop="url" rel="index"><span itemprop="name">Arduino</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">Comments: </span>
-                <a href="/2019/05/12/arduino-19/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/05/12/arduino-19/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-            <span class="post-meta-divider">|</span>
-            <span class="post-meta-item-icon">
-            <i class="fa fa-eye"></i>
-             Views:  
-            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
-            </span>
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Symbols count in article: </span>
-                
-                <span title="Symbols count in article">4.9k</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Reading time &asymp;</span>
-                
-                <span title="Reading time">4 mins.</span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        <h2 id="红外接收头介绍"><a href="#红外接收头介绍" class="headerlink" title="红外接收头介绍"></a>红外接收头介绍</h2><ol>
-<li><p>什么是红外接收头？<br>红外遥控器发出的信号是一连串的二进制脉冲码。为了使其在无线传输过程中免受其他红外信号的干扰,通常都是先将其调制在特定的载波频率上,然后再经红外发射二极管发射出去,而红外线接收装置则要滤除其他杂波,叧接收该特定频率的信号并将其还原成二进制脉冲码,也就是解调. </p>
-</li>
-<li><p>工作原理<br>内置接收管将红外发射管发射出来癿光信号转换为微弱的电信号，此信号经由IC内部放大器进行放大，然后通过自动增益控制、带通滤波、解调变、波形整形后还原为遥控器发射出的原始编码，经由接收头的信号输出脚输入到电器上的编码识别电路。 </p>
-</li>
-</ol>
-<a id="more"></a>
-<ol start="3">
-<li>红外接收头的引脚与连线 </li>
-</ol>
-<p>红外接收头有三个引脚如下图： </p>
-<p><a href><img src="/2019/05/12/arduino-19/image001.jpg" alt></a></p>
-<p>用的时候将VOUT接到模拟口，GND接到实验板上的GND,VCC接到实验板上的+5v。</p>
-<h2 id="红外遥控实验"><a href="#红外遥控实验" class="headerlink" title="红外遥控实验"></a>红外遥控实验</h2><ol>
-<li>实验器件 </li>
-</ol>
-<ul>
-<li>红外遥控器：1个 </li>
-<li>红外接收头：1个 </li>
-<li>LED灯：6个</li>
-<li>220Ω电阻：6个 </li>
-<li>多彩面包线：若干 </li>
-</ul>
-<ol start="2">
-<li>实验连线 </li>
-</ol>
-<p>首先将板子连接好；接着将红外接收头按照上述方法接好，将VOUT接到数字11口引脚，将LED灯通过电阻接到数字引脚2,3,4,5,6,7。返样就完成了电路部分的连接。 </p>
-<ol start="3">
-<li>实验原理 </li>
-</ol>
-<p>要想对某一遥控器进行解码必须要了解该遥控器的编码方式。本产品使用的控器的码方式为：NEC协议。</p>
-<p>下面就介绍一下NEC协议： </p>
-<ul>
-<li>NEC协议介绍：</li>
-</ul>
-<p>特点：</p>
-<p>（1）8位地址位，8位命令位 </p>
-<p>（2）为了可靠性地址位和命令位被传输两次</p>
-<p>（3）脉冲位置调制 </p>
-<p>（4）载波频率38khz </p>
-<p>（5）每一位癿时间为1.125ms戒2.25ms </p>
-<ul>
-<li>逻辑 </li>
-</ul>
-<p>0和1的定义如下图</p>
-<p>协议如下：</p>
-<p><a href><img src="/2019/05/12/arduino-19/image002.jpg" alt></a></p>
-<ul>
-<li>按键按下立刻松开的发射脉冲：</li>
-</ul>
-<p><a href><img src="/2019/05/12/arduino-19/image003.jpg" alt></a></p>
-<p>上面图片显示了NEC的协议典型的脉冲序列。注意：这首先发送LSB（最低位）的协议。在上面癿脉冲传输的地址为0x59命令为0x16。一个消息是由一个9ms的高电平开始，随后有一个4.5ms的低电平，（返两段电平组成引寻码）然后由地址码和命令码。地址和命令传输两次。第二次所有位都取反，可用于对所收到的消息中的确认使用。总传输时间是恒定的，因为每一点与它取反长度重复。如果你不感兴趣，你可以忽略这个可靠性取反，也可以扩大地址和命令，以每16位！</p>
-<ul>
-<li>按键按下一段时间才松开的发射脉冲：</li>
-</ul>
-<p><a href><img src="/2019/05/12/arduino-19/image004.jpg" alt></a></p>
-<p>一个命令发送一次，即使在遥控器上的按键仍然按下。当按键一直按下时，第一个110ms癿脉冲与上图一样，之后每110ms重复代码传输一次。返个重复代码是由一个9ms的高电平脉冲和一个2.25ms低电平和560μs癿高电平组成。</p>
-<ul>
-<li>重复脉冲</li>
-</ul>
-<p><a href><img src="/2019/05/12/arduino-19/image005.jpg" alt></a></p>
-<p>注意：脉冲波形进入一体化接收头以后，因为一体化接收头里要迕解码、信号放大和整形，故要注意：在没有红外信号时，其输出端为高电平，有信号时为低电平，故其输出信号电平正好和发射端相反。接收端脉冲大家可以通过示波器看到，结合看到的波形理解程序。</p>
-<p>遥控器键值: </p>
-<p>一排一 = 0x00FFA25D; 一排二 = 0x00FFE01F; 一排三 =0x00FF629D; </p>
-<p>二排一 = 0x00FFA857; 二排二 = 0x00FFE21D; 二排三 = 0x00FF906F;</p>
-<p>三排一 = 0x00FF22DD; 三排二 = 0x00FF6897; 三排三 = 0x00FF02FD; </p>
-<p>四排一 = 0x00FF9867; 四排二 = 0x00FFC23D; 四排三= 0x00FFB047;</p>
-<p>Source Code: </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;IRremote.h&gt;</span><br><span class="line">int RECV_PIN = 11;</span><br><span class="line">int LED1 = 2;</span><br><span class="line">int LED2 = 3;</span><br><span class="line">int LED3 = 4;</span><br><span class="line">int LED4 = 5;</span><br><span class="line">int LED5 = 6;</span><br><span class="line">int LED6 = 7;</span><br><span class="line">long on1  = 0x00FFA25D;</span><br><span class="line">long off1 = 0x00FFE01F;</span><br><span class="line">long on2 = 0x00FF629D;</span><br><span class="line">long off2 = 0x00FFA857;</span><br><span class="line">long on3 = 0x00FFE21D;</span><br><span class="line">long off3 = 0x00FF906F;</span><br><span class="line">long on4 = 0x00FF22DD;</span><br><span class="line">long off4 = 0x00FF6897;</span><br><span class="line">long on5 = 0x00FF02FD;</span><br><span class="line">long off5 = 0x00FF9867;</span><br><span class="line">long on6 = 0x00FFC23D;</span><br><span class="line">long off6 = 0x00FFB047;</span><br><span class="line">IRrecv irrecv(RECV_PIN);</span><br><span class="line">decode_results results;</span><br><span class="line">// Dumps out the decode_results structure.</span><br><span class="line">// Call this after IRrecv::decode()</span><br><span class="line">// void * to work around compiler issue</span><br><span class="line">//void dump(void *v) &#123;</span><br><span class="line">//  decode_results *results = (decode_results *)v</span><br><span class="line">void dump(decode_results *results) &#123;</span><br><span class="line">  int count = results-&gt;rawlen;</span><br><span class="line">  if (results-&gt;decode_type == UNKNOWN) </span><br><span class="line">    &#123;</span><br><span class="line">     Serial.println(&quot;Could not decode message&quot;);</span><br><span class="line">    &#125; </span><br><span class="line">  else </span><br><span class="line">   &#123;</span><br><span class="line">    if (results-&gt;decode_type == NEC) </span><br><span class="line">      &#123;</span><br><span class="line">       Serial.print(&quot;Decoded NEC: &quot;);</span><br><span class="line">      &#125; </span><br><span class="line">    else if (results-&gt;decode_type == SONY) </span><br><span class="line">      &#123;</span><br><span class="line">       Serial.print(&quot;Decoded SONY: &quot;);</span><br><span class="line">      &#125; </span><br><span class="line">    else if (results-&gt;decode_type == RC5) </span><br><span class="line">      &#123;</span><br><span class="line">       Serial.print(&quot;Decoded RC5: &quot;);</span><br><span class="line">      &#125; </span><br><span class="line">    else if (results-&gt;decode_type == RC6) </span><br><span class="line">      &#123;</span><br><span class="line">       Serial.print(&quot;Decoded RC6: &quot;);</span><br><span class="line">      &#125;</span><br><span class="line">     Serial.print(results-&gt;value, HEX);</span><br><span class="line">     Serial.print(&quot; (&quot;);</span><br><span class="line">     Serial.print(results-&gt;bits, DEC);</span><br><span class="line">     Serial.println(&quot; bits)&quot;);</span><br><span class="line">   &#125;</span><br><span class="line">     Serial.print(&quot;Raw (&quot;);</span><br><span class="line">     Serial.print(count, DEC);</span><br><span class="line">     Serial.print(&quot;): &quot;);</span><br><span class="line"></span><br><span class="line">  for (int i = 0; i &lt; count; i++) </span><br><span class="line">     &#123;</span><br><span class="line">      if ((i % 2) == 1) &#123;</span><br><span class="line">      Serial.print(results-&gt;rawbuf[i]*USECPERTICK, DEC);</span><br><span class="line">     &#125; </span><br><span class="line">    else  </span><br><span class="line">     &#123;</span><br><span class="line">      Serial.print(-(int)results-&gt;rawbuf[i]*USECPERTICK, DEC);</span><br><span class="line">     &#125;</span><br><span class="line">    Serial.print(&quot; &quot;);</span><br><span class="line">     &#125;</span><br><span class="line">      Serial.println(&quot;&quot;);</span><br><span class="line">     &#125;</span><br><span class="line"></span><br><span class="line">void setup()</span><br><span class="line"> &#123;</span><br><span class="line">  pinMode(RECV_PIN, INPUT);   </span><br><span class="line">  pinMode(LED1, OUTPUT);</span><br><span class="line">  pinMode(LED2, OUTPUT);</span><br><span class="line">  pinMode(LED3, OUTPUT);</span><br><span class="line">  pinMode(LED4, OUTPUT);</span><br><span class="line">  pinMode(LED5, OUTPUT);</span><br><span class="line">  pinMode(LED6, OUTPUT);  </span><br><span class="line">  pinMode(13, OUTPUT);</span><br><span class="line">  Serial.begin(9600);</span><br><span class="line">  </span><br><span class="line">  irrecv.enableIRIn(); // Start the receiver</span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line">int on = 0;</span><br><span class="line">unsigned long last = millis();</span><br><span class="line"></span><br><span class="line">void loop() </span><br><span class="line">&#123;</span><br><span class="line">  if (irrecv.decode(&amp;results)) </span><br><span class="line">   &#123;</span><br><span class="line">    // If it&apos;s been at least 1/4 second since the last</span><br><span class="line">    // IR received, toggle the relay</span><br><span class="line">    if (millis() - last &gt; 250) </span><br><span class="line">      &#123;</span><br><span class="line">       on = !on;</span><br><span class="line">//       digitalWrite(8, on ? HIGH : LOW);</span><br><span class="line">       digitalWrite(13, on ? HIGH : LOW);</span><br><span class="line">       dump(&amp;results);</span><br><span class="line">      &#125;</span><br><span class="line">    if (results.value == on1 )</span><br><span class="line">       digitalWrite(LED1, HIGH);</span><br><span class="line">    if (results.value == off1 )</span><br><span class="line">       digitalWrite(LED1, LOW); </span><br><span class="line">    if (results.value == on2 )</span><br><span class="line">       digitalWrite(LED2, HIGH);</span><br><span class="line">    if (results.value == off2 )</span><br><span class="line">       digitalWrite(LED2, LOW); </span><br><span class="line">    if (results.value == on3 )</span><br><span class="line">       digitalWrite(LED3, HIGH);</span><br><span class="line">    if (results.value == off3 )</span><br><span class="line">       digitalWrite(LED3, LOW);</span><br><span class="line">    if (results.value == on4 )</span><br><span class="line">       digitalWrite(LED4, HIGH);</span><br><span class="line">    if (results.value == off4 )</span><br><span class="line">       digitalWrite(LED4, LOW); </span><br><span class="line">    if (results.value == on5 )</span><br><span class="line">       digitalWrite(LED5, HIGH);</span><br><span class="line">    if (results.value == off5 )</span><br><span class="line">       digitalWrite(LED5, LOW); </span><br><span class="line">    if (results.value == on6 )</span><br><span class="line">       digitalWrite(LED6, HIGH);</span><br><span class="line">    if (results.value == off6 )</span><br><span class="line">       digitalWrite(LED6, LOW);        </span><br><span class="line">    last = millis();      </span><br><span class="line">    irrecv.resume(); // Receive the next value</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-      <div>
-        <div id="reward-container">
-  <div>Would you mind buy me a cup of coffee?</div>
-  <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
-    Donate
-  </button>
-  <div id="qr" style="display: none;">
-
-    
-      
-      
-        
-      
-      <div style="display: inline-block">
-        <img src="/images/wechatpay.png" alt="Tony Yuan WeChat Pay">
-        <p>WeChat Pay</p>
-      </div>
-    
-      
-      
-        
-      
-      <div style="display: inline-block">
-        <img src="/images/alipay.png" alt="Tony Yuan Alipay">
-        <p>Alipay</p>
-      </div>
-    
-
-  </div>
 </div>
 
-      </div>
+</header>
+
+      
+      
+      
+      <div class="post-body">
+        
+        
+          <blockquote>
+    <p>Life is a song - sing it.</p>
+</blockquote>
+
+<style>
     
+.hexo-douban-tabs {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
 
-    
-      <div>
+.hexo-douban-tab {
+    padding: 5px;
+}
+
+.hexo-douban-active {
+    background: #657b83;
+    color: #fff;
+}
+
+.hexo-douban-item {
+    padding-bottom: 10px;
+    position: relative;
+    clear: both;
+    min-height: 170px;
+    padding: 10px 0;
+    border-bottom: 1px #ddd solid;
+}
+
+@media screen and (max-width: 600px) {
+    .hexo-douban-item {
+        width: 100%;
+    }
+}
+
+.hexo-douban-picture {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 100px;
+}
+
+.hexo-douban-info {
+    padding-left: 120px;
+}
+
+.hexo-douban-meta {
+    font-size: 12px;
+    padding-right: 10px;
+}
+
+.hexo-douban-comments {
+    font-size: 12px;
+}
+
+.hexo-douban-pagination {
+    margin-top: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.hexo-douban-button {
+    padding: 5px;
+}
+
+.hexo-douban-button:hover {
+    background: #657b83;
+    color: #fff;
+}
+
+.hexo-douban-hide {
+    display: none;
+}
+
+.hexo-douban-show {
+    display: block;
+}
+
+
+</style>
+
+<div class="hexo-douban-tabs">
+    <a class="hexo-douban-tab" id="hexo-douban-tab1" href="javascript:;" rel="external">
+        Playing
+        (0)</a>
+    <a class="hexo-douban-tab" id="hexo-douban-tab2" href="javascript:;" rel="external">
+        Wish
+        (0)</a>
+    <a class="hexo-douban-tab" id="hexo-douban-tab3" href="javascript:;" rel="external">
+        Played
+        (0)</a>
+
+</div>
+<div>
+    <div id="hexo-douban-item1">
         
-
-
-
-
-  
-
-
-
-<ul class="post-copyright">
-  <li class="post-copyright-author">
-    <strong>Post author:  </strong>Tony Yuan</li>
-  <li class="post-copyright-link">
-    <strong>Post link: </strong>
-    
-    <a href="https://yuan901202.github.io/2019/05/12/arduino-19/" title="Arduino 19 - Infrared Remote Control红外遥控实验">https://yuan901202.github.io/2019/05/12/arduino-19/</a>
-  </li>
-  <li class="post-copyright-license">
-    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.</li>
-</ul>
-
-      </div>
-    
-
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/arduino/" rel="tag"># arduino</a>
-          
-            <a href="/tags/chinese/" rel="tag"># chinese</a>
-          
-        </div>
-      
-
-      
-      
-        <div class="post-widgets">
+        <div class="hexo-douban-pagination">
+    <a class="hexo-douban-button hexo-douban-firstpage" href="javascript:;"> Top</a>
+    <a class="hexo-douban-button hexo-douban-previouspage" href="javascript:;">Prev</a>
+    <span class="hexo-douban-pagenum">2 / 3</span>
+    <a class="hexo-douban-button hexo-douban-nextpage" href="javascript:;">Next</a>
+    <a class="hexo-douban-button hexo-douban-lastpage" href="javascript:;">End</a>
+</div>
+    </div>
+    <div id="hexo-douban-item2">
         
-          <div class="wp_rating">
-            <div id="wpac-rating"></div>
-          </div>
+        <div class="hexo-douban-pagination">
+    <a class="hexo-douban-button hexo-douban-firstpage" href="javascript:;"> Top</a>
+    <a class="hexo-douban-button hexo-douban-previouspage" href="javascript:;">Prev</a>
+    <span class="hexo-douban-pagenum">2 / 3</span>
+    <a class="hexo-douban-button hexo-douban-nextpage" href="javascript:;">Next</a>
+    <a class="hexo-douban-button hexo-douban-lastpage" href="javascript:;">End</a>
+</div>
+    </div>
+    <div id="hexo-douban-item3">
         
-
-        
-          
-            <span class="post-meta-divider">|</span>
-          
-          <div class="social-like">
-            
-
-            
-              <div class="fb_like">
-                <div class="fb-like" data-layout="button_count" data-share="true"></div>
-              </div>
-            
-          </div>
-        
-
-        
-        </div>
-      
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2019/05/02/arduino-18/" rel="next" title="Arduino 18 - Rudder Control舵机控制实验">
-                <i class="fa fa-chevron-left"></i> Arduino 18 - Rudder Control舵机控制实验
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/05/20/arduino-20/" rel="prev" title="Arduino 20 - PS2 Shot Stick摇杆实验">
-                Arduino 20 - PS2 Shot Stick摇杆实验 <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-  </div>
-
-
-          </div>
-          
-
-  
-    <div class="comments" id="comments">
-      <div id="disqus_thread">
-        <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
-      </div>
+        <div class="hexo-douban-pagination">
+    <a class="hexo-douban-button hexo-douban-firstpage" href="javascript:;"> Top</a>
+    <a class="hexo-douban-button hexo-douban-previouspage" href="javascript:;">Prev</a>
+    <span class="hexo-douban-pagenum">2 / 3</span>
+    <a class="hexo-douban-button hexo-douban-nextpage" href="javascript:;">Next</a>
+    <a class="hexo-douban-button hexo-douban-lastpage" href="javascript:;">End</a>
+</div>
     </div>
 
-  
+</div>
+
+<script>
+    /**
+ * Created by myths on 18-2-8.
+ */
+
+Element.prototype.siblings = function () {
+    var siblingElement = [];
+    var sibs = this.parentNode.children;
+    for (var i = 0; i < sibs.length; i++) {
+        if (sibs[i] !== this) {
+            siblingElement.push(sibs[i]);
+        }
+    }
+    return siblingElement;
+};
+function tabClick() {
+    //修改标签样式
+    this.classList.add('hexo-douban-active');
+    var sibs = this.siblings();
+    for (var j = 0; j < sibs.length; j++) {
+        sibs[j].classList.remove('hexo-douban-active');
+    }
+    //显示对应板块
+    var itemId = this.id.replace('tab', 'item');
+    var target = document.getElementById(itemId);
+    target.classList.remove('hexo-douban-hide');
+    target.classList.add('hexo-douban-show');
+    sibs = document.getElementById(itemId).siblings();
+    for (var k = 0; k < sibs.length; k++) {
+        sibs[k].classList.remove('hexo-douban-show');
+        sibs[k].classList.add('hexo-douban-hide');
+    }
+}
+var tabs = document.getElementsByClassName("hexo-douban-tab");
+for (var i = 0; i < tabs.length; i++) {
+    tabs[i].onclick = tabClick;
+    tabs[i].onclick.apply(tabs[i]);
+}
+tabs[2].click();
+
+    var firstpages = document.getElementsByClassName("hexo-douban-firstpage");
+var previouspages = document.getElementsByClassName("hexo-douban-previouspage");
+var nextpages = document.getElementsByClassName("hexo-douban-nextpage");
+var lastpages = document.getElementsByClassName("hexo-douban-lastpage");
+var pagenums = document.getElementsByClassName("hexo-douban-pagenum");
+
+function makePageNum(num, arr) {
+    return (num + 1) + ' / ' + (Math.ceil(arr.length / 10 === 0 ? 1 : Math.ceil(arr.length / 10)));
+}
+
+function firstBtn() {
+    var sibs = this.parentNode.siblings();
+    displayPage(sibs, 0);
+    this.parentNode.getElementsByClassName('hexo-douban-pagenum')[0].innerText = makePageNum(0, sibs);
+}
+
+function previousBtn() {
+    var sibs = this.parentNode.siblings();
+    var currNum = this.parentNode.getElementsByClassName('hexo-douban-pagenum')[0].innerText;
+    currNum = currNum.substr(0, currNum.indexOf('/') - 1);
+    currNum = parseInt(currNum, 10) - 1;
+    if (currNum > 0) {
+        currNum--;
+    }
+    displayPage(sibs, currNum);
+    this.parentNode.getElementsByClassName('hexo-douban-pagenum')[0].innerText = makePageNum(currNum, sibs);
+}
+
+function nextBtn() {
+    var sibs = this.parentNode.siblings();
+    var currNum = this.parentNode.getElementsByClassName('hexo-douban-pagenum')[0].innerText;
+    currNum = currNum.substr(0, currNum.indexOf('/') - 1);
+    currNum = parseInt(currNum, 10) - 1;
+    if (currNum < Math.ceil(sibs.length / 10) - 1) {
+        currNum++;
+    }
+    displayPage(sibs, currNum);
+    this.parentNode.getElementsByClassName('hexo-douban-pagenum')[0].innerText = makePageNum(currNum, sibs);
+}
+
+function lastBtn() {
+    var sibs = this.parentNode.siblings();
+    displayPage(sibs, Math.ceil(sibs.length / 10) - 1);
+    this.parentNode.getElementsByClassName('hexo-douban-pagenum')[0].innerText = makePageNum(Math.ceil(sibs.length / 10) - 1 === -1 ? 0 : Math.ceil(sibs.length / 10) - 1, sibs);
+}
+
+function displayPage(arr, num) {
+    for (var i = 0; i < arr.length; i++) {
+        if (Math.floor(i / 10) === num) {
+            arr[i].classList.remove('hexo-douban-hide');
+            var img = arr[i].getElementsByTagName('img')[0];
+            img.src = img.getAttribute('data-src');
+        } else {
+            arr[i].classList.add('hexo-douban-hide');
+        }
+    }
+}
+
+for (var i = 0; i < firstpages.length; i++) {
+
+    //add listener
+    firstpages[i].onclick = firstBtn;
+    previouspages[i].onclick = previousBtn;
+    nextpages[i].onclick = nextBtn;
+    lastpages[i].onclick = lastBtn;
+
+    //set page num
+    var size = pagenums[i].parentNode.siblings().length;
+    pagenums[i].innerText = '1 / ' + (Math.ceil(size / 10) === 0 ? 1 : Math.ceil(size / 10));
+    firstpages[i].click();
+}
+
+</script>
 
 
+        
+      </div>
+      
+      
+      
+    </div>
+    
+
+
+
+    
+    
+    
+  </div>
+
+
+          </div>
+          
 
         </div>
         
@@ -930,17 +834,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
-          </li>
-        </ul>
-      
 
-      <div class="site-overview-wrap sidebar-panel">
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -1230,23 +1125,6 @@
       </div>
 
       
-      <!--noindex-->
-        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-            
-            
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#红外接收头介绍"><span class="nav-number">1.</span> <span class="nav-text">红外接收头介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#红外遥控实验"><span class="nav-number">2.</span> <span class="nav-text">红外遥控实验</span></a></li></ol></div>
-            
-
-          </div>
-        </div>
-      <!--/noindex-->
-      
 
       
 
@@ -1460,28 +1338,9 @@
   <script id="dsq-count-scr" src="https://yuan901202.disqus.com/count.js" async></script>
 
 
-<script>
-  var disqus_config = function() {
-    this.page.url = "https://yuan901202.github.io/2019/05/12/arduino-19/";
-    this.page.identifier = "2019/05/12/arduino-19/";
-    this.page.title = 'Arduino 19 - Infrared Remote Control红外遥控实验';
-    };
-  function loadComments() {
-    var d = document, s = d.createElement('script');
-    s.src = 'https://yuan901202.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', '' + +new Date());
-    (d.head || d.body).appendChild(s);
-  }
-  
-    loadComments();
-  
-</script>
 
 
 
-
-
-  
 
 
   
@@ -1891,13 +1750,13 @@
       var articles = db.collection('articles')
 
       //https://hexo.io/docs/variables.html
-      var isPost = 'Arduino 19 - Infrared Remote Control红外遥控实验'.length > 0
+      var isPost = 'My Games on Douban'.length > 0
       var isArchive = '' === 'true'
       var isCategory = ''.length > 0
       var isTag = ''.length > 0
 
       if (isPost) { //is article page
-        var title = 'Arduino 19 - Infrared Remote Control红外遥控实验'
+        var title = 'My Games on Douban'
         var doc = articles.doc(title)
 
         getCount(doc, true).then(appendCountTo($('.post-meta')))
@@ -1947,25 +1806,6 @@
   
 
   
-  <script>
-    wpac_init = window.wpac_init || [];
-    wpac_init.push({
-      widget: 'Rating',
-      id: 18713,
-      el: 'wpac-rating',
-      color: 'fc6423'
-    });
-    (function() {
-      if ('WIDGETPACK_LOADED' in window) return;
-      WIDGETPACK_LOADED = true;
-      var mc = document.createElement('script');
-      mc.type = 'text/javascript';
-      mc.async = true;
-      mc.src = '//embed.widgetpack.com/widget.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
-    })();
-  </script>
-
 
   
 

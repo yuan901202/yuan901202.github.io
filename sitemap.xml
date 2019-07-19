@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://yuan901202.github.io/movies/index.html</loc>
+    
+    <lastmod>2019-07-19T05:35:43.482Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://yuan901202.github.io/books/index.html</loc>
+    
+    <lastmod>2019-07-19T05:35:21.405Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://yuan901202.github.io/games/index.html</loc>
+    
+    <lastmod>2019-07-19T05:35:11.459Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://yuan901202.github.io/tags/index.html</loc>
     
     <lastmod>2019-07-16T09:41:22.419Z</lastmod>
@@ -19,13 +40,6 @@
     <loc>https://yuan901202.github.io/categories/index.html</loc>
     
     <lastmod>2019-07-16T09:41:05.703Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://yuan901202.github.io/books/index.html</loc>
-    
-    <lastmod>2019-07-16T09:35:43.394Z</lastmod>
     
   </url>
   
