@@ -290,7 +290,7 @@
       
     
 
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>Tags<span class="badge">28</span></a>
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>Tags<span class="badge">29</span></a>
 
   </li>
         
@@ -328,7 +328,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">61</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">62</span></a>
 
   </li>
         
@@ -405,6 +405,25 @@
     
 
     <a href="/games/" rel="section"><i class="menu-item-icon fa fa-fw fa-gamepad"></i> <br>Games</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-gallery">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/gallery/" rel="section"><i class="menu-item-icon fa fa-fw fa-images"></i> <br>Gallery</a>
 
   </li>
         
@@ -495,6 +514,234 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://yuan901202.github.io/2019/02/18/arduino-6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Tony Yuan">
+      <meta itemprop="description" content="Kia Ora! My name is Tianfu (Tony) Yuan. And I’m a young passionate website developer living at New Zealand.">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Blog of Tony Yuan">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/02/18/arduino-6/" class="post-title-link" itemprop="url">Arduino 6 - Button Control LED按键控制LED实验</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 18-02-2019 17:30:13" itemprop="dateCreated datePublished" datetime="2019-02-18T17:30:13+13:00">18-02-2019</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 03-06-2019 18:36:47" itemprop="dateModified" datetime="2019-06-03T18:36:47+12:00">03-06-2019</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Arduino/" itemprop="url" rel="index"><span itemprop="name">Arduino</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments: </span>
+                <a href="/2019/02/18/arduino-6/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/02/18/arduino-6/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Symbols count in article: </span>
+                
+                <span title="Symbols count in article">1.2k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">1 mins.</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>I/O口的意思即为INPUT 接口和OUTPUT 接口，到目前为止我们设计的小灯实验都还只是应用到Arduino 的I/O 口的输出功能，这个实验我们来尝试一下使用Arduino的I/O 口的输入功能即为读取外接设备的输出值，我们用一个按键和一个LED 小灯完成一个输入输出结合使用的实验，让大家能简单了解I/O 的作用。按键开关大家都应该比较了解，属于开关量（数字量）元件，按下时为闭合（导通）状态。完成本实验要用到的元件如下：</p>
+<ul>
+<li>按键开关*1 </li>
+<li>红色M5 直插LED*1 </li>
+<li>220Ω电阻*1</li>
+<li>10KΩ电阻*1 </li>
+<li>面包板*1</li>
+<li>面包板跳线*1 扎</li>
+</ul>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/02/18/arduino-6/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
     
       
 
@@ -2504,226 +2751,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://yuan901202.github.io/2016/09/18/uni12/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Tony Yuan">
-      <meta itemprop="description" content="Kia Ora! My name is Tianfu (Tony) Yuan. And I’m a young passionate website developer living at New Zealand.">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Blog of Tony Yuan">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2016/09/18/uni12/" class="post-title-link" itemprop="url">Why are retail companies so interested in using social media for marketing purposes, and why are they finding it so difficult? Explain your answer.</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 18-09-2016 15:38:00" itemprop="dateCreated datePublished" datetime="2016-09-18T15:38:00+12:00">18-09-2016</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 27-05-2019 16:12:06" itemprop="dateModified" datetime="2019-05-27T16:12:06+12:00">27-05-2019</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Master/" itemprop="url" rel="index"><span itemprop="name">Master</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">Comments: </span>
-                <a href="/2016/09/18/uni12/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/09/18/uni12/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Symbols count in article: </span>
-                
-                <span title="Symbols count in article">12k</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Reading time &asymp;</span>
-                
-                <span title="Reading time">10 mins.</span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h1 id="Topic-Why-are-retail-companies-so-interested-in-using-social-media-for-marketing-purposes-and-why-are-they-finding-it-so-difficult-Explain-your-answer"><a href="#Topic-Why-are-retail-companies-so-interested-in-using-social-media-for-marketing-purposes-and-why-are-they-finding-it-so-difficult-Explain-your-answer" class="headerlink" title="Topic: Why are retail companies so interested in using social media for marketing purposes, and why are they finding it so difficult? Explain your answer."></a>Topic: Why are retail companies so interested in using social media for marketing purposes, and why are they finding it so difficult? Explain your answer.</h1><h2 id="Lecturer’s-Name-David-Johnstone"><a href="#Lecturer’s-Name-David-Johnstone" class="headerlink" title="Lecturer’s Name: David Johnstone"></a>Lecturer’s Name: David Johnstone</h2><h2 id="Date-18th-September-2016"><a href="#Date-18th-September-2016" class="headerlink" title="Date: 18th September, 2016"></a>Date: 18th September, 2016</h2><h2 id="Word-Count-1600"><a href="#Word-Count-1600" class="headerlink" title="Word Count: 1600"></a>Word Count: 1600</h2>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2016/09/18/uni12/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2772,7 +2799,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">61</span>
+                    <span class="site-state-item-count">62</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -2878,7 +2905,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">28</span>
+                      
+                    
+                    <span class="site-state-item-count">29</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
@@ -3071,7 +3100,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="Symbols count total">469k</span>
+    <span title="Symbols count total">474k</span>
   
 
   
@@ -3080,7 +3109,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="Reading time total">7:06</span>
+    <span title="Reading time total">7:11</span>
   
 </div>
 
@@ -3681,7 +3710,7 @@
       else if (!isArchive && !isCategory && !isTag) { //is index page
         var titles = [] //array to titles
 
-        var postsstr = 'titles.push("Arduino 5 - Traffic Lights交通灯设计实验");titles.push("Arduino 4 - Advertising Light Effect广告灯效果实验");titles.push("Arduino 3 - PWM Control Light Brightness调控灯光亮度实验");titles.push("Arduino 2 - LED Flashing Light闪灯实验");titles.push("Arduino 1 - Hello World实验");titles.push("Essay");titles.push("Essay");titles.push("Role of ICTs in the Organization – the Impact of E-leadership in Theories and Practices");titles.push("Role of ICT in E-government - the Impact of Cloud Computing in Government Institution");titles.push("Why are retail companies so interested in using social media for marketing purposes, and why are they finding it so difficult? Explain your answer.");' //if you have a better way to get titles of posts, please change it
+        var postsstr = 'titles.push("Arduino 6 - Button Control LED按键控制LED实验");titles.push("Arduino 5 - Traffic Lights交通灯设计实验");titles.push("Arduino 4 - Advertising Light Effect广告灯效果实验");titles.push("Arduino 3 - PWM Control Light Brightness调控灯光亮度实验");titles.push("Arduino 2 - LED Flashing Light闪灯实验");titles.push("Arduino 1 - Hello World实验");titles.push("Essay");titles.push("Essay");titles.push("Role of ICTs in the Organization – the Impact of E-leadership in Theories and Practices");titles.push("Role of ICT in E-government - the Impact of Cloud Computing in Government Institution");' //if you have a better way to get titles of posts, please change it
         eval(postsstr)
 
         var promises = titles.map(function (title) {

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yuan901202.github.io/"/>
-  <updated>2019-07-16T08:51:36.378Z</updated>
+  <updated>2019-07-26T10:48:00.502Z</updated>
   <id>https://yuan901202.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>How to Fix App “is damaged and can’t be opened. You should move it to the Trash” Error on Mac</title>
+    <link href="https://yuan901202.github.io/2019/07/26/2019-07-26-fix-app-damaged-on-mac/"/>
+    <id>https://yuan901202.github.io/2019/07/26/2019-07-26-fix-app-damaged-on-mac/</id>
+    <published>2019-07-26T10:44:37.000Z</published>
+    <updated>2019-07-26T10:48:00.502Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Some Mac users may occasionally run into a somewhat strange error when they try to open an app that was downloaded to their Mac, upon lau
+      
+    
+    </summary>
+    
+      <category term="Technique" scheme="https://yuan901202.github.io/categories/Technique/"/>
+    
+    
+      <category term="mac" scheme="https://yuan901202.github.io/tags/mac/"/>
+    
+  </entry>
   
   <entry>
     <title>How Huawei&#39;s Hongmeng OS could change their position in mobile industry?</title>
@@ -486,35 +509,6 @@
 &lt;/ol&gt;
 &lt;p&gt;火焰传感器（即红外接收三极管）是机器人专门用来搜寻火源的传感器，本传感器对火焰特别灵敏。实物如图：&lt;/p&gt;
 &lt;p&gt;&lt;a href&gt;&lt;img src=&quot;/2019/04/10/arduino-14/image001.jpg&quot; alt&gt;&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Arduino" scheme="https://yuan901202.github.io/categories/Arduino/"/>
-    
-    
-      <category term="arduino" scheme="https://yuan901202.github.io/tags/arduino/"/>
-    
-      <category term="chinese" scheme="https://yuan901202.github.io/tags/chinese/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Arduino 13 - Tilt Switch倾斜开关实验</title>
-    <link href="https://yuan901202.github.io/2019/04/05/arduino-13/"/>
-    <id>https://yuan901202.github.io/2019/04/05/arduino-13/</id>
-    <published>2019-04-05T04:30:32.000Z</published>
-    <updated>2019-06-03T06:56:36.794Z</updated>
-    
-    <summary type="html">
-    
-      &lt;ol&gt;
-&lt;li&gt;实验器件&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;滚珠开关：1个 &lt;/li&gt;
-&lt;li&gt;LED灯：1个 &lt;/li&gt;
-&lt;li&gt;220Ω电阻：1个&lt;/li&gt;
-&lt;li&gt;多彩面包板实验跳线：若干&lt;/li&gt;&lt;/ul&gt;
     
     </summary>
     
