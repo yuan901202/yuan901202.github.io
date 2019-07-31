@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yuan901202.github.io/"/>
-  <updated>2019-07-26T10:48:00.502Z</updated>
+  <updated>2019-07-31T08:02:47.091Z</updated>
   <id>https://yuan901202.github.io/</id>
   
   <author>
@@ -17,18 +17,60 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Add gallery function to Hexo framework by using CSS and markdown</title>
+    <link href="https://yuan901202.github.io/2019/07/31/2019-07-31-add-gallery-to-hexo/"/>
+    <id>https://yuan901202.github.io/2019/07/31/2019-07-31-add-gallery-to-hexo/</id>
+    <published>2019-07-31T07:45:09.000Z</published>
+    <updated>2019-07-31T08:02:47.091Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;My Hexo example link: &lt;a href=&quot;https://yuan901202.github.io/gallery/&quot;&gt;https://yuan901202.github.io/gallery/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Function-list&quot;&gt;&lt;a href=&quot;#Function-list&quot; class=&quot;headerlink&quot; title=&quot;Function list&quot;&gt;&lt;/a&gt;Function list&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Main interface&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Category album&lt;/li&gt;
+&lt;li&gt;Custom album name&lt;/li&gt;
+&lt;li&gt;Custom cover&lt;/li&gt;
+&lt;li&gt;Automatically cut the cover to the same size&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Classified album interface&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Third-order&lt;/li&gt;
+&lt;li&gt;Tiled by image original aspect ratio&lt;/li&gt;
+&lt;li&gt;Local picture source / picture bed outer chain&lt;/li&gt;
+&lt;li&gt;Uniform with the article illustration format&lt;/li&gt;
+&lt;li&gt;Click for larger image&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Other&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Custom album description&lt;/li&gt;
+&lt;li&gt;Local browsing&lt;/li&gt;
+&lt;li&gt;Page load speed optimization&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Technique" scheme="https://yuan901202.github.io/categories/Technique/"/>
+    
+    
+      <category term="github pages" scheme="https://yuan901202.github.io/tags/github-pages/"/>
+    
+      <category term="hexo" scheme="https://yuan901202.github.io/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
     <title>How to Fix App “is damaged and can’t be opened. You should move it to the Trash” Error on Mac</title>
     <link href="https://yuan901202.github.io/2019/07/26/2019-07-26-fix-app-damaged-on-mac/"/>
     <id>https://yuan901202.github.io/2019/07/26/2019-07-26-fix-app-damaged-on-mac/</id>
     <published>2019-07-26T10:44:37.000Z</published>
-    <updated>2019-07-26T10:48:00.502Z</updated>
+    <updated>2019-07-31T07:43:33.079Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;Some Mac users may occasionally run into a somewhat strange error when they try to open an app that was downloaded to their Mac, upon lau
-      
+      &lt;p&gt;Some Mac users may occasionally run into a somewhat strange error when they try to open an app that was downloaded to their Mac, upon launching the app a little “verifying” progress bar will appear and stall for a moment before an error alert message says “Appname.app is damaged and can’t be opened. You should move it to the Trash.” with an accompanying detail specifying when and where the file was downloaded from. You then have two options, to ‘cancel’ or to “Move to Trash” the app you downloaded.&lt;br&gt;&lt;/p&gt;
     
     </summary>
     
@@ -483,32 +525,6 @@
     
       &lt;p&gt;数码管是一种半导体发光器件，其基本单元是发光二极管。数码管按段数分为七段数码管和八段数码管，八段数码管比七段数码管多一个发光二极管单元（多一个小数点显示），本实验所使用的是八段数码管。按发光二极管单元连接方式分为共阳极数码管和共阴极数码管。共阳数码管是指将所有发光二极管的阳极接到一起形成公共阳极(COM)的数码管。共阳数码管在应用时应将公共极COM 接到+5V，当某一字段发光二极管的阴极为低电平时，相应字段就点亮。当某一字段的阴极为高电平时，相应字段就不亮。共阴数码管是指将所有发光二极管的阴极接到一起形成公共阴极(COM)的数码管。共阴数码管在应用时应将公共极COM 接到地线GND 上，当某一字段发光二极管的阳极为高电平时，相应字段就点亮。当某一字段的阳极为低电平时，相应字段就不亮。&lt;/p&gt;
 &lt;p&gt;&lt;a href&gt;&lt;img src=&quot;/2019/04/17/arduino-15/image001.jpg&quot; alt&gt;&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Arduino" scheme="https://yuan901202.github.io/categories/Arduino/"/>
-    
-    
-      <category term="arduino" scheme="https://yuan901202.github.io/tags/arduino/"/>
-    
-      <category term="chinese" scheme="https://yuan901202.github.io/tags/chinese/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Arduino 14 - Flame Alarm火焰报警实验</title>
-    <link href="https://yuan901202.github.io/2019/04/10/arduino-14/"/>
-    <id>https://yuan901202.github.io/2019/04/10/arduino-14/</id>
-    <published>2019-04-10T05:30:35.000Z</published>
-    <updated>2019-06-03T07:03:27.760Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;火焰传感器介绍&quot;&gt;&lt;a href=&quot;#火焰传感器介绍&quot; class=&quot;headerlink&quot; title=&quot;火焰传感器介绍&quot;&gt;&lt;/a&gt;火焰传感器介绍&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;认识火焰传感器 &lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;火焰传感器（即红外接收三极管）是机器人专门用来搜寻火源的传感器，本传感器对火焰特别灵敏。实物如图：&lt;/p&gt;
-&lt;p&gt;&lt;a href&gt;&lt;img src=&quot;/2019/04/10/arduino-14/image001.jpg&quot; alt&gt;&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
     
     </summary>
     

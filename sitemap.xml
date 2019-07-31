@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://yuan901202.github.io/2019/07/31/2019-07-31-add-gallery-to-hexo/</loc>
+    
+    <lastmod>2019-07-31T08:02:47.091Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://yuan901202.github.io/2019/07/26/2019-07-26-fix-app-damaged-on-mac/</loc>
+    
+    <lastmod>2019-07-31T07:43:33.079Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://yuan901202.github.io/gallery/index.html</loc>
     
     <lastmod>2019-07-27T05:18:29.023Z</lastmod>
@@ -33,13 +47,6 @@
     <loc>https://yuan901202.github.io/gallery/auckland/index.html</loc>
     
     <lastmod>2019-07-27T04:39:58.153Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://yuan901202.github.io/2019/07/26/2019-07-26-fix-app-damaged-on-mac/</loc>
-    
-    <lastmod>2019-07-26T10:48:00.502Z</lastmod>
     
   </url>
   
